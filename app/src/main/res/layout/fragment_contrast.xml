@@ -18,7 +18,7 @@
                 android:id="@+id/textVie1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Contrast Ratio"
+                android:text="@string/contrast_ratio"
                 android:accessibilityHeading="true"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -31,7 +31,7 @@
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Contrast ratio is one of the aspects of accessibility that is often not given enough attention in the development of mobile apps. However, especially in mobile use, a good contrast ratio is important for all users, e.g., when using mobile devices outdoors in the sunshine. Below are a few examples of good and bad contrast ratios."
+                android:text="@string/contrast_description"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="20dp"/>
@@ -46,13 +46,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Passed with 21.0:1, HEX: #ffffff on #000000."
+                    android:text="@string/passed"
                     android:textColor="@color/white"
                     android:background="@color/black"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="10dp"
-                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="1dp"
                     />
 
                 <TextView
@@ -60,13 +61,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Just passed with 4.5:1, HEX: #00e9ff on #5a4dad"
+                    android:text="@string/just_passed"
                     android:textColor="@color/just_past_foreground"
                     android:background="@color/just_past_background"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="10dp"
-                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="1dp"
                     />
 
             </LinearLayout>
@@ -81,13 +83,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Failed with 2.3:1, HEX: #ffffff on #a0b0a1."
+                    android:text="@string/failed"
                     android:textColor="@color/white"
                     android:background="@color/fault_background"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="10dp"
-                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="1dp"
                     />
 
                 <TextView
@@ -95,13 +98,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Just failed with 4.4:1, HEX: #ffffff on #0083a1"
+                    android:text="@string/just_failed"
                     android:textColor="@color/white"
                     android:background="@color/just_fault_background"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="10dp"
-                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="1dp"
                     />
             </LinearLayout>
             <LinearLayout
@@ -115,13 +119,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Failed with? HEX #FFFFFF on ##FFBB86FC"
+                    android:text="@string/failed_with"
                     android:textColor="@color/white"
                     android:background="@color/purple_200"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="20dp"
-                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="1dp"
                     />
 
                 <TextView
@@ -129,13 +134,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Passed with? HEX #FFFFFF on #006400 "
+                    android:text="@string/passed_with"
                     android:textColor="@color/white"
                     android:background="@color/green"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="20dp"
-                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="1dp"
                     />
             </LinearLayout>
 

@@ -9,7 +9,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="Logo of ritter1.apps"
+        android:contentDescription="@string/logo"
         android:src="@mipmap/ic_logo_round"
         app:layout_constraintBottom_toTopOf="@+id/text_home"
         app:layout_constraintEnd_toEndOf="parent"

@@ -13,4 +13,28 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="dark_mode_heading__html">dark_mode_heading.html</string>
+    <string name="contrast_ratio">Contrast Ratio</string>
+    <string name="contrast_description">Contrast ratio is one of the aspects of accessibility that is often not given enough attention in the development of mobile apps. However, especially in mobile use, a good contrast ratio is important for all users, e.g., when using mobile devices outdoors in the sunshine. Below are a few examples of good and bad contrast ratios.</string>
+    <string name="passed">Passed with 21.0:1, HEX: #ffffff on #000000.</string>
+    <string name="just_passed">Just passed with 4.5:1, HEX: #00e9ff on #5a4dad</string>
+    <string name="failed">Failed with 2.3:1, HEX: #ffffff on #a0b0a1.</string>
+    <string name="just_failed">Just failed with 4.4:1, HEX: #ffffff on #0083a1</string>
+    <string name="failed_with">Failed with? HEX #FFFFFF on ##FFBB86FC</string>
+    <string name="passed_with">Passed with? HEX #FFFFFF on #006400</string>
+    <string name="alternative_texts">Alternative Texts</string>
+    <string name="alt_description">The following will show what is read by TalkBack in the 3 most common situations (no alternative text, decorative graphics, and informative graphics). To provide an alternative text to graphics the attribute android:contentDescription=\" \" is used.</string>
+    <string name="no_alt_text">No Alternative Text</string>
+    <string name="no_alt_description">In this example, the alternative text was intentionally omitted. In practice, it happens very often that the alternative text is omitted by mistake. For this example, the symbol for non-wheelchair accessible is used (a crossed-out wheelchair symbol).</string>
+    <string name="decorative_graphics">Decorative Graphics</string>
+    <string name="deco_graphic_description">In this example, the graphic was assumed to be purely decorative and the alternative text was left blank so that TalkBack ignores the graphic and does not output irrelevant text. The wheelchair symbol was used for this example.</string>
+    <string name="informative_graphic">Informative Graphic</string>
+    <string name="informative_graphic_description">In this example, the graphic was assumed to be informative, so it was provided with an alternative text.</string>
+    <string name="informative_graphic_alt">wheelchair access</string>
+    <string name="headings_stricture">Headings Stricture</string>
+    <string name="heading_description">There is a difference in headings between native apps and hybrids with embedded HTML content. While there are six levels of headings in HTML h1 to h6. This is not the case with native apps. In native apps, the attribute android:accessibilityHeading \"tue\" is used to mark up a text (textView) on a non-visual level as a heading.</string>
+    <string name="contact_information">Contact information</string>
+    <string name="petra_ritter">Petra Ritter</string>
+    <string name="email">Email:</string>
+    <string name="mail_address">ritter1.apps@gmail.com</string>
+    <string name="logo">Logo of ritter1.apps</string>
 </resources>
