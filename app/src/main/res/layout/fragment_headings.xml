@@ -33,7 +33,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="There is a difference in headings between native apps and hybrids with embedded HTML content. While there are six levels of headings in HTML h1 to h6. This is not the case with native apps. In native apps, the attribute android:accessibilityHeadimg &quot;tue&quot; is used to mark up a text (textView) on a non-visual level as a heading."
+                android:text="There is a difference in headings between native apps and hybrids with embedded HTML content. While there are six levels of headings in HTML h1 to h6. This is not the case with native apps. In native apps, the attribute android:accessibilityHeading &quot;tue&quot; is used to mark up a text (textView) on a non-visual level as a heading."
                 android:textSize="16sp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"/>
