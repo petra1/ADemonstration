@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:text="Headings Stricture"
                 android:accessibilityHeading="true"
-                android:textSize="30sp"
+                android:textSize="24sp"
                 android:textStyle="bold"
                 android:textColor="?colorOnPrimary"
                 android:layout_gravity="center"

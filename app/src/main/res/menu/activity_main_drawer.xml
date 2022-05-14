@@ -9,9 +9,17 @@
             android:icon="@drawable/ic_baseline_home_24"
             android:title="@string/menu_home" />
         <item
+            android:id="@+id/nav_graphics"
+            android:icon="@drawable/ic_baseline_gif_box_24"
+            android:title="Graphics" />
+        <item
             android:id="@+id/nav_headings"
             android:icon="@drawable/ic_baseline_view_headline_24"
             android:title="Headings" />
+        <item
+            android:id="@+id/nav_contrast"
+            android:icon="@drawable/ic_baseline_contrast_24"
+            android:title="Contrast Ratio" />
         <item
             android:id="@+id/nav_contact"
             android:icon="@drawable/ic_baseline_contact_mail_24"

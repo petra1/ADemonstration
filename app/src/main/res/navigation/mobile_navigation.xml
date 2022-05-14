@@ -21,5 +21,15 @@
         android:name="ch.ritter1.apps.ademonstration.HeadingsFragment"
         android:label="Headings"
         tools:layout="@layout/fragment_headings" />
+    <fragment
+        android:id="@+id/nav_graphics"
+        android:name="ch.ritter1.apps.ademonstration.GraphicsFragment"
+        android:label="Graphics"
+        tools:layout="@layout/fragment_graphics" />
+    <fragment
+        android:id="@+id/nav_contrast"
+        android:name="ch.ritter1.apps.ademonstration.ContrastFragment"
+        android:label="Contrast"
+        tools:layout="@layout/fragment_contrast" />
 
 </navigation>
