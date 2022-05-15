@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="ch.ritter1.apps.ademonstration.ui.home.HomeFragment"
-            android:label="@string/menu_home"
+        android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
@@ -31,5 +31,10 @@
         android:name="ch.ritter1.apps.ademonstration.ContrastFragment"
         android:label="Contrast"
         tools:layout="@layout/fragment_contrast" />
+    <fragment
+        android:id="@+id/nav_edit"
+        android:name="ch.ritter1.apps.ademonstration.EditfieldFragment"
+        android:label="Edit fields"
+        tools:layout="@layout/fragment_editfield" />
 
 </navigation>

@@ -17,6 +17,10 @@
             android:icon="@drawable/ic_baseline_view_headline_24"
             android:title="Headings" />
         <item
+            android:id="@+id/nav_edit"
+            android:icon="@drawable/ic_baseline_edit_24"
+            android:title="Edit fields" />
+        <item
             android:id="@+id/nav_contrast"
             android:icon="@drawable/ic_baseline_contrast_24"
             android:title="Contrast Ratio" />
