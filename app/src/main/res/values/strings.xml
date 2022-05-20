@@ -7,8 +7,9 @@
     <string name="nav_header_desc">Navigation header</string>
 
 
-
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_home">Home</string>
+    <string name="first_name_send">First name has been send</string>
+    <string name="last_name_send">Last name has been send</string>
     <string name="dark_mode_heading__html">dark_mode_heading.html</string>
     <string name="contrast_ratio">Contrast Ratio</string>
     <string name="contrast_description">Contrast ratio is one of the aspects of accessibility that is often not given enough attention in the development of mobile apps. However, especially in mobile use, a good contrast ratio is important for all users, e.g., when using mobile devices outdoors in the sunshine. Below are a few examples of good and bad contrast ratios.</string>

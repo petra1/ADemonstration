@@ -24,7 +24,6 @@
                 android:layout_marginBottom="15dp"
                 android:accessibilityHeading="true"
                 android:text="Edit fields"
-                android:textColor="?colorOnPrimary"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -35,7 +34,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="10dp"
-                android:text="In the following, we will show how TalkBack behaves when the visually visible labels have not been linked to the corresponding input field. In order to link the visually visible labels with the corresponding input fields, the attribute android:labelFor=&quot; &quot; is used for the label with the ID belonging to the editText as value. The entered data is not permanently stored or sent to a server." />
+                android:text="In the following, we will show how TalkBack behaves when the visually visible labels have not been linked to the corresponding input field. In order to link the visually visible labels with the corresponding input fields, the attribute android:labelFor=&quot; &quot; is used for the label with the ID belonging to the editText as value."/>
 
             <TextView
                 android:id="@+id/text_Description2"
@@ -43,8 +42,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginBottom="30dp"
-                android:text="In the first input field, the link to the visible label was intentionally omitted. The second was correctly linked to the label." />
+                android:layout_marginBottom="10dp"
+                android:text="In the first input field, the link to the visible label was intentionally omitted. The second was correctly linked to the label."/>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -67,11 +67,11 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="First name" />
+                    android:inputType="textPersonName" />
 
 
             </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -86,12 +86,13 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:text="Send first name"
                     android:background="@color/green"
-                    android:textColor="@color/white"
+                    android:focusable="true"
                     android:paddingStart="8dp"
                     android:paddingEnd="8dp"
-
+                    android:text="Send first name"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
                     />
 
 
@@ -119,8 +120,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Last name" />
+                    android:inputType="textPersonName" />
+
 
 
             </LinearLayout>
@@ -128,7 +129,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="10dp"
                 android:orientation="vertical">
 
                 <androidx.appcompat.widget.AppCompatButton
@@ -138,12 +139,13 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:text="Send last name"
                     android:background="@color/green"
-                    android:textColor="@color/white"
+                    android:focusable="true"
                     android:paddingStart="8dp"
                     android:paddingEnd="8dp"
-                    />
+                    android:text="Send last name"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"/>
 
             </LinearLayout>
 
@@ -151,7 +153,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingBottom="320dp">
 
                 <TextView
                     android:id="@+id/text_full_name"
@@ -162,7 +165,8 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="Full name"
+                    android:text="Press the button below"
+                    android:textStyle="bold"
 
                     />
 
@@ -174,12 +178,13 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:text="Display full name"
                     android:background="@color/green"
-                    android:textColor="@color/white"
+                    android:focusable="true"
                     android:paddingStart="8dp"
                     android:paddingEnd="8dp"
-
+                    android:text="Display full name"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
                     />
 
 
