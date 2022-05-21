@@ -23,7 +23,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"
                 android:accessibilityHeading="true"
-                android:text="Edit fields"
+                android:text="@string/edit_fields"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -34,7 +34,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="10dp"
-                android:text="In the following, we will show how TalkBack behaves when the visually visible labels have not been linked to the corresponding input field. In order to link the visually visible labels with the corresponding input fields, the attribute android:labelFor=&quot; &quot; is used for the label with the ID belonging to the editText as value."/>
+                android:text="@string/description1_editfield" />
 
             <TextView
                 android:id="@+id/text_Description2"
@@ -43,7 +43,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="10dp"
-                android:text="In the first input field, the link to the visible label was intentionally omitted. The second was correctly linked to the label."/>
+                android:text="@string/description2_editfield" />
 
 
             <LinearLayout
@@ -59,7 +59,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="First name" />
+                    android:text="@string/first_name_label" />
 
                 <EditText
                     android:id="@+id/editText_Fist_name"
@@ -67,7 +67,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:autofillHints="cc-given-name"/>
 
 
             </LinearLayout>
@@ -82,18 +83,17 @@
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/bt_first_name"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:background="@color/green"
+                    android:background="@drawable/button_selector"
                     android:focusable="true"
                     android:paddingStart="8dp"
                     android:paddingEnd="8dp"
-                    android:text="Send first name"
-                    android:textColor="@color/white"
+                    android:text="@string/send_first_name_bt"
                     android:textAllCaps="false"
-                    />
+                    android:textColor="@color/white" />
 
 
             </LinearLayout>
@@ -112,7 +112,8 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="last name" />
+                    android:labelFor="@id/editText_Last_name"
+                    android:text="@string/last_name_label" />
 
                 <EditText
                     android:id="@+id/editText_Last_name"
@@ -120,8 +121,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textPersonName" />
-
+                    android:inputType="textPersonName"
+                    android:autofillHints="family-name"
+                    />
 
 
             </LinearLayout>
@@ -135,17 +137,17 @@
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/bt_last_name"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:background="@color/green"
+                    android:background="@drawable/button_selector"
                     android:focusable="true"
                     android:paddingStart="8dp"
                     android:paddingEnd="8dp"
-                    android:text="Send last name"
-                    android:textColor="@color/white"
-                    android:textAllCaps="false"/>
+                    android:text="@string/send_last_name_bt"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
 
             </LinearLayout>
 
@@ -165,8 +167,8 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="Press the button below"
-                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/full_name_text"
 
                     />
 
@@ -178,19 +180,17 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:background="@color/green"
+                    android:background="@drawable/button_selector"
                     android:focusable="true"
                     android:paddingStart="8dp"
                     android:paddingEnd="8dp"
-                    android:text="Display full name"
-                    android:textColor="@color/white"
+                    android:text="@string/display_full_name_bt"
                     android:textAllCaps="false"
+                    android:textColor="@color/white"
                     />
 
 
             </LinearLayout>
-
-
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </FrameLayout>

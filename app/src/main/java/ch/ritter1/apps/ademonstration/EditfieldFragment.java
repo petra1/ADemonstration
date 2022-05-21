@@ -15,7 +15,7 @@ import android.widget.TextView;
 public class EditfieldFragment extends Fragment {
     String lastname;
     String firstname;
-    boolean clicked=false;
+    boolean clicked = false;
 
 
     public EditfieldFragment() {
@@ -38,53 +38,36 @@ public class EditfieldFragment extends Fragment {
         Button button_l_name = v.findViewById(R.id.bt_last_name);
         Button button_full_name = v.findViewById(R.id.bt_full_name);
         TextView text_full_name = v.findViewById(R.id.text_full_name);
-         EditText editText_f_name = v.findViewById(R.id.editText_Fist_name);
+        EditText editText_f_name = v.findViewById(R.id.editText_Fist_name);
         EditText editText_l_name = v.findViewById(R.id.editText_Last_name);
 
 
         button_f_name.setOnClickListener(
-                new Button.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
+                view -> {
 
 
-                        firstname = editText_f_name.getText().toString();
-                        if(clicked=true);
-                        button_f_name.setContentDescription(getString(R.string.first_name_send));
-
-
-
-                    }
+                    firstname = editText_f_name.getText().toString();
+                    clicked = true;
+                    button_f_name.setContentDescription(getString(R.string.first_name_send));
 
 
                 }
         );
 
         button_l_name.setOnClickListener(
-                new Button.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
+                view -> {
 
-                        lastname = editText_l_name.getText().toString();
-                        if(clicked=true);
-                        button_l_name.setContentDescription(getString(R.string.last_name_send));
-
-
-
-                    }
+                    lastname = editText_l_name.getText().toString();
+                    clicked = true;
+                    button_l_name.setContentDescription(getString(R.string.last_name_send));
 
 
                 }
         );
         button_full_name.setOnClickListener(
-                new Button.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        text_full_name.setText(firstname + " " + lastname);
-                        text_full_name.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
-
-                    }
-
+                view -> {
+                    text_full_name.setText(firstname + " " + lastname);
+                    text_full_name.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
 
                 }
         );
