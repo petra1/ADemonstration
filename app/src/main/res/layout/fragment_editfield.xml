@@ -124,8 +124,6 @@
                     android:inputType="textPersonName"
                     android:autofillHints="family-name"
                     />
-
-
             </LinearLayout>
 
             <LinearLayout
@@ -147,7 +145,8 @@
                     android:paddingEnd="8dp"
                     android:text="@string/send_last_name_bt"
                     android:textAllCaps="false"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    />
 
             </LinearLayout>
 
@@ -188,8 +187,6 @@
                     android:textAllCaps="false"
                     android:textColor="@color/white"
                     />
-
-
             </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

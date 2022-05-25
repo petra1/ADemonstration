@@ -44,4 +44,15 @@
     <string name="send_last_name_bt">Send last name</string>
     <string name="full_name_text">Press the button below to display your full name.</string>
     <string name="display_full_name_bt">Display full name</string>
+   v<string name="version_of_wcag">The current version of WCAG is 2.1.</string>
+    <string name="released_wcag">The current version was released in june 2018.</string>
+    <string name="what_is_the_current_version_of_wcag">What is the current version of WCAG?</string>
+<string name="when_was_the_current_version_of_wcag_released">When was the current version of WCAG released?</string>
+    <string name="image_buttons">Image Buttons</string>
+    <string name="Description1_imageButton">This example shows how TalkBack behaves in relation to graphical buttons with missing alternative text, and at the same time shows how the buttons can be made more usable for people with limited fine motor skills.</string>
+    <string name="Description2_imageButton">In the first graphic button, the alternative text, the attribute contentDescription=\" \" was intentionally omitted and the font target was also not adjusted. The second graphic button, however, was correctly labelled and the touch target was adjusted by setting the attributes minWidth and minHeight to 48dp so that the button is displayed larger and is thus easier to use.</string>
+    <string name="question1_imageButton">Question #1: What is the current version of WCAG?</string>
+    <string name="question2_imageButton">Question #2: When was the current version of WCAG released?</string>
+    <string name="contentDescription_imageButton">Get the answer to the second question.</string>
+    <string name="reset_questions">Reset questions</string>
 </resources>
