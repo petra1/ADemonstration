@@ -1,16 +1,18 @@
 <resources>
+    <!--Default-->
     <string name="app_name">A Demonstration</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">ritter1.apps</string>
-    <!--<string name="nav_header_subtitle">android.studio@android.com</string>-->
     <string name="nav_header_desc">Navigation header</string>
-
-
     <string name="menu_home">Home</string>
-    <string name="first_name_send">First name has been send</string>
-    <string name="last_name_send">Last name has been send</string>
+
+    <!--Headings-->
     <string name="dark_mode_heading__html">dark_mode_heading.html</string>
+    <string name="headings_stricture">Headings Stricture</string>
+    <string name="heading_description">There is a difference in headings between native apps and hybrids with embedded HTML content. While there are six levels of headings in HTML h1 to h6. This is not the case with native apps. In native apps, the attribute android:accessibilityHeading \"tue\" is used to mark up a text (textView) on a non-visual level as a heading.</string>
+
+    <!--Contrast ratio-->
     <string name="contrast_ratio">Contrast Ratio</string>
     <string name="contrast_description">Contrast ratio is one of the aspects of accessibility that is often not given enough attention in the development of mobile apps. However, especially in mobile use, a good contrast ratio is important for all users, e.g., when using mobile devices outdoors in the sunshine. Below are a few examples of good and bad contrast ratios.</string>
     <string name="passed">Passed with 21.0:1, HEX: #ffffff on #000000.</string>
@@ -19,6 +21,8 @@
     <string name="just_failed">Just failed with 4.4:1, HEX: #ffffff on #0083a1</string>
     <string name="failed_with">Failed with? HEX #FFFFFF on ##FFBB86FC</string>
     <string name="passed_with">Passed with? HEX #FFFFFF on #006400</string>
+
+    <!--Alternative text-->
     <string name="alternative_texts">Alternative Texts</string>
     <string name="alt_description">The following will show what is read by TalkBack in the 3 most common situations (no alternative text, decorative graphics, and informative graphics). To provide an alternative text to graphics the attribute android:contentDescription=\" \" is used.</string>
     <string name="no_alt_text">No Alternative Text</string>
@@ -28,14 +32,21 @@
     <string name="informative_graphic">Informative Graphic</string>
     <string name="informative_graphic_description">In this example, the graphic was assumed to be informative, so it was provided with an alternative text.</string>
     <string name="informative_graphic_alt">wheelchair access</string>
-    <string name="headings_stricture">Headings Stricture</string>
-    <string name="heading_description">There is a difference in headings between native apps and hybrids with embedded HTML content. While there are six levels of headings in HTML h1 to h6. This is not the case with native apps. In native apps, the attribute android:accessibilityHeading \"tue\" is used to mark up a text (textView) on a non-visual level as a heading.</string>
+
+    <!--Contact and Logo-->
     <string name="contact_information">Contact information</string>
     <string name="petra_ritter">Petra Ritter</string>
     <string name="email">Email:</string>
     <string name="mail_address">ritter1.apps@gmail.com</string>
     <string name="logo">Logo of ritter1.apps</string>
+    <string name="github">Github:</string>
+    <string name="github_url">https://github.com/petra1/ADemonstration</string>
+
+
+    <!--Edit fields-->
     <string name="edit_fields">Edit fields</string>
+    <string name="first_name_send">First name has been send</string>
+    <string name="last_name_send">Last name has been send</string>
     <string name="description1_editfield">In the following, we will show how TalkBack behaves when the visually visible labels have not been linked to the corresponding input field. In order to link the visually visible labels with the corresponding input fields, the attribute android:labelFor=\" \" is used for the label with the ID belonging to the editText as value.</string>
     <string name="description2_editfield">In the first input field, the link to the visible label was intentionally omitted. The second was correctly linked to the label.</string>
     <string name="first_name_label">First name</string>
@@ -44,10 +55,12 @@
     <string name="send_last_name_bt">Send last name</string>
     <string name="full_name_text">Press the button below to display your full name.</string>
     <string name="display_full_name_bt">Display full name</string>
-   v<string name="version_of_wcag">The current version of WCAG is 2.1.</string>
+
+    <!--Image Buttons-->
+    <string name="version_of_wcag">The current version of WCAG is 2.1.</string>
     <string name="released_wcag">The current version was released in june 2018.</string>
     <string name="what_is_the_current_version_of_wcag">What is the current version of WCAG?</string>
-<string name="when_was_the_current_version_of_wcag_released">When was the current version of WCAG released?</string>
+    <string name="when_was_the_current_version_of_wcag_released">When was the current version of WCAG released?</string>
     <string name="image_buttons">Image Buttons</string>
     <string name="Description1_imageButton">This example shows how TalkBack behaves in relation to graphical buttons with missing alternative text, and at the same time shows how the buttons can be made more usable for people with limited fine motor skills.</string>
     <string name="Description2_imageButton">In the first graphic button, the alternative text, the attribute contentDescription=\" \" was intentionally omitted and the font target was also not adjusted. The second graphic button, however, was correctly labelled and the touch target was adjusted by setting the attributes minWidth and minHeight to 48dp so that the button is displayed larger and is thus easier to use.</string>
@@ -55,4 +68,5 @@
     <string name="question2_imageButton">Question #2: When was the current version of WCAG released?</string>
     <string name="contentDescription_imageButton">Get the answer to the second question.</string>
     <string name="reset_questions">Reset questions</string>
+
 </resources>
