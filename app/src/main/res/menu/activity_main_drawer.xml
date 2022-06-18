@@ -26,10 +26,16 @@
             android:icon="@drawable/ic_baseline_edit_24"
             android:title="Edit fields" />
         <item
+            android:id="@+id/nav_tab"
+            android:icon="@drawable/ic_baseline_keyboard_tab_24"
+            android:title="Tab Order" />
+        <item
             android:id="@+id/nav_contrast"
             android:icon="@drawable/ic_baseline_contrast_24"
             android:title="Contrast Ratio" />
+
         <item
+
             android:id="@+id/nav_contact"
             android:icon="@drawable/ic_baseline_contact_mail_24"
             android:title="Contact" />

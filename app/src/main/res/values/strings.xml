@@ -68,5 +68,11 @@
     <string name="question2_imageButton">Question #2: When was the current version of WCAG released?</string>
     <string name="contentDescription_imageButton">Get the answer to the second question.</string>
     <string name="reset_questions">Reset questions</string>
+    <!--Tab Order-->
+    <string name="somethings_wrong">Oops, something went wrong with the tab order.</string>
+    <string name="tab_correct">Now the tab order is correct.</string>
+    <string name="help_first">Get help to first name</string>
+    <string name="help_last">Get help to last name</string>
+
 
 </resources>
