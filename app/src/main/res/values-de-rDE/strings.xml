@@ -7,5 +7,19 @@
     <string name="send_first_name_bt">Vornamen senden</string>
     <string name="send_last_name_bt">Nachnamen senden</string>
     <string name="full_name_text">Drücken Sie die Taste unten, um Ihren vollständigen Namen anzuzeigen.</string>
+    <string name="logo">Logo von ritter1.apps</string>
+    <string name="edit_fields">Eingabefelder</string>
+    <string name="version_of_wcag">Die aktuelle Version der WCAG ist 2.1.</string>
+    <string name="display_full_name_bt">Vollständigen Namen anzeigen</string>
+    <string name="image_buttons">Grafische Schalter</string>
+    <string name="reset_questions">Fragen zurücksetzen</string>
+    <string name="navigation_drawer_open">Navigation öffnen</string>
+    <string name="navigation_drawer_close">Navigation Schlirddrm</string>
+    <string name="nav_header_desc">Navigation Kopfzeilen</string>
+    <string name="headings_stricture">Überschriften Struktur</string>
+    <string name="alternative_texts">Alternativtexte</string>
+    <string name="no_alt_text">fehlender Alternativtext</string>
+    <string name="decorative_graphics">Dekorative Grafiken</string>
+    <string name="informative_graphic">Informative Grafik</string>
 
 </resources>

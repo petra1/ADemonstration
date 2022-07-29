@@ -1,7 +1,6 @@
 <resources>
     <!--Default-->
     <string name="app_name">A Demonstration</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title" translatable="false">ritter1.apps</string>
     <string name="nav_header_desc">Navigation header</string>
@@ -9,7 +8,6 @@
 
     <!--Headings-->
     <string name="dark_mode_heading__html">dark_mode_heading.html</string>
-    <string name="headings_stricture">Headings Stricture</string>
     <string name="heading_description">There is a difference in headings between native apps and hybrids with embedded HTML content. While there are six levels of headings in HTML h1 to h6. This is not the case with native apps. In native apps, the attribute android:accessibilityHeading \"tue\" is used to mark up a text (textView) on a non-visual level as a heading.</string>
 
     <!--Contrast ratio-->
@@ -24,7 +22,7 @@
     <!--Alternative text-->
     <string name="alternative_texts">Alternative Texts</string>
     <string name="alt_description">The following will show what is read by TalkBack in the 3 most common situations (no alternative text, decorative graphics, and informative graphics). To provide an alternative text to graphics the attribute android:contentDescription=\" \" is used.</string>
-    <string name="no_alt_text">No Alternative Text</string>
+    <string name="no_alt_text">No alternative text</string>
     <string name="no_alt_description">In this example, the alternative text was intentionally omitted. In practice, it happens very often that the alternative text is omitted by mistake. For this example, the symbol for non-wheelchair accessible is used (a crossed-out wheelchair symbol).</string>
     <string name="decorative_graphics">Decorative Graphics</string>
     <string name="deco_graphic_description">In this example, the graphic was assumed to be purely decorative and the alternative text was left blank so that TalkBack ignores the graphic and does not output irrelevant text. The wheelchair symbol was used for this example.</string>
@@ -43,7 +41,6 @@
 
 
     <!--Edit fields-->
-    <string name="edit_fields">Edit fields</string>
     <string name="first_name_send">First name has been send</string>
     <string name="last_name_send">Last name has been send</string>
     <string name="description1_editfield">In the following, we will show how TalkBack behaves when the visually visible labels have not been linked to the corresponding input field. In order to link the visually visible labels with the corresponding input fields, the attribute android:labelFor=\" \" is used for the label with the ID belonging to the editText as value.</string>
@@ -53,7 +50,6 @@
     <string name="last_name_label">Last name</string>
     <string name="send_last_name_bt">Send last name</string>
     <string name="full_name_text">Press the button below to display your full name.</string>
-    <string name="display_full_name_bt">Vollständigen Namen anzeigen</string>
 
     <!--Image Buttons-->
     <string name="version_of_wcag">The current version of WCAG is 2.1.</string>
@@ -73,6 +69,10 @@
     <string name="help_first">Get help to first name</string>
     <string name="help_last">Get help to last name</string>
     <string name="contrast_ratio">Contrast Ratio</string>
+    <string name="edit_fields">Edit fields</string>
+    <string name="display_full_name_bt">Display full name</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="headings_stricture">Headings Stricture</string>
 
 
 </resources>
