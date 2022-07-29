@@ -3,5 +3,9 @@
     <string name="app_name">A Demonstration</string>
     <string name="first_name_label">Vorname</string>
     <string name="last_name_label">Nachname</string>
-    <string name="last_name_label">N</string>
+    <string name="contrast_ratio">Kontrastverhältnis</string>
+    <string name="send_first_name_bt">Vornamen senden</string>
+    <string name="send_last_name_bt">Nachnamen senden</string>
+    <string name="full_name_text">Drücken Sie die Taste unten, um Ihren vollständigen Namen anzuzeigen.</string>
+
 </resources>

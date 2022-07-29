@@ -3,7 +3,7 @@
     <string name="app_name">A Demonstration</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">ritter1.apps</string>
+    <string name="nav_header_title" translatable="false">ritter1.apps</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="menu_home">Home</string>
 
@@ -13,7 +13,6 @@
     <string name="heading_description">There is a difference in headings between native apps and hybrids with embedded HTML content. While there are six levels of headings in HTML h1 to h6. This is not the case with native apps. In native apps, the attribute android:accessibilityHeading \"tue\" is used to mark up a text (textView) on a non-visual level as a heading.</string>
 
     <!--Contrast ratio-->
-    <string name="contrast_ratio">Contrast Ratio</string>
     <string name="contrast_description">Contrast ratio is one of the aspects of accessibility that is often not given enough attention in the development of mobile apps. However, especially in mobile use, a good contrast ratio is important for all users, e.g., when using mobile devices outdoors in the sunshine. Below are a few examples of good and bad contrast ratios.</string>
     <string name="passed">Passed with 21.0:1, HEX: #ffffff on #000000.</string>
     <string name="just_passed">Just passed with 4.5:1, HEX: #00e9ff on #5a4dad</string>
@@ -54,7 +53,7 @@
     <string name="last_name_label">Last name</string>
     <string name="send_last_name_bt">Send last name</string>
     <string name="full_name_text">Press the button below to display your full name.</string>
-    <string name="display_full_name_bt">Display full name</string>
+    <string name="display_full_name_bt">Vollständigen Namen anzeigen</string>
 
     <!--Image Buttons-->
     <string name="version_of_wcag">The current version of WCAG is 2.1.</string>
@@ -73,6 +72,7 @@
     <string name="tab_correct">Now the tab order is correct.</string>
     <string name="help_first">Get help to first name</string>
     <string name="help_last">Get help to last name</string>
+    <string name="contrast_ratio">Contrast Ratio</string>
 
 
 </resources>
