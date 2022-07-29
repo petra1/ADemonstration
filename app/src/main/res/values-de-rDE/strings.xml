@@ -21,5 +21,9 @@
     <string name="no_alt_text">fehlender Alternativtext</string>
     <string name="decorative_graphics">Dekorative Grafiken</string>
     <string name="informative_graphic">Informative Grafik</string>
+    <string name="no_alt_description">In diesem Beispiel wurde der Alternativtext absichtlich weggelassen. In der Praxis kommt es sehr oft vor, dass der Alternativtext versehentlich weggelassen wird. In diesem Beispiel wird das Symbol für nicht rollstuhlgerecht verwendet (ein durchgestrichenes Rollstuhlsymbol).</string>
+    <string name="deco_graphic_description">In diesem Beispiel wurde davon ausgegangen, dass die Grafik rein dekorativ ist, und der alternative Text wurde leer gelassen, damit TalkBack die Grafik ignoriert und keinen irrelevanten Text ausgibt. Für dieses Beispiel wurde das Rollstuhlsymbol verwendet.</string>
+    <string name="heading_description">Es gibt einen Unterschied bei den Überschriften zwischen nativen Anwendungen und hybriden Anwendungen mit eingebettetem HTML-Inhalt. Während es in HTML sechs Überschriftsebenen h1 bis h6 gibt. Dies ist bei nativen Apps nicht der Fall. In nativen Apps wird das Attribut android:accessibilityHeading \"tue\" verwendet, um einen Text (textView) auf einer nicht visuellen Ebene als Überschrift zu kennzeichnen.  Übersetzt mit www.DeepL.com/Translator (kostenlose Version)</string>
+    <string name="contrast_description">Das Kontrastverhältnis ist einer der Aspekte der Barrierefreiheit, dem bei der Entwicklung von mobilen Apps oft nicht genügend Aufmerksamkeit geschenkt wird. Gerade bei der mobilen Nutzung ist ein gutes Kontrastverhältnis jedoch für alle Nutzer wichtig, z. B. bei der Nutzung mobiler Geräte im Freien bei Sonnenschein. Nachfolgend finden Sie einige Beispiele für gute und schlechte Kontrastverhältnisse.  Übersetzt mit www.DeepL.com/Translator (kostenlose Version)</string>
 
 </resources>
