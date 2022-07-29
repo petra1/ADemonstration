@@ -35,11 +35,11 @@
 
     <!--Contact and Logo-->
     <string name="contact_information">Contact information</string>
-    <string name="petra_ritter">Petra Ritter</string>
-    <string name="email">Email:</string>
-    <string name="mail_address">ritter1.apps@gmail.com</string>
+    <string name="petra_ritter" translatable="false">Petra Ritter</string>
+    <string name="email" translatable="false">Email:</string>
+    <string name="mail_address" translatable="false">ritter1.apps@gmail.com</string>
     <string name="logo">Logo of ritter1.apps</string>
-    <string name="github">Github:</string>
+    <string name="github" translatable="false">Github:</string>
     <string name="github_url">https://github.com/petra1/ADemonstration</string>
 
 
