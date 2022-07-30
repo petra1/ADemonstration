@@ -4,7 +4,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title" translatable="false">ritter1.apps</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="menu_home">Home</string>
+    <string name="menu_home" translatable="false">Home</string>
 
     <!--Headings-->
     <string name="dark_mode_heading__html">dark_mode_heading.html</string>
