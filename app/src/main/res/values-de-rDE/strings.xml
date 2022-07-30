@@ -25,5 +25,22 @@
     <string name="deco_graphic_description">In diesem Beispiel wurde davon ausgegangen, dass die Grafik rein dekorativ ist, und der alternative Text wurde leer gelassen, damit TalkBack die Grafik ignoriert und keinen irrelevanten Text ausgibt. Für dieses Beispiel wurde das Rollstuhlsymbol verwendet.</string>
     <string name="heading_description">Es gibt einen Unterschied bei den Überschriften zwischen nativen Anwendungen und hybriden Anwendungen mit eingebettetem HTML-Inhalt. Während es in HTML sechs Überschriftsebenen h1 bis h6 gibt. Dies ist bei nativen Apps nicht der Fall. In nativen Apps wird das Attribut android:accessibilityHeading \"tue\" verwendet, um einen Text (textView) auf einer nicht visuellen Ebene als Überschrift zu kennzeichnen.  Übersetzt mit www.DeepL.com/Translator (kostenlose Version)</string>
     <string name="contrast_description">Das Kontrastverhältnis ist einer der Aspekte der Barrierefreiheit, dem bei der Entwicklung von mobilen Apps oft nicht genügend Aufmerksamkeit geschenkt wird. Gerade bei der mobilen Nutzung ist ein gutes Kontrastverhältnis jedoch für alle Nutzer wichtig, z. B. bei der Nutzung mobiler Geräte im Freien bei Sonnenschein. Nachfolgend finden Sie einige Beispiele für gute und schlechte Kontrastverhältnisse.  Übersetzt mit www.DeepL.com/Translator (kostenlose Version)</string>
+    <string name="passed">Bestanden mit 21.0:1, HEX: #ffffff auf #000000.</string>
+    <string name="just_passed">Gerade bestanden mit 4,5:1, HEX: #00e9ff auf #5a4dad</string>
+    <string name="failed">" Nicht bestanden mit  2.3:1, HEX: #ffffff auf #a0b0a1"</string>
+    <string name="just_failed">Gerade nicht bestanden mit  4.4:1, HEX: #ffffff auf #0083a1</string>
+    <string name="failed_with">Nicht bestanden mit? HEX #FFFFFF auf ##FFBB86FC</string>
+    <string name="passed_with">Bestanden mit? HEX #FFFFFF auf #006400</string>
+    <string name="alt_description">Im Folgenden wird gezeigt, was von TalkBack in den 3 häufigsten Situationen (kein Alternativtext, dekorative Grafiken und informative Grafiken) gelesen wird. Um einen alternativen Text zu Grafiken bereitzustellen, wird das Attribut android:contentDescription=\" \" verwendet.</string>
+    <string name="informative_graphic_description">In diesem Beispiel wurde davon ausgegangen, dass die Grafik informativ ist, weshalb sie mit einem Alternativtext versehen wurde.</string>
+    <string name="informative_graphic_alt">In diesem Beispiel wurde davon ausgegangen, dass die Grafik informativ ist, weshalb sie mit einem Alternativtext versehen wurde.</string>
+    <string name="contact_information">Kontakt Information</string>
+    <string name="contact_information">K</string>
+    <string name="first_name_send">Vorname wurde gesendet</string>
+    <string name="first_name_send">V</string>
+    <string name="last_name_send">Nachname wurde gesendet</string>
+    <string name="last_name_send">N</string>
+    <string name="description1_editfield">Im Folgenden wird gezeigt, wie sich TalkBack verhält, wenn die visuell sichtbaren Labels nicht mit dem entsprechenden Eingabefeld verknüpft sind. Um die visuell sichtbaren Labels mit den entsprechenden Eingabefeldern zu verknüpfen, wird das Attribut android:labelFor=\" \" für das Label mit der zum editText gehörenden ID als Wert verwendet.</string>
+    <string name="description2_editfield">Im ersten Eingabefeld wurde der Link zur sichtbaren Beschriftung absichtlich weggelassen. Das zweite war korrekt mit der Beschriftung verknüpft.</string>
 
 </resources>
