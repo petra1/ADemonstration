@@ -11,34 +11,34 @@
         <item
             android:id="@+id/nav_graphics"
             android:icon="@drawable/ic_baseline_gif_box_24"
-            android:title="Graphics" />
+            android:title="@string/graphics" />
         <item
             android:id="@+id/nav_image_button"
             android:icon="@drawable/ic_baseline_radio_button_checked_24"
-            android:title="Image Buttons" />
+            android:title="@string/image_buttons" />
 
         <item
             android:id="@+id/nav_headings"
             android:icon="@drawable/ic_baseline_view_headline_24"
-            android:title="Headings" />
+            android:title="@string/headings" />
         <item
             android:id="@+id/nav_edit"
             android:icon="@drawable/ic_baseline_edit_24"
-            android:title="Edit fields" />
+            android:title="@string/edit_fields" />
         <item
             android:id="@+id/nav_tab"
             android:icon="@drawable/ic_baseline_keyboard_tab_24"
-            android:title="Tab Order" />
+            android:title="@string/tab_order" />
         <item
             android:id="@+id/nav_contrast"
             android:icon="@drawable/ic_baseline_contrast_24"
-            android:title="Contrast Ratio" />
+            android:title="@string/contrast_ratio" />
 
         <item
 
             android:id="@+id/nav_contact"
             android:icon="@drawable/ic_baseline_contact_mail_24"
-            android:title="Contact" />
+            android:title="@string/contact" />
 
     </group>
 </menu>

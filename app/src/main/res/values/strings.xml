@@ -8,13 +8,14 @@
 
     <!--Headings-->
     <string name="dark_mode_heading__html">dark_mode_heading.html</string>
+    <string name="heading__html">heading.html</string>
 
     <!--Contrast ratio-->
     <string name="contrast_description">Contrast ratio is one of the aspects of accessibility that is often not given enough attention in the development of mobile apps. However, especially in mobile use, a good contrast ratio is important for all users, e.g., when using mobile devices outdoors in the sunshine. Below are a few examples of good and bad contrast ratios.</string>
     <string name="passed">Passed with 21.0:1, HEX: #ffffff on #000000.</string>
     <string name="just_passed">Just passed with 4.5:1, HEX: #00e9ff on #5a4dad</string>
     <string name="just_failed">Just failed with 4.4:1, HEX: #ffffff on #0083a1</string>
-    <string name="passed_with">Passed with? HEX #FFFFFF on #006400</string>
+    <string name="passed_with">Passed with? HEX #ffffff on #006400</string>
 
     <!--Alternative text-->
     <string name="alternative_texts">Alternative Texts</string>
@@ -24,7 +25,7 @@
     <string name="deco_graphic_description">In this example, the graphic was assumed to be purely decorative and the alternative text was left blank so that TalkBack ignores the graphic and does not output irrelevant text. The wheelchair symbol was used for this example.</string>
     <string name="informative_graphic">Informative Graphic</string>
     <string name="informative_graphic_description">In this example, the graphic was assumed to be informative, so it was provided with an alternative text.</string>
-    <string name="informative_graphic_alt">In this example, the graphic was assumed to be informative, so it was provided with an alternative text.</string>
+    <string name="informative_graphic_alt">wheelchair accessible</string>
 
     <!--Contact and Logo-->
     <string name="contact_information">Contact information</string>
@@ -70,10 +71,22 @@
     <string name="headings_stricture">Headings Stricture</string>
     <string name="heading_description">There is a difference in headings between native apps and hybrids with embedded HTML content. While there are six levels of headings in HTML h1 to h6. This is not the case with native apps. In native apps, the attribute android:accessibilityHeading \"tue\" is used to mark up a text (textView) on a non-visual level as a heading.</string>
     <string name="failed">Failed with 2.3:1, HEX: #ffffff on #a0b0a1.</string>
-    <string name="failed_with">Failed with? HEX #FFFFFF on ##FFBB86FC</string>
+    <string name="failed_with">Failed with? HEX #ffffff on #ffbb86fc</string>
     <string name="alt_description">The following will show what is read by TalkBack in the 3 most common situations (no alternative text, decorative graphics, and informative graphics). To provide an alternative text to graphics the attribute android:contentDescription=\" \" is used.</string>
     <string name="first_name_send">First name has been send</string>
-    <string name="first_name_send">First name has been send</string>
+    <string name="graphics">Graphics</string>
+    <string name="headings">Headings</string>
+    <string name="tab_order">Tab Order</string>
+    <string name="contact">Contact &amp; privacy</string>
+    <string name="description1_tab_order">People with limited fine motor skills may not be able to operate a touch screen, for example because they suffer from tremor. It is therefore important that an app can also be operated with a keyboard connected via Bluetooth and that the focus order of the operating elements is correct.</string>
+    <string name="description2_tab_order">In the first example, the focus order was intentionally ignored, but in the second example, the focus order is correct</string>
+    <string name="contentDescription_passed">Passed with 21.0:1, HEX: #f f f f f f on #000000.</string>
+    <string name="contentDescription_failed">Failed with 2.3:1, HEX: #f f f f f f on #a0b0a1.</string>
+    <string name="contentDescription_just_failed">Just failed with 4.4:1, HEX: #f f f f f f on #0083a1</string>
+    <string name="contentDescription_failed_with">Failed with? HEX #f f f f f f  on #ffbb86fc</string>
+    <string name="contentDescription_passed_with">Passed with? HEX #f f f f f f on #006400</string>
+    <string name="privacy_text">This app does not store data permanently or share it with third parties. The data entered is also not evaluated in any way.</string>
+    <string name="privacy">privacy</string>
 
 
 </resources>

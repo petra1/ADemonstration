@@ -40,12 +40,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
-
+<!--The contentDescriptions in the following TextView are a workaround a problem where TalkBack #ffffff was not announced by TalkBack with out the spaces between the letters.-->
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:contentDescription="@string/contentDescription_passed"
                     android:text="@string/passed"
                     android:textColor="@color/white"
                     android:background="@color/black"
@@ -61,6 +62,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:contentDescription="@string/contentDescription_just_failed"
                     android:text="@string/just_passed"
                     android:textColor="@color/just_past_foreground"
                     android:background="@color/just_past_background"
@@ -83,6 +85,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:contentDescription="@string/contentDescription_failed"
                     android:text="@string/failed"
                     android:textColor="@color/white"
                     android:background="@color/fault_background"
@@ -119,6 +122,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:contentDescription="@string/contentDescription_failed_with"
                     android:text="@string/failed_with"
                     android:textColor="@color/white"
                     android:background="@color/purple_200"
@@ -134,6 +138,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:contentDescription="@string/contentDescription_passed_with"
                     android:text="@string/passed_with"
                     android:textColor="@color/white"
                     android:background="@color/green"

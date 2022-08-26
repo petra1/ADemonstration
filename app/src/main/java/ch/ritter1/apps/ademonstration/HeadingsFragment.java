@@ -37,7 +37,7 @@ public class HeadingsFragment extends Fragment {
                 webView.loadUrl ("file:///android_asset/" + getString (R.string.dark_mode_heading__html));
                 break;
             case  Configuration.UI_MODE_NIGHT_NO:
-                webView.loadUrl ("file:///android_asset/" + "heading.html");
+                webView.loadUrl ("file:///android_asset/" + "heading_de.html");
                 break;
         }
 

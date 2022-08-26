@@ -28,7 +28,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:accessibilityHeading="true"
-                    android:text="Tab Order"
+                    android:text="@string/tab_order"
                     android:textSize="22sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +44,7 @@
                     android:layout_marginEnd="8dp"
                     android:paddingStart="8dp"
                     android:paddingEnd="8dp"
-                    android:text="People with limited fine motor skills may not be able to operate a touch screen, for example because they suffer from tremor. It is therefore important that an app can also be operated with a keyboard connected via Bluetooth and that the focus order of the operating elements is correct. "
+                    android:text="@string/description1_tab_order"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tab_title" />
@@ -58,7 +58,7 @@
                     android:layout_marginEnd="6dp"
                     android:paddingStart="8dp"
                     android:paddingEnd="8dp"
-                    android:text="In the first example, the focus order was intentionally ignored, but in the second example, the focus order is correct "
+                    android:text="@string/description2_tab_order"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tab_description1" />
@@ -124,6 +124,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="61dp"
+                    android:labelFor="@id/tab_last_name_edit"
                     android:text="@string/last_name_label"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tab_send_first_name_btn" />

@@ -14,22 +14,22 @@
     <fragment
         android:id="@+id/nav_contact"
         android:name="ch.ritter1.apps.ademonstration.ContactFragment"
-        android:label="Contact"
+        android:label="@string/contact"
         tools:layout="@layout/fragment_contact" />
     <fragment
         android:id="@+id/nav_headings"
         android:name="ch.ritter1.apps.ademonstration.HeadingsFragment"
-        android:label="Headings"
+        android:label="@string/headings"
         tools:layout="@layout/fragment_headings" />
     <fragment
         android:id="@+id/nav_graphics"
         android:name="ch.ritter1.apps.ademonstration.GraphicsFragment"
-        android:label="Graphics"
+        android:label="@string/graphics"
         tools:layout="@layout/fragment_graphics" />
     <fragment
         android:id="@+id/nav_contrast"
         android:name="ch.ritter1.apps.ademonstration.ContrastFragment"
-        android:label="Contrast"
+        android:label="@string/contrast_ratio"
         tools:layout="@layout/fragment_contrast" />
     <fragment
         android:id="@+id/nav_edit"
@@ -39,12 +39,12 @@
     <fragment
         android:id="@+id/nav_image_button"
         android:name="ch.ritter1.apps.ademonstration.ImageButtonFragment"
-        android:label="Image Button"
+        android:label="@string/image_buttons"
         tools:layout="@layout/fragment_image_button" />
     <fragment
         android:id="@+id/nav_tab"
         android:name="ch.ritter1.apps.ademonstration.TabOrderFragment"
-        android:label="Tab Order"
+        android:label="@string/tab_order"
         tools:layout="@layout/fragment_tab__order" />
 
 </navigation>
