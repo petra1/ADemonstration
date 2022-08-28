@@ -46,5 +46,10 @@
         android:name="ch.ritter1.apps.ademonstration.TabOrderFragment"
         android:label="@string/tab_order"
         tools:layout="@layout/fragment_tab__order" />
+    <fragment
+        android:id="@+id/nav_usage"
+        android:name="ch.ritter1.apps.ademonstration.UsageFragment"
+        android:label="@string/usage"
+        tools:layout="@layout/fragment_usage" />
 
 </navigation>

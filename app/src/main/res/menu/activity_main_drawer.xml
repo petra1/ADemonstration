@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
+
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
@@ -33,12 +34,17 @@
             android:id="@+id/nav_contrast"
             android:icon="@drawable/ic_baseline_contrast_24"
             android:title="@string/contrast_ratio" />
+        <item
+            android:id="@+id/nav_usage"
+            android:icon="@drawable/ic_baseline_front_hand_24"
+            android:title="@string/usage" />
+
 
         <item
-
             android:id="@+id/nav_contact"
             android:icon="@drawable/ic_baseline_contact_mail_24"
             android:title="@string/contact" />
 
     </group>
+
 </menu>

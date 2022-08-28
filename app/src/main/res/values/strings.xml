@@ -87,6 +87,8 @@
     <string name="contentDescription_passed_with">Passed with? HEX #f f f f f f on #006400</string>
     <string name="privacy_text">This app does not store data permanently or share it with third parties. The data entered is also not evaluated in any way.</string>
     <string name="privacy">privacy</string>
+    <string name="dark_mode_usage.html">dark_mode_usage.html</string>
+    <string name="usage">Usage</string>
 
 
 </resources>

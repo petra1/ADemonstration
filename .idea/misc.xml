@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable/button_selector.xml" value="0.175" />
         <entry key="app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.175" />
+        <entry key="app/src/main/res/drawable/ic_baseline_front_hand_24.xml" value="0.175" />
         <entry key="app/src/main/res/drawable/ic_baseline_gif_box_24.xml" value="0.175" />
         <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1495" />
         <entry key="app/src/main/res/drawable/ic_baseline_question_mark_24.xml" value="0.1495" />
@@ -22,7 +23,8 @@
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_image_button.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_tab__ordeer.xml" value="0.28177083333333336" />
-        <entry key="app/src/main/res/layout/fragment_tab__order.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/fragment_tab__order.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_usage.xml" value="0.1" />
         <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.335" />
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.28177083333333336" />
         <entry key="app/src/main/res/menu/main.xml" value="0.2537037037037037" />
@@ -38,7 +40,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.28177083333333336" />
+        <option name="scale" value="0.1" />
       </ProjectState>
     </option>
   </component>
