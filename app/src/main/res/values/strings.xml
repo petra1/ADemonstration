@@ -89,6 +89,7 @@
     <string name="privacy">privacy</string>
     <string name="dark_mode_usage.html">dark_mode_usage.html</string>
     <string name="usage">Usage</string>
+    <string name="edit_field">Edit fields</string>
 
 
 </resources>

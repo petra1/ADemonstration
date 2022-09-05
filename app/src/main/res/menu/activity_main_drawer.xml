@@ -4,11 +4,11 @@
     tools:showIn="navigation_view">
 
 
-    <group android:checkableBehavior="single">
+    <group android:checkableBehavior="single"/>
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_baseline_home_24"
-            android:title="@string/menu_home"/>
+            android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_graphics"
             android:icon="@drawable/ic_baseline_gif_box_24"
@@ -34,6 +34,11 @@
             android:id="@+id/nav_contrast"
             android:icon="@drawable/ic_baseline_contrast_24"
             android:title="@string/contrast_ratio" />
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+
+
         <item
             android:id="@+id/nav_usage"
             android:icon="@drawable/ic_baseline_front_hand_24"

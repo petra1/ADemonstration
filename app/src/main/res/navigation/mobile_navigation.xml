@@ -34,7 +34,7 @@
     <fragment
         android:id="@+id/nav_edit"
         android:name="ch.ritter1.apps.ademonstration.EditfieldFragment"
-        android:label="Edit field"
+        android:label="@string/edit_field"
         tools:layout="@layout/fragment_editfield" />
     <fragment
         android:id="@+id/nav_image_button"

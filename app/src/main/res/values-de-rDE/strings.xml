@@ -68,6 +68,7 @@
     <string name="privacy_text">Diese App speichert keine Daten dauerhaft oder gibt diese an Dritte weiter. Die eingegeben Daten werden auch nicht in irgend einer Form ausgewertet.</string>
     <string name="dark_mode_usage.html">dark_mode_usage_de.html</string>
     <string name="usage">Verwendung</string>
+    <string name="edit_field">Eingabefelder</string>
 
 
 </resources>
