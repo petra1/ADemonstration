@@ -39,6 +39,6 @@ If you are an Android developer, you can also go through the source code of the 
 
 At the moment there are no contributors however your are welcome to contribute to the project.
 
-<h2>Requirement</h2>
+
 
 
