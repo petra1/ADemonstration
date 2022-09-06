@@ -77,7 +77,7 @@
     <string name="graphics">Graphics</string>
     <string name="headings">Headings</string>
     <string name="tab_order">Tab Order</string>
-    <string name="contact">Contact &amp; privacy</string>
+    <string name="contact">Contact &amp; Privacy</string>
     <string name="description1_tab_order">People with limited fine motor skills may not be able to operate a touch screen, for example because they suffer from tremor. It is therefore important that an app can also be operated with a keyboard connected via Bluetooth and that the focus order of the operating elements is correct.</string>
     <string name="description2_tab_order">In the first example, the focus order was intentionally ignored, but in the second example, the focus order is correct</string>
     <string name="contentDescription_passed">Passed with 21.0:1, HEX: #f f f f f f on #000000.</string>
@@ -86,7 +86,7 @@
     <string name="contentDescription_failed_with">Failed with? HEX #f f f f f f  on #ffbb86fc</string>
     <string name="contentDescription_passed_with">Passed with? HEX #f f f f f f on #006400</string>
     <string name="privacy_text">This app does not store data permanently or share it with third parties. The data entered is also not evaluated in any way.</string>
-    <string name="privacy">privacy</string>
+    <string name="privacy">Privacy</string>
     <string name="dark_mode_usage.html">dark_mode_usage.html</string>
     <string name="usage">Usage</string>
     <string name="edit_field">Edit fields</string>
