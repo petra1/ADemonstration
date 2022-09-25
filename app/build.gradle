@@ -28,6 +28,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+    namespace 'ch.ritter1.apps.ademonstration'
 }
 
 dependencies {

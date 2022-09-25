@@ -20,9 +20,9 @@
     <!--Alternative text-->
     <string name="alternative_texts">Alternative Texts</string>
     <string name="no_alt_text">No alternative text</string>
-    <string name="no_alt_description">In this example, the alternative text was intentionally omitted. In practice, it happens very often that the alternative text is omitted by mistake. For this example, the symbol for non-wheelchair accessible is used (a crossed-out wheelchair symbol).</string>
+    <string name="no_alt_description">In this example, the alternative text was intentionally omitted. In practice, it happens very often that the alternative text is omitted by mistake.</string>
     <string name="decorative_graphics">Decorative Graphics</string>
-    <string name="deco_graphic_description">In this example, the graphic was assumed to be purely decorative and the alternative text was left blank so that TalkBack ignores the graphic and does not output irrelevant text. The wheelchair symbol was used for this example.</string>
+    <string name="deco_graphic_description">In this example, the graphic was assumed to be purely decorative and the alternative text was left blank so that TalkBack ignores the graphic and does not output irrelevant text.</string>
     <string name="informative_graphic">Informative Graphic</string>
     <string name="informative_graphic_description">In this example, the graphic was assumed to be informative, so it was provided with an alternative text.</string>
     <string name="informative_graphic_alt">wheelchair accessible</string>
