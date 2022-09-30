@@ -39,9 +39,9 @@
     <string name="last_name_send">Last name has been send</string>
     <string name="description1_editfield">In the following, we will show how TalkBack behaves when the visually visible labels have not been linked to the corresponding input field. In order to link the visually visible labels with the corresponding input fields, the attribute android:labelFor=\" \" is used for the label with the ID belonging to the editText as value.</string>
     <string name="description2_editfield">In the first input field, the link to the visible label was intentionally omitted. The second was correctly linked to the label.</string>
-    <string name="first_name_label">First name</string>
+    <string name="first_name_label">First name (any)</string>
     <string name="send_first_name_bt">Send first name</string>
-    <string name="last_name_label">Last name</string>
+    <string name="last_name_label">Last name (any)</string>
     <string name="send_last_name_bt">Send last name</string>
     <string name="full_name_text">Press the button below to display your full name.</string>
 
