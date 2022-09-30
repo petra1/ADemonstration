@@ -26,8 +26,9 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="8dp"
                 android:accessibilityHeading="true"
+                android:textColor="?colorOnPrimary"
                 android:text="@string/image_buttons"
-                android:textSize="20sp"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView

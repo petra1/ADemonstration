@@ -73,14 +73,14 @@
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/decorative_graphics"
-                android:accessibilityHeading="true"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="?colorOnPrimary"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:layout_marginBottom="15dp"/>
+                android:layout_marginBottom="15dp"
+                android:accessibilityHeading="true"
+                android:text="@string/decorative_graphics"
+                android:textColor="?colorOnPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView6"

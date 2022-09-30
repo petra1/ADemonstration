@@ -24,7 +24,7 @@
                 android:layout_marginBottom="15dp"
                 android:accessibilityHeading="true"
                 android:text="@string/edit_fields"
-                android:textSize="20sp"
+                android:textColor="?colorOnPrimary"                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView

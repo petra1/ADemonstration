@@ -20,7 +20,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/contrast_ratio"
                 android:accessibilityHeading="true"
-                android:textSize="20sp"
+
+                android:textSize="24sp"
                 android:textStyle="bold"
                 android:textColor="?colorOnPrimary"
                 android:layout_gravity="center"
