@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">A Demonstration</string>
-    <string name="first_name_label">Vorname (irgendein)</string>
-    <string name="last_name_label">Nachname (irgendein)</string>
+    <string name="first_name_label">"Irgendein Vorname "</string>
+    <string name="last_name_label">"Igendein Nachname "</string>
     <string name="contrast_ratio">Kontrastverhältnis</string>
     <string name="send_first_name_bt">Vornamen senden</string>
     <string name="send_last_name_bt">Nachnamen senden</string>
-    <string name="full_name_text">Drücken Sie die Taste unten, um Ihren vollständigen Namen anzuzeigen.</string>
+    <string name="full_name_text">Drücken Sie die Taste unten, um den vollständigen Namen anzuzeigen.</string>
     <string name="logo">Logo von ritter1.apps</string>
     <string name="edit_fields">Eingabefelder</string>
     <string name="version_of_wcag">Die aktuelle Version der WCAG ist 2.1.</string>
@@ -16,7 +16,7 @@
     <string name="navigation_drawer_open">Navigation öffnen</string>
     <string name="navigation_drawer_close">Navigation Schlirddrm</string>
     <string name="nav_header_desc">Navigation Kopfzeilen</string>
-    <string name="headings_stricture">Überschriften Struktur</string>
+    <string name="headings_stricture">Überschriften-Struktur</string>
     <string name="alternative_texts">Alternativtexte</string>
     <string name="no_alt_text">fehlender Alternativtext</string>
     <string name="decorative_graphics">Dekorative Grafiken</string>
@@ -31,14 +31,14 @@
     <string name="just_failed">Gerade nicht bestanden mit  4.4:1, HEX: #ffffff auf #0083a1</string>
     <string name="failed_with">Nicht bestanden mit? HEX #ffffff auf #ffbb86fc</string>
     <string name="passed_with">Bestanden mit? HEX #ffffff auf #006400</string>
-    <string name="alt_description">Im Folgenden wird gezeigt, was von TalkBack in den 3 häufigsten Situationen (kein Alternativtext, dekorative Grafiken und informative Grafiken) gelesen wird. Um einen alternativen Text zu Grafiken bereitzustellen, wird das Attribut android:contentDescription=\" \" verwendet.</string>
+    <string name="alt_description">Im Folgenden wird gezeigt, was von TalkBack in den drei häufigsten Situationen (kein Alternativtext, dekorative Grafiken und informative Grafiken) vorgelesen wird. Um einen Alternativtext für Grafiken bereitzustellen, wird das Attribut android:contentDescription=\" \" verwendet.</string>
     <string name="informative_graphic_description">In diesem Beispiel wurde davon ausgegangen, dass die Grafik informativ ist, weshalb sie mit einem Alternativtext versehen wurde.</string>
     <string name="informative_graphic_alt">rollstuhlgängig</string>
     <string name="contact_information">Kontakt Information</string>
     <string name="first_name_send">Vorname wurde gesendet</string>
     <string name="last_name_send">Nachname wurde gesendet</string>
     <string name="description1_editfield">Im Folgenden wird gezeigt, wie sich TalkBack verhält, wenn die visuell sichtbaren Labels nicht mit dem entsprechenden Eingabefeld verknüpft sind. Um die visuell sichtbaren Labels mit den entsprechenden Eingabefeldern zu verknüpfen, wird das Attribut android:labelFor=\" \" für das Label mit der zum editText gehörenden ID als Wert verwendet.</string>
-    <string name="description2_editfield">Im ersten Eingabefeld wurde der Link zur sichtbaren Beschriftung absichtlich weggelassen. Das zweite war korrekt mit der Beschriftung verknüpft.</string>
+    <string name="description2_editfield">Im ersten Eingabefeld wurde der Link zur sichtbaren Beschriftung absichtlich weggelassen. Das zweite ist korrekt mit der Beschriftung verknüpft.</string>
     <string name="released_wcag">Die aktuelle Version wurde im Juni 2018 veröffentlicht.</string>
     <string name="what_is_the_current_version_of_wcag">Was ist die aktuelle Version der WCAG?</string>
     <string name="when_was_the_current_version_of_wcag_released">Wann wurde die aktuelle Version der WCAG veröffentlicht?</string>
