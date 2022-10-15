@@ -37,7 +37,20 @@ If you are an Android developer, you can also go through the source code of the 
 
 <h2>Contribution</h2>
 
+<p>
+
 At the moment there are no contributors however your are welcome to contribute to the project.
+
+</p>
+
+
+<h2>Privacy/h2>
+<p>
+
+
+The app "A Demonstration" does not store any data permanently (not even on the device) or pass it on to third parties. The data entered is also not evaluated in any way.
+
+</p>
 
 
 
