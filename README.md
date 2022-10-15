@@ -44,7 +44,7 @@ At the moment there are no contributors however your are welcome to contribute t
 </p>
 
 
-<h2>Privacy</h2>
+<h2>Privacy of A Demonstration</h2>
 
 <p>
 
