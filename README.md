@@ -45,6 +45,7 @@ At the moment there are no contributors however your are welcome to contribute t
 
 
 <h2>Privacy/h2>
+
 <p>
 
 
