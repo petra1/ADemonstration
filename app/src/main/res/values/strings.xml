@@ -1,8 +1,8 @@
 <resources>
     <!--Default-->
     <string name="app_name">A Demonstration</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title" translatable="false">ritter1.apps</string>
+
+    <string name="nav_header_title"> translatable="false">ritter1.apps</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="menu_home" translatable="false">Home</string>
 
@@ -11,18 +11,18 @@
     <string name="heading__html">heading.html</string>
 
     <!--Contrast ratio-->
-    <string name="contrast_description">Contrast ratio is one of the aspects of accessibility that is often not given enough attention in the development of mobile apps. However, especially in mobile use, a good contrast ratio is important for all users, e.g., when using mobile devices outdoors in the sunshine. Below are a few examples of good and bad contrast ratios.</string>
+    <string name="contrast_description">The contrast ratio is often not given enough attention in the development of mobile apps. However, especially in mobile use, a good contrast ratio is important for all users, e.g. when using mobile devices outdoors in sunshine. Below you will find some examples of good and bad contrast ratios.</string>
     <string name="passed">Passed with 21.0:1, HEX: #ffffff on #000000.</string>
     <string name="just_passed">Just passed with 4.5:1, HEX: #00e9ff on #5a4dad</string>
     <string name="just_failed">Just failed with 4.4:1, HEX: #ffffff on #0083a1</string>
-    <string name="passed_with">Passed with? HEX #ffffff on #006400</string>
+    <string name="passed_with">Passed with contrast ratio of? HEX #ffffff on #006400</string>
 
     <!--Alternative text-->
     <string name="alternative_texts">Alternative Texts</string>
     <string name="no_alt_text">No alternative text</string>
     <string name="no_alt_description">In this example, the alternative text was intentionally omitted. In practice, it happens very often that the alternative text is omitted by mistake.</string>
     <string name="decorative_graphics">Decorative Graphics</string>
-    <string name="deco_graphic_description">In this example, the graphic was assumed to be purely decorative and the alternative text was left blank so that TalkBack ignores the graphic and does not output irrelevant text.</string>
+    <string name="deco_graphic_description">In this example, the graphic was assumed to be purely decorative and the alternative text was left blank so that TalkBack ignores the graphic and does not output unnecessary text.</string>
     <string name="informative_graphic">Informative Graphic</string>
     <string name="informative_graphic_description">In this example, the graphic was assumed to be informative, so it was provided with an alternative text.</string>
     <string name="informative_graphic_alt">wheelchair accessible</string>
@@ -36,14 +36,14 @@
 
 
     <!--Edit fields-->
-    <string name="last_name_send">Last name has been send</string>
-    <string name="description1_editfield">In the following, we will show how TalkBack behaves when the visually visible labels have not been linked to the corresponding input field. In order to link the visually visible labels with the corresponding input fields, the attribute android:labelFor=\" \" is used for the label with the ID belonging to the editText as value.</string>
+    <string name="last_name_send">Last name was sent.</string>
+    <string name="description1_editfield">In the following, we will show how TalkBack behaves when the visually visible labels have not been linked to the corresponding input field. In order to link the visible labels with the corresponding input fields, the attribute android:labelFor=\" \" is used for the label with the belonging editText\'s ID as value.</string>
     <string name="description2_editfield">In the first input field, the link to the visible label was intentionally omitted. The second is correctly linked to the label.</string>
     <string name="first_name_label">Any first name</string>
     <string name="send_first_name_bt">Send first name</string>
-    <string name="last_name_label">"Any last name "</string>
+    <string name="last_name_label">Any last name</string>
     <string name="send_last_name_bt">Send last name</string>
-    <string name="full_name_text">Press the button below to display the  full name.</string>
+    <string name="full_name_text">Press the button below to display the full name.</string>
 
     <!--Image Buttons-->
     <string name="version_of_wcag">The current version of WCAG is 2.1.</string>
@@ -51,7 +51,7 @@
     <string name="what_is_the_current_version_of_wcag">What is the current version of WCAG?</string>
     <string name="when_was_the_current_version_of_wcag_released">When was the current version of WCAG released?</string>
     <string name="image_buttons">Image Buttons</string>
-    <string name="Description1_imageButton">This example shows how TalkBack behaves in relation to graphical buttons with missing alternative text, and at the same time shows how the buttons can be made more usable for people with limited fine motor skills.</string>
+    <string name="Description1_imageButton">This example shows how TalkBack behaves with graphic buttons that lack alternative text, and at the same time shows how the buttons can be made more usable for people with limited fine motor skills.</string>
     <string name="Description2_imageButton">In the first graphic button, the alternative text, the attribute contentDescription=\" \" was intentionally omitted and the font target was also not adjusted. The second graphic button, however, was correctly labelled and the touch target was adjusted by setting the attributes minWidth and minHeight to 48dp so that the button is displayed larger and is thus easier to use.</string>
     <string name="question1_imageButton">Question #1: What is the current version of WCAG?</string>
     <string name="question2_imageButton">Question #2: When was the current version of WCAG released?</string>
@@ -60,35 +60,34 @@
     <!--Tab Order-->
     <string name="somethings_wrong">Oops, something went wrong with the tab order.</string>
     <string name="tab_correct">Now the tab order is correct.</string>
-    <string name="help_first">Get help to first name</string>
-    <string name="help_last">Get help to last name</string>
+    <string name="help_first">Get help for first name</string>
+    <string name="help_last">Get help for last name</string>
     <string name="contrast_ratio">Contrast Ratio</string>
     <string name="edit_fields">Edit fields</string>
     <string name="display_full_name_bt">Display full name</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="headings_stricture">Headings Stricture</string>
-    <string name="heading_description">There is a difference in headings between native apps and hybrids with embedded HTML content. While there are six levels of headings in HTML h1 to h6. This is not the case with native apps. In native apps, the attribute android:accessibilityHeading \"tue\" is used to mark up a text (textView) on a non-visual level as a heading.</string>
+    <string name="heading_description">There is a difference in headings between native apps and hybrids with embedded HTML content. While there are six levels of headings in HTML h1 to h6, this is not the case with native apps. In native apps, the attribute android:accessibilityHeading \"tue\" is used to mark up a text (textView) on a non-visual level as a heading.</string>
     <string name="failed">Failed with 2.3:1, HEX: #ffffff on #a0b0a1.</string>
-    <string name="failed_with">Failed with? HEX #ffffff on #ffbb86fc</string>
+    <string name="failed_with">Failed with contrast ratio of?  HEX #ffffff on #ffbb86fc</string>
     <string name="alt_description">The following will show what is read by TalkBack in the three most common situations (no alternative text, decorative graphics, and informative graphics). To provide an alternative text to graphics the attribute android:contentDescription=\" \" is used.</string>
-    <string name="first_name_send">First name has been send</string>
+    <string name="first_name_send">First name has been sent</string>
     <string name="graphics">Graphics</string>
     <string name="headings">Headings</string>
     <string name="tab_order">Tab Order</string>
     <string name="contact">Contact &amp; Privacy</string>
-    <string name="description1_tab_order">People with limited fine motor skills may not be able to operate a touch screen, for example because they suffer from tremor. It is therefore important that an app can also be operated with a keyboard connected via Bluetooth and that the focus order of the operating elements is correct.</string>
+    <string name="description1_tab_order">People with limited fine motor skills may not be able to operate a touch screen. It is therefore important that an app can also be operated with a keyboard connected via Bluetooth and that the focus order of the operating elements is correct.</string>
     <string name="description2_tab_order">In the first example, the focus order was intentionally ignored, but in the second example, the focus order is correct</string>
-    <string name="contentDescription_passed">Passed with 21.0:1, HEX: #f f f f f f on #000000.</string>
-    <string name="contentDescription_failed">Failed with 2.3:1, HEX: #f f f f f f on #a0b0a1.</string>
-    <string name="contentDescription_just_failed">Just failed with 4.4:1, HEX: #f f f f f f on #0083a1</string>
-    <string name="contentDescription_failed_with">Failed with? HEX #f f f f f f  on #ffbb86fc</string>
-    <string name="contentDescription_passed_with">Passed with? HEX #f f f f f f on #006400</string>
-    <string name="privacy_text">This app does not store data permanently or share it with third parties. The data entered is also not evaluated in any way.</string>
+    <string name="contentDescription_passed">Passed with 21.0:1, HEX: #ffffff on #000000.</string>
+    <string name="contentDescription_failed">Failed with 2.3:1, HEX: #ffffff on #a0b0a1.</string>
+    <string name="contentDescription_just_failed">Just failed with 4.4:1, HEX: #ffffff on #0083a1</string>
+    <string name="contentDescription_failed_with">Failed with contrast ratio of? HEX #ffffff on #ffbb86fc</string>
+    <string name="contentDescription_passed_with">Passed with  contrast ratio of? HEX #ffffff on #006400</string>
+    <string name="privacy_text">The app \"A Demonstration\" does not store any data permanently (not even on the device) or pass it on to third parties. The data entered is also not evaluated in any way..</string>
     <string name="privacy">Privacy</string>
     <string name="dark_mode_usage.html">dark_mode_usage.html</string>
     <string name="usage">Usage</string>
     <string name="edit_field">Edit fields</string>
     <string name="contact_name" translatable="false">Name:</string>
-
 
 </resources>
