@@ -53,7 +53,6 @@
     <string name="help_first">Hilfe zum Vornamen</string>
     <string name="help_last">Hilfe zum Nachnamen</string>
     <string name="dark_mode_heading__html">dark_mode_heading_de.html</string>
-    <string name="heading__html">heading_de.html</string>
     <string name="graphics">Grafiken</string>
     <string name="headings">Überschriften</string>
     <string name="tab_order">Tab-Reihenfolge</string>
@@ -70,5 +69,8 @@
     <string name="dark_mode_usage.html">dark_mode_usage_de.html</string>
     <string name="usage">Verwendung</string>
     <string name="edit_field">Eingabefelder</string>
+    <string name="heading__html">heading_de.html</string>
+    <string name="usage.html">usage_de.html</string>
+
 
 </resources>

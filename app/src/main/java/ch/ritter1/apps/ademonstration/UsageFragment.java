@@ -35,7 +35,7 @@ public class UsageFragment extends Fragment {
                 webView.loadUrl ("file:///android_asset/" + getString (R.string.dark_mode_usage_html));
                 break;
             case  Configuration.UI_MODE_NIGHT_NO:
-                webView.loadUrl ("file:///android_asset/" + "usage_de.html");
+                webView.loadUrl ("file:///android_asset/" + getString (R.string.usage_html));
                 break;
         }
 

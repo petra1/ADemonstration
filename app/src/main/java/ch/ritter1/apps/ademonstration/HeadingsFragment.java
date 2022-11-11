@@ -34,10 +34,10 @@ public class HeadingsFragment extends Fragment {
 
         switch (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK) {
             case Configuration.UI_MODE_NIGHT_YES:
-                webView.loadUrl ("file:///android_asset/" + getString (R.string.dark_mode_heading__html));
+                webView.loadUrl ("file:///android_asset/" +  getString (R.string.dark_mode_heading__html));
                 break;
             case  Configuration.UI_MODE_NIGHT_NO:
-                webView.loadUrl ("file:///android_asset/" + "heading_de.html");
+                webView.loadUrl ("file:///android_asset/" + getString (R.string.heading__html));
                 break;
         }
 
