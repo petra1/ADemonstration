@@ -83,12 +83,13 @@
     <string name="contentDescription_just_failed">Just failed with 4.4:1, HEX: #ffffff on #0083a1</string>
     <string name="contentDescription_failed_with">Failed with contrast ratio of? HEX #ffffff on #ffbb86fc</string>
     <string name="contentDescription_passed_with">Passed with  contrast ratio of? HEX #ffffff on #006400</string>
-    <string name="privacy_text">The app \"A Demonstration\" does not store any data permanently (not even on the device) or pass it on to third parties. The data entered is also not evaluated in any way.   There are two forms is the app, however this are just mock forms. The data that you entered in this forms are only displayed on the same screen and wil not stored.</string>
+    <string name="privacy_text">"The app \"A Demonstration\" does not store any data permanently (not even on the device) or pass it on to third parties. "</string>
     <string name="privacy">Privacy</string>
     <string name="dark_mode_usage.html">dark_mode_usage.html</string>
     <string name="usage">Usage</string>
     <string name="edit_field">Edit fields</string>
     <string name="contact_name" translatable="false">Name:</string>
     <string name="usage.html">usage.html</string>
+    <string name="privacy_text2">There are two forms is the app, however this are just mock forms. The data that you entered in this forms are only displayed on the same screen and wil be not stored.</string>
 
 </resources>
