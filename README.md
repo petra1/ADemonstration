@@ -53,6 +53,8 @@ The app "A Demonstration" does not store any data permanently (not even on the d
 
 </p>
 
-
+<p>
+There are two forms is the app, however this are just mock forms. The data that you entered in this forms are only displayed on the same screen and wil be not stored.
+</p>
 
 
