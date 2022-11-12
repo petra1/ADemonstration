@@ -49,7 +49,7 @@ At the moment there are no contributors however your are welcome to contribute t
 <p>
 
 
-The app "A Demonstration" does not store any data permanently (not even on the device) or pass it on to third parties. The data entered is also not evaluated in any way.
+The app "A Demonstration" does not store any data permanently (not even on the device) or pass it on to third parties.
 
 </p>
 
