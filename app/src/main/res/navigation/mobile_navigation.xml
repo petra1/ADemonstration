@@ -8,48 +8,48 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="ch.ritter1.apps.ademonstration.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:label=""
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_contact"
         android:name="ch.ritter1.apps.ademonstration.ContactFragment"
-        android:label="@string/contact"
+        android:label=""
         tools:layout="@layout/fragment_contact" />
     <fragment
         android:id="@+id/nav_headings"
         android:name="ch.ritter1.apps.ademonstration.HeadingsFragment"
-        android:label="@string/headings"
+        android:label=""
         tools:layout="@layout/fragment_headings" />
     <fragment
         android:id="@+id/nav_graphics"
         android:name="ch.ritter1.apps.ademonstration.GraphicsFragment"
-        android:label="@string/graphics"
+        android:label=""
         tools:layout="@layout/fragment_graphics" />
     <fragment
         android:id="@+id/nav_contrast"
         android:name="ch.ritter1.apps.ademonstration.ContrastFragment"
-        android:label="@string/contrast_ratio"
+        android:label=""
         tools:layout="@layout/fragment_contrast" />
     <fragment
         android:id="@+id/nav_edit"
         android:name="ch.ritter1.apps.ademonstration.EditfieldFragment"
-        android:label="@string/edit_field"
+        android:label=""
         tools:layout="@layout/fragment_editfield" />
     <fragment
         android:id="@+id/nav_image_button"
         android:name="ch.ritter1.apps.ademonstration.ImageButtonFragment"
-        android:label="@string/image_buttons"
+        android:label=""
         tools:layout="@layout/fragment_image_button" />
     <fragment
         android:id="@+id/nav_tab"
         android:name="ch.ritter1.apps.ademonstration.TabOrderFragment"
-        android:label="@string/tab_order"
+        android:label=""
         tools:layout="@layout/fragment_tab__order" />
     <fragment
         android:id="@+id/nav_usage"
         android:name="ch.ritter1.apps.ademonstration.UsageFragment"
-        android:label="@string/usage"
+        android:label=""
         tools:layout="@layout/fragment_usage" />
 
 </navigation>

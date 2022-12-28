@@ -59,7 +59,8 @@
                 android:layout_marginBottom="10dp"
                 android:text="@string/question1_imageButton"
                 android:textSize="14sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:accessibilityLiveRegion="polite"/>
 
             <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/imageButton1"
@@ -82,7 +83,8 @@
                 android:layout_marginBottom="10dp"
                 android:text="@string/question2_imageButton"
                 android:textSize="14sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:accessibilityLiveRegion="polite"/>
 
             <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/imageButton2"

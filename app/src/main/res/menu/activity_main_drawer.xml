@@ -12,7 +12,7 @@
         <item
             android:id="@+id/nav_graphics"
             android:icon="@drawable/ic_baseline_gif_box_24"
-            android:title="@string/graphics" />
+            android:title="@string/alternative_texts" />
         <item
             android:id="@+id/nav_image_button"
             android:icon="@drawable/ic_baseline_radio_button_checked_24"
