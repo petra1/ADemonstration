@@ -36,21 +36,29 @@
             android:title="@string/contrast_ratio" />
 
 
+
+
     <group
         android:id="@+id/group2"
         android:checkableBehavior="single">
-
-
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_baseline_contact_mail_24"
+            android:title="@string/contact" />
         <item
             android:id="@+id/nav_usage"
             android:icon="@drawable/ic_baseline_front_hand_24"
             android:title="@string/usage" />
 
 
-        <item
-            android:id="@+id/nav_contact"
-            android:icon="@drawable/ic_baseline_contact_mail_24"
-            android:title="@string/contact" />
+
+
+
+
+
+
+
+
 
 
     </group>
