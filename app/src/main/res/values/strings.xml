@@ -78,11 +78,11 @@
     <string name="contact">Contact &amp; Privacy</string>
     <string name="description1_tab_order">People with limited fine motor skills may not be able to operate a touch screen. It is therefore important that an app can also be operated with a keyboard connected via Bluetooth and that the focus order of the operating elements is correct.</string>
     <string name="description2_tab_order">In the first example, the focus order was intentionally ignored, but in the second example, the focus order is correct</string>
-    <string name="contentDescription_passed">Passed with 21.0:1, HEX: #ffffff on #000000.</string>
-    <string name="contentDescription_failed">Failed with 2.3:1, HEX: #ffffff on #a0b0a1.</string>
-    <string name="contentDescription_just_failed">Just failed with 4.4:1, HEX: #ffffff on #0083a1</string>
-    <string name="contentDescription_failed_with">Failed with contrast ratio of? HEX #ffffff on #ffbb86fc</string>
-    <string name="contentDescription_passed_with">Passed with  contrast ratio of? HEX #ffffff on #006400</string>
+    <string name="contentDescription_passed">Passed with 21.0:1, HEX: # f f f f f f on #000000.</string>
+    <string name="contentDescription_failed">Failed with 2.3:1, HEX: # f f f f f f on #a0b0a1.</string>
+    <string name="contentDescription_just_failed">Just failed with 4.4:1, HEX: # f f f f f f on #0083a1</string>
+    <string name="contentDescription_failed_with">Failed with contrast ratio of? HEX # f f f f f f on #ffbb86fc</string>
+    <string name="contentDescription_passed_with">Passed with  contrast ratio of? HEX # f f f f f f on #006400</string>
     <string name="privacy_text">"The app \"A Demonstration\" does not store any data permanently (not even on the device) or pass it on to third parties. "</string>
     <string name="privacy">Privacy</string>
     <string name="dark_mode_usage.html">dark_mode_usage.html</string>
