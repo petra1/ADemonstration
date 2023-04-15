@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "ch.ritter1.apps.ademonstration"
-        minSdk 28
+        minSdk 29
         targetSdk 33
         versionCode 1
         versionName "0.8"
