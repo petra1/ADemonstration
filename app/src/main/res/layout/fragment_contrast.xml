@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:background="?colorSecondary"
     tools:context=".ContrastFragment">
 
     <ScrollView
@@ -22,6 +24,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"
                 android:accessibilityHeading="true"
+                android:fontFamily="sans-serif-black"
                 android:text="@string/contrast_ratio"
                 android:textColor="?colorOnPrimary"
                 android:textSize="20sp"
@@ -34,7 +37,10 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="20dp"
-                android:text="@string/contrast_description" />
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/contrast_description"
+                android:textColor="?colorOnPrimary"
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"

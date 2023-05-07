@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:background="?colorSecondary"
     tools:context=".EditfieldFragment">
 
     <androidx.core.widget.NestedScrollView
@@ -23,6 +25,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"
                 android:accessibilityHeading="true"
+                android:fontFamily="sans-serif-black"
                 android:text="@string/edit_fields"
                 android:textColor="?colorOnPrimary"
                 android:textSize="24sp"
@@ -35,7 +38,10 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="10dp"
-                android:text="@string/description1_editfield" />
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/description1_editfield"
+                android:textColor="?colorOnPrimary"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/text_Description2"
@@ -44,7 +50,10 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="10dp"
-                android:text="@string/description2_editfield" />
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/description2_editfield"
+                android:textColor="?colorOnPrimary"
+                android:textSize="16sp" />
 
 
             <LinearLayout
@@ -60,16 +69,19 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="@string/first_name_label" />
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/first_name_label"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/editText_Fist_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:autofillHints="cc-given-name"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:autofillHints="cc-given-name"/>
+                    android:inputType="textPersonName" />
 
 
             </LinearLayout>
@@ -113,18 +125,20 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
                     android:labelFor="@id/editText_Last_name"
-                    android:text="@string/last_name_label" />
+                    android:text="@string/last_name_label"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/editText_Last_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="textPersonName"
                     android:autofillHints="family-name"
-                    />
+                    android:ems="10"
+                    android:inputType="textPersonName" />
             </LinearLayout>
 
             <LinearLayout
@@ -146,8 +160,7 @@
                     android:paddingEnd="8dp"
                     android:text="@string/send_last_name_bt"
                     android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    />
+                    android:textColor="@color/white" />
 
             </LinearLayout>
 
@@ -167,8 +180,11 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
                     android:gravity="center_horizontal"
                     android:text="@string/full_name_text"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="16sp"
 
                     />
 
@@ -186,8 +202,7 @@
                     android:paddingEnd="8dp"
                     android:text="@string/display_full_name_bt"
                     android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    />
+                    android:textColor="@color/white" />
             </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

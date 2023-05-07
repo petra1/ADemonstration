@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:background="?colorSecondary"
     tools:context=".ui.home.HomeFragment">
 
     <TextView
@@ -12,11 +14,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="130dp"
         android:layout_marginBottom="100dp"
+        android:accessibilityHeading="true"
         android:textAlignment="center"
         android:textColor="?colorPrimary"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:accessibilityHeading="true"
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

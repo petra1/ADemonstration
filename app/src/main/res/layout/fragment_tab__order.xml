@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:background="?colorSecondary"
     tools:context=".TabOrderFragment">
 
     <androidx.core.widget.NestedScrollView
@@ -28,10 +30,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:accessibilityHeading="true"
+                    android:fontFamily="sans-serif-black"
                     android:text="@string/tab_order"
+                    android:textColor="?colorOnPrimary"
                     android:textSize="24sp"
                     android:textStyle="bold"
-                    android:textColor="?colorOnPrimary"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -43,9 +46,12 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="8dp"
+                    android:fontFamily="sans-serif-medium"
                     android:paddingStart="8dp"
                     android:paddingEnd="8dp"
                     android:text="@string/description1_tab_order"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tab_title" />
@@ -57,9 +63,12 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="2dp"
                     android:layout_marginEnd="6dp"
+                    android:fontFamily="sans-serif-medium"
                     android:paddingStart="8dp"
                     android:paddingEnd="8dp"
                     android:text="@string/description2_tab_order"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tab_description1" />
@@ -70,8 +79,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="31dp"
+                    android:fontFamily="sans-serif-medium"
                     android:labelFor="@id/tab_first_name_edit"
                     android:text="@string/first_name_label"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tab_description2" />
 
@@ -116,17 +128,19 @@
                     android:minHeight="48dp"
                     android:src="@drawable/ic_baseline_question_mark_24"
                     app:layout_constraintStart_toEndOf="@+id/tab_send_first_name_btn"
-                    app:layout_constraintTop_toBottomOf="@+id/tab_first_name_edit"
-                    />
+                    app:layout_constraintTop_toBottomOf="@+id/tab_first_name_edit" />
 
                 <TextView
                     android:id="@+id/tab_last_name_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:layout_marginTop="61dp"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="sans-serif-medium"
                     android:labelFor="@id/tab_last_name_edit"
                     android:text="@string/last_name_label"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tab_send_first_name_btn" />
 
@@ -137,7 +151,9 @@
                     android:layout_marginStart="18dp"
                     android:layout_marginTop="54dp"
                     android:ems="10"
+                    android:fontFamily="sans-serif-medium"
                     android:inputType="textPersonName"
+                    android:textSize="16sp"
                     app:layout_constraintStart_toEndOf="@+id/tab_last_name_label"
                     app:layout_constraintTop_toBottomOf="@+id/tab_first_name_help" />
 
@@ -164,13 +180,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="40dp"
                     android:layout_marginTop="15dp"
+                    android:accessibilityTraversalBefore="@id/tab_send_last_name_btn"
                     android:background="@drawable/button_selector"
                     android:minWidth="48dp"
                     android:minHeight="48dp"
                     android:src="@drawable/ic_baseline_question_mark_24"
                     app:layout_constraintStart_toEndOf="@+id/tab_send_last_name_btn"
-                    app:layout_constraintTop_toBottomOf="@+id/tab_last_name_edit"
-                    android:accessibilityTraversalBefore="@id/tab_send_last_name_btn"/>
+                    app:layout_constraintTop_toBottomOf="@+id/tab_last_name_edit" />
 
                 <TextView
                     android:id="@+id/tab_full_name_text"
@@ -179,9 +195,12 @@
                     android:layout_marginStart="74dp"
                     android:layout_marginTop="30dp"
                     android:layout_marginEnd="74dp"
+                    android:fontFamily="sans-serif-medium"
                     android:paddingStart="8dp"
                     android:paddingEnd="8dp"
                     android:text="@string/full_name_text"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tab_last_name_help" />
@@ -198,8 +217,8 @@
                     android:minHeight="48dp"
                     android:paddingStart="8dp"
                     android:paddingEnd="8dp"
-                    android:textAllCaps="false"
                     android:text="@string/display_full_name_bt"
+                    android:textAllCaps="false"
                     android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

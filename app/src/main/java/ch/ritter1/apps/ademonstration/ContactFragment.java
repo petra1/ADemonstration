@@ -12,7 +12,6 @@ import android.view.ViewGroup;
 public class ContactFragment extends Fragment {
 
 
-
     public ContactFragment() {
         // Required empty public constructor
     }
