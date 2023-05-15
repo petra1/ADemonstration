@@ -1,4 +1,4 @@
-package ch.ritter1.apps.ademonstration;
+package ch.ritter1.apps.ademonstration.editfield;
 
 import android.os.Bundle;
 
@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import ch.ritter1.apps.ademonstration.R;
 
 
 public class EditfieldFragment extends Fragment {

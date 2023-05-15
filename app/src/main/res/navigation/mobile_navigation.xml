@@ -13,42 +13,42 @@
 
     <fragment
         android:id="@+id/nav_contact"
-        android:name="ch.ritter1.apps.ademonstration.ContactFragment"
+        android:name="ch.ritter1.apps.ademonstration.contact.ContactFragment"
         android:label=""
         tools:layout="@layout/fragment_contact" />
     <fragment
         android:id="@+id/nav_headings"
-        android:name="ch.ritter1.apps.ademonstration.HeadingsFragment"
+        android:name="ch.ritter1.apps.ademonstration.headings.HeadingsFragment"
         android:label=""
         tools:layout="@layout/fragment_headings" />
     <fragment
         android:id="@+id/nav_graphics"
-        android:name="ch.ritter1.apps.ademonstration.GraphicsFragment"
+        android:name="ch.ritter1.apps.ademonstration.graphics.GraphicsFragment"
         android:label=""
         tools:layout="@layout/fragment_graphics" />
     <fragment
         android:id="@+id/nav_contrast"
-        android:name="ch.ritter1.apps.ademonstration.ContrastFragment"
+        android:name="ch.ritter1.apps.ademonstration.contrast.ContrastFragment"
         android:label=""
         tools:layout="@layout/fragment_contrast" />
     <fragment
         android:id="@+id/nav_edit"
-        android:name="ch.ritter1.apps.ademonstration.EditfieldFragment"
+        android:name="ch.ritter1.apps.ademonstration.editfield.EditfieldFragment"
         android:label=""
         tools:layout="@layout/fragment_editfield" />
     <fragment
         android:id="@+id/nav_image_button"
-        android:name="ch.ritter1.apps.ademonstration.ImageButtonFragment"
+        android:name="ch.ritter1.apps.ademonstration.imagebutton.ImageButtonFragment"
         android:label=""
         tools:layout="@layout/fragment_image_button" />
     <fragment
         android:id="@+id/nav_tab"
-        android:name="ch.ritter1.apps.ademonstration.TabOrderFragment"
+        android:name="ch.ritter1.apps.ademonstration.taborder.TabOrderFragment"
         android:label=""
         tools:layout="@layout/fragment_tab__order" />
     <fragment
         android:id="@+id/nav_usage"
-        android:name="ch.ritter1.apps.ademonstration.UsageFragment"
+        android:name="ch.ritter1.apps.ademonstration.usage.UsageFragment"
         android:label=""
         tools:layout="@layout/fragment_usage" />
 

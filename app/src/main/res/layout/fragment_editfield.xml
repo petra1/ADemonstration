@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:layout_margin="15dp"
     android:background="?colorSecondary"
-    tools:context=".EditfieldFragment">
+    tools:context=".editfield.EditfieldFragment">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"

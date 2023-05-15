@@ -1,4 +1,4 @@
-package ch.ritter1.apps.ademonstration;
+package ch.ritter1.apps.ademonstration.contact;
 
 import android.os.Bundle;
 
@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import ch.ritter1.apps.ademonstration.R;
+
 
 public class ContactFragment extends Fragment {
 
 
     public ContactFragment() {
-        // Required empty public constructor
+            // Required empty public constructor
     }
 
 

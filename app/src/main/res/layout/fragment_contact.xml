@@ -6,7 +6,7 @@
     android:layout_margin="15dp"
 
     android:background="?colorSecondary"
-    tools:context=".ContactFragment">
+    tools:context=".contact.ContactFragment">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"

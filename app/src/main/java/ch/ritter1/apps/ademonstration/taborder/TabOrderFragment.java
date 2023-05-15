@@ -1,4 +1,4 @@
-package ch.ritter1.apps.ademonstration;
+package ch.ritter1.apps.ademonstration.taborder;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +11,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
+
+import ch.ritter1.apps.ademonstration.R;
 
 
 public class TabOrderFragment extends Fragment {

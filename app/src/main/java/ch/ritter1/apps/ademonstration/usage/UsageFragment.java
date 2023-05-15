@@ -1,20 +1,19 @@
-package ch.ritter1.apps.ademonstration;
+package ch.ritter1.apps.ademonstration.usage;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 
+import ch.ritter1.apps.ademonstration.R;
 
-public class HeadingsFragment extends Fragment {
 
+public class UsageFragment extends Fragment {
 
-    public HeadingsFragment() {
+    public UsageFragment() {
         // Required empty public constructor
     }
 
@@ -27,17 +26,18 @@ public class HeadingsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate (R.layout.fragment_headings, container, false);
-        WebView webView = v.findViewById (R.id.webView);
-        v.setVerticalScrollBarEnabled(true);
+        View v = inflater.inflate(R.layout.fragment_usage, container, false);
+        WebView webView = v.findViewById (R.id.webView2);
         v.setHorizontalScrollBarEnabled(true);
+        v.setHorizontalScrollBarEnabled(true);
+
 
         switch (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK) {
             case Configuration.UI_MODE_NIGHT_YES:
-                webView.loadUrl ("file:///android_asset/" +  getString (R.string.dark_mode_heading__html));
+                webView.loadUrl ("file:///android_asset/" + getString (R.string.dark_mode_usage_html));
                 break;
             case  Configuration.UI_MODE_NIGHT_NO:
-                webView.loadUrl ("file:///android_asset/" + getString (R.string.heading__html));
+                webView.loadUrl ("file:///android_asset/" + getString (R.string.usage_html));
                 break;
         }
 

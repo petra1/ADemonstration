@@ -1,4 +1,4 @@
-package ch.ritter1.apps.ademonstration;
+package ch.ritter1.apps.ademonstration.imagebutton;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
+
+import ch.ritter1.apps.ademonstration.R;
 
 
 public class ImageButtonFragment extends Fragment {
