@@ -72,6 +72,7 @@
     <string name="heading__html">heading_de.html</string>
     <string name="usage.html">usage_de.html</string>
     <string name="privacy_text2">Die App enthält zwei Formulare, bei denen es sich jedoch nur um Übungsformulare handelt. Die Daten, die Sie in diese Formulare eingeben, werden nur auf demselben Bildschirm angezeigt und nicht gespeichert.</string>
+    <string name="More_button">Info über die App</string>
 
 
 </resources>
