@@ -72,7 +72,7 @@
     <string name="heading__html">heading_de.html</string>
     <string name="usage.html">usage_de.html</string>
     <string name="privacy_text2">Es gibt zwei Formulare in der App, dies sind jedoch nur Beispielformulare. Die Daten, die Sie in diese Formulare eingeben, werden nur auf demselben Bildschirm angezeigt, aber nicht gespeichert.</string>
-    <string name="More_button">Info über die App</string>
+    <string name="More_button">Hilfe</string>
 
 
 </resources>
