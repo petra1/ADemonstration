@@ -83,10 +83,10 @@
     <string name="contentDescription_just_failed">Just failed with 4.4:1, HEX: # f f f f f f on #0083a1</string>
     <string name="contentDescription_failed_with">Failed with contrast ratio of? HEX # f f f f f f on #ffbb86fc</string>
     <string name="contentDescription_passed_with">Passed with  contrast ratio of? HEX # f f f f f f on #006400</string>
-    <string name="privacy_text">"The app \"A Demonstration\" does not store any data permanently (not even on the device) or pass it on to third parties. "</string>
+    <string name="privacy_text">The app \"A Demonstration\" does not store any data permanently (not even local on  the device) or pass it on to third parties.</string>
     <string name="privacy">Privacy</string>
     <string name="dark_mode_usage.html">dark_mode_usage.html</string>
-    <string name="usage">Usage</string>
+    <string name="usage">Help</string>
     <string name="edit_field">Edit fields</string>
     <string name="contact_name" translatable="false">Name:</string>
     <string name="usage.html">usage.html</string>

@@ -65,13 +65,13 @@
     <string name="contentDescription_failed_with">Nicht bestanden mit Kontrastverhältnis von? HEX # f f f f f f auf #ffbb86fc</string>
     <string name="contentDescription_passed_with">Bestanden mit einem Kontrastverhältnis von? HEX # f f f f f f auf #006400</string>
     <string name="privacy">Datenschutz</string>
-    <string name="privacy_text">"Die App \"A Demonstration\" speichert keine Daten dauerhaft (auch nicht auf dem Gerät) oder gibt diese an Dritte weiter. "</string>
+    <string name="privacy_text">Die App \"A Demonstration\" speichert keine Daten dauerhaft (auch nicht lokal auf dem Gerät) oder gibt sie an Dritte weiter.</string>
     <string name="dark_mode_usage.html">dark_mode_usage_de.html</string>
-    <string name="usage">Verwendung</string>
+    <string name="usage">Hilfe</string>
     <string name="edit_field">Eingabefelder</string>
     <string name="heading__html">heading_de.html</string>
     <string name="usage.html">usage_de.html</string>
-    <string name="privacy_text2">Die App enthält zwei Formulare, bei denen es sich jedoch nur um Übungsformulare handelt. Die Daten, die Sie in diese Formulare eingeben, werden nur auf demselben Bildschirm angezeigt und nicht gespeichert.</string>
+    <string name="privacy_text2">Es gibt zwei Formulare in der App, dies sind jedoch nur Beispielformulare. Die Daten, die Sie in diese Formulare eingeben, werden nur auf demselben Bildschirm angezeigt, aber nicht gespeichert.</string>
     <string name="More_button">Info über die App</string>
 
 
