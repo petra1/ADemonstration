@@ -2,7 +2,7 @@
     <!--Default-->
     <string name="app_name">A Demonstration</string>
 
-    <string name="nav_header_title">ritter1.apps</string>
+    <string name="nav_header_title">Ritter Apps</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="menu_home" translatable="false">Home</string>
 
@@ -32,7 +32,7 @@
     <string name="petra_ritter" translatable="false">Petra Ritter</string>
     <string name="email" translatable="false">E-mail:</string>
     <string name="mail_address" translatable="false">ritter1.apps@gmail.com</string>
-    <string name="logo">Logo of ritter1.apps</string>
+    <string name="logo">Logo of A Demonstration</string>
 
 
     <!--Edit fields-->
@@ -92,5 +92,7 @@
     <string name="usage.html">usage.html</string>
     <string name="privacy_text2">There are two forms is the app, however this are just mock forms. The data that you entered in this forms are only displayed on the same screen and wil be not stored.</string>
     <string name="More_button">Help</string>
+
+
 
 </resources>

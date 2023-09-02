@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">A Demonstration</string>
-    <string name="nav_header_title">" ritter1.apps"</string>
+    <string name="nav_header_title">Ritter Apps</string>
     <string name="first_name_label">Irgend ein Vorname</string>
     <string name="last_name_label">Igend ein Nachname</string>
     <string name="contrast_ratio">Kontrastverhältnis</string>
     <string name="send_first_name_bt">Vornamen senden</string>
     <string name="send_last_name_bt">Nachnamen senden</string>
     <string name="full_name_text">Drücken Sie die Taste unten, um den vollständigen Namen anzuzeigen.</string>
-    <string name="logo">Logo von ritter1.apps</string>
+    <string name="logo">Logo von A Demonstration</string>
     <string name="edit_fields">Eingabefelder</string>
     <string name="version_of_wcag">Die aktuelle Version der WCAG ist 2.1.</string>
     <string name="display_full_name_bt">Vollständigen Namen anzeigen</string>
@@ -43,7 +43,7 @@
     <string name="released_wcag">Die aktuelle Version wurde im Juni 2018 veröffentlicht.</string>
     <string name="what_is_the_current_version_of_wcag">Was ist die aktuelle Version der WCAG?</string>
     <string name="when_was_the_current_version_of_wcag_released">Wann wurde die aktuelle Version der WCAG veröffentlicht?</string>
-    <string name="Description1_imageButton">    </string>
+    <string name="Description1_imageButton">Dieses Beispiel zeigt, wie sich TalkBack bei grafischen Schaltflächen verhält, die keinen Alternativtext enthalten, und zeigt gleichzeitig, wie die Schaltflächen für Menschen mit eingeschränkter Feinmotorik besser nutzbar gemacht werden können.</string>
     <string name="Description2_imageButton">Bei der ersten grafischen Schaltfläche wurde das Attribut contentDescription=\" \" absichtlich weggelassen und auch das Touch-Target wurde nicht angepasst. Die zweite grafische Schaltfläche hingegen wurde korrekt beschriftet und das Touch-Target wurde durch Setzen der Attribute minWidth und minHeight auf 48dp angepasst, so dass die Schaltfläche größer dargestellt wird und somit leichter zu bedienen ist.</string>
     <string name="question2_imageButton">Frage 2: Wann wurde die aktuelle Version der WCAG veröffentlicht?</string>
     <string name="question1_imageButton">Frage 1: Was ist die aktuelle Version der WCAG?</string>
