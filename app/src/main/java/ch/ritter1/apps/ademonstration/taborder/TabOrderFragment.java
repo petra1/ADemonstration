@@ -95,8 +95,17 @@ public class TabOrderFragment extends Fragment {
     }
 
     private void setFullMame() {
-        tab_text_full_name.setText(firstName + " " + lastName);
-        tab_text_full_name.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
-
+        if (lastName == null) {
+            lastName = getString(R.string.default_lastName);
+        } else  {
+            tab_text_full_name.setText(firstName + " " + lastName);
+            tab_text_full_name.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
+        }
+        if (firstName == null) {
+            firstName = getString(R.string.default_firstName);
+        } else  {
+            tab_text_full_name.setText(firstName + " " + lastName);
+            tab_text_full_name.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
+        }
     }
 }

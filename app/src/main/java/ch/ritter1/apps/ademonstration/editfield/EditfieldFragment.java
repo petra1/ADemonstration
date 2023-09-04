@@ -1,21 +1,19 @@
 package ch.ritter1.apps.ademonstration.editfield;
 
+
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import ch.ritter1.apps.ademonstration.R;
 
 
 public class EditfieldFragment extends Fragment {
-    String lastName;
+    String lastName ;
     String firstName;
     boolean clicked = false;
     View v;
@@ -25,6 +23,7 @@ public class EditfieldFragment extends Fragment {
     TextView text_full_name;
     EditText editText_f_name;
     EditText editText_l_name;
+
 
 
     public EditfieldFragment() {
@@ -39,7 +38,6 @@ public class EditfieldFragment extends Fragment {
 
     }
 
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
@@ -54,7 +52,7 @@ public class EditfieldFragment extends Fragment {
 
 
         button_f_name.setOnClickListener(
-                view -> setFirstName()
+                view  -> setFirstName()
         );
 
         button_l_name.setOnClickListener(
@@ -67,12 +65,11 @@ public class EditfieldFragment extends Fragment {
         return v;
     }
 
-
     private void setFirstName() {
+
         firstName = editText_f_name.getText().toString();
         clicked = true;
         button_f_name.setContentDescription(getString(R.string.first_name_send));
-
     }
 
     private void setLastName() {
@@ -81,11 +78,23 @@ public class EditfieldFragment extends Fragment {
         button_l_name.setContentDescription(getString(R.string.last_name_send));
     }
 
-    private void setFullMame() {
-        text_full_name.setText(firstName + " " + lastName);
-        text_full_name.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
+   private void setFullMame() {
+        if (lastName == null) {
+            lastName = getString(R.string.default_lastName);
+        } else  {
+            text_full_name.setText(firstName + " " + lastName);
+            text_full_name.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
+        }
+       if (firstName == null) {
+           firstName = getString(R.string.default_firstName);
+       } else  {
+           text_full_name.setText(firstName + " " + lastName);
+           text_full_name.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
+       }
+   }
 
-    }
+
+
 
 
 }
