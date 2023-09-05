@@ -64,7 +64,7 @@ public class TabOrderFragment extends Fragment {
                 view -> setLastName()
         );
         tab_button_full_name.setOnClickListener(
-                view -> setFullMame()
+                view -> setFullName()
         );
 
         tab_f_help.setOnClickListener(
@@ -94,18 +94,17 @@ public class TabOrderFragment extends Fragment {
 
     }
 
-    private void setFullMame() {
-        if (lastName == null) {
-            lastName = getString(R.string.default_lastName);
-        } else  {
-            tab_text_full_name.setText(firstName + " " + lastName);
-            tab_text_full_name.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
+
+        private void setFullName() {
+            if (lastName == null) {
+                lastName = getString(R.string.default_lastName);
+            } else if  (firstName == null) {
+                firstName = getString(R.string.default_firstName);
+            } else {
+                tab_text_full_name.setText(firstName + " " + lastName);
+                tab_text_full_name.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
+            }
+
         }
-        if (firstName == null) {
-            firstName = getString(R.string.default_firstName);
-        } else  {
-            tab_text_full_name.setText(firstName + " " + lastName);
-            tab_text_full_name.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
-        }
-    }
+
 }

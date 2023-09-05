@@ -59,7 +59,7 @@ public class EditfieldFragment extends Fragment {
                 view -> setLastName()
         );
         button_full_name.setOnClickListener(
-                view -> setFullMame()
+                view -> setFullName()
         );
 
         return v;
@@ -78,19 +78,16 @@ public class EditfieldFragment extends Fragment {
         button_l_name.setContentDescription(getString(R.string.last_name_send));
     }
 
-   private void setFullMame() {
+   private void setFullName() {
         if (lastName == null) {
             lastName = getString(R.string.default_lastName);
-        } else  {
+        } else if  (firstName == null) {
+            firstName = getString(R.string.default_firstName);
+        } else {
             text_full_name.setText(firstName + " " + lastName);
             text_full_name.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
         }
-       if (firstName == null) {
-           firstName = getString(R.string.default_firstName);
-       } else  {
-           text_full_name.setText(firstName + " " + lastName);
-           text_full_name.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
-       }
+
    }
 
 
