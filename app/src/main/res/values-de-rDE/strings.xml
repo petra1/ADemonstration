@@ -2,8 +2,8 @@
 <resources>
     <string name="app_name">A Demonstration</string>
     <string name="nav_header_title">Ritter Apps</string>
-    <string name="first_name_label">Irgend ein Vorname</string>
-    <string name="last_name_label">Igend ein Nachname</string>
+    <string name="first_name_label">Irgendein Vorname</string>
+    <string name="last_name_label">Igendein Nachname</string>
     <string name="contrast_ratio">Kontrastverhältnis</string>
     <string name="send_first_name_bt">Vornamen senden</string>
     <string name="send_last_name_bt">Nachnamen senden</string>
@@ -73,7 +73,7 @@
     <string name="usage.html">usage_de.html</string>
     <string name="privacy_text2">Es gibt zwei Formulare in der App, dies sind jedoch nur Beispielformulare. Die Daten, die Sie in diese Formulare eingeben, werden nur auf demselben Bildschirm angezeigt, aber nicht gespeichert.</string>
     <string name="More_button">Hilfe</string>
-    <string name="default_lastName">\n Bitte geben Sie einen Nachnamen ein und tippen Sie den Schalter \"Nachnamen senden\", dann tippen Sie erneut den Schalter \"Vollständigen Namen anzeigen\".  </string>
-    <string name="default_firstName"> Bitte geben Sie einen Vachnamen ein und tippen Sie den Schaler \"Vornamen senden\", dann tippen Sie erneut den Schalter \"Vollständigen Namen anzeigen\". \n </string>
+    <string name="default_lastName"> Bitte geben Sie einen Nachnamen ein und tippen Sie den Schalter \"Nachnamen senden\", dann tippen Sie erneut den Schalter \"Vollständigen Namen anzeigen\".  </string>
+    <string name="default_firstName">Bitte geben Sie einen Vornamen ein und tippen Sie den Schalter \"Vornamen senden\", dann tippen Sie erneut den Schalter \"Vollständigen Namen anzeigen\" </string>
 
 </resources>

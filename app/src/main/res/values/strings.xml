@@ -92,8 +92,8 @@
     <string name="usage.html">usage.html</string>
     <string name="privacy_text2">There are two forms is the app, however this are just mock forms. The data that you entered in this forms are only displayed on the same screen and wil be not stored.</string>
     <string name="More_button">Help</string>
-    <string name="default_lastName">Please enter a last name and press the button \"Send last name\" then press the button \"Display full Name\" again.\n</string>
-    <string name="default_firstName">\n Please enter a fist name and press the button \"Send fist name\" then press the button \"Display full Name\" again.</string>
+    <string name="default_lastName"> Please enter a last name and press the button \"Send last name\" then press the button \"Display full Name\" again.\n</string>
+    <string name="default_firstName">Please enter a fist name and press the button \"Send fist name\" then press the button \"Display full Name\" again.</string>
 
 
 </resources>

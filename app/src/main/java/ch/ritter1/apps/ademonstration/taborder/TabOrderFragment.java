@@ -54,7 +54,8 @@ public class TabOrderFragment extends Fragment {
         tab_text_full_name = v.findViewById(R.id.tab_full_name_text);
         tab_editText_f_name = v.findViewById(R.id.tab_first_name_edit);
         tab_editText_l_name = v.findViewById(R.id.tab_last_name_edit);
-
+        lastName = getString(R.string.default_lastName);
+        firstName = getString(R.string.default_firstName);
 
         tab_button_f_name.setOnClickListener(
                 view -> setFirstName()
@@ -74,9 +75,6 @@ public class TabOrderFragment extends Fragment {
         tab_l_help.setOnClickListener(
                 view -> Toast.makeText(getActivity(), R.string.tab_correct, Toast.LENGTH_SHORT).show()
         );
-
-
-
         return v;
     }
 
@@ -84,27 +82,17 @@ public class TabOrderFragment extends Fragment {
         firstName = tab_editText_f_name.getText().toString();
         clicked = true;
         tab_button_f_name.setContentDescription(getString(R.string.first_name_send));
-
     }
 
     private void setLastName() {
         lastName = tab_editText_l_name.getText().toString();
         clicked = true;
         tab_button_l_name.setContentDescription(getString(R.string.last_name_send));
-
     }
 
 
         private void setFullName() {
-            if (lastName == null) {
-                lastName = getString(R.string.default_lastName);
-            } else if  (firstName == null) {
-                firstName = getString(R.string.default_firstName);
-            } else {
                 tab_text_full_name.setText(firstName + " " + lastName);
                 tab_text_full_name.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
-            }
-
         }
-
 }
