@@ -18,6 +18,7 @@ import ch.ritter1.apps.ademonstration.R;
 public class TabOrderFragment extends Fragment {
     String lastName;
     String firstName;
+    String fullName;
     boolean clicked = false;
     View v;
     Button tab_button_f_name;
@@ -54,8 +55,7 @@ public class TabOrderFragment extends Fragment {
         tab_text_full_name = v.findViewById(R.id.tab_full_name_text);
         tab_editText_f_name = v.findViewById(R.id.tab_first_name_edit);
         tab_editText_l_name = v.findViewById(R.id.tab_last_name_edit);
-        lastName = getString(R.string.default_lastName);
-        firstName = getString(R.string.default_firstName);
+
 
         tab_button_f_name.setOnClickListener(
                 view -> setFirstName()
@@ -92,7 +92,8 @@ public class TabOrderFragment extends Fragment {
 
 
         private void setFullName() {
-                tab_text_full_name.setText(firstName + " " + lastName);
+            fullName = firstName  + " " + lastName;
+            tab_button_full_name.setText(fullName);
                 tab_text_full_name.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
         }
 }

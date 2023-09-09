@@ -73,7 +73,6 @@
     <string name="usage.html">usage_de.html</string>
     <string name="privacy_text2">Es gibt zwei Formulare in der App, dies sind jedoch nur Beispielformulare. Die Daten, die Sie in diese Formulare eingeben, werden nur auf demselben Bildschirm angezeigt, aber nicht gespeichert.</string>
     <string name="More_button">Hilfe</string>
-    <string name="default_lastName"> Bitte geben Sie einen Nachnamen ein und tippen Sie den Schalter \"Nachnamen senden\", dann tippen Sie erneut den Schalter \"Vollständigen Namen anzeigen\".  </string>
-    <string name="default_firstName">Bitte geben Sie einen Vornamen ein und tippen Sie den Schalter \"Vornamen senden\", dann tippen Sie erneut den Schalter \"Vollständigen Namen anzeigen\" </string>
+
 
 </resources>
