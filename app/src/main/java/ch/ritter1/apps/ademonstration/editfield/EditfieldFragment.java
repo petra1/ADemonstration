@@ -67,16 +67,13 @@ public class EditfieldFragment extends Fragment {
         button_full_name.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AlertDialog.Builder alert = new AlertDialog.Builder(getContext());
-                alert.setTitle("Error");
-                alert.setMessage("Enter a fist or a last name and press the associated send button");
-                alert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        //empty DialogInterface.OnClickListener()
-                    }
-                });
-                alert.show();
+                // Überprüfe, ob eine der Variablen null ist oder alle null sind
+                if (firstName == null || lastName == null || (firstName.isEmpty() && lastName.isEmpty())) {
+                    // Zeige den AlertDialog an, falls die Bedingungen erfüllt sind
+                    showAlertDialog();
+                } else {
+                    setFullName();
+                }
             }
         });
         return v;
@@ -100,33 +97,21 @@ public class EditfieldFragment extends Fragment {
         text_full_name.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
     }
 
-    private void conditionalAlert(){
-        if (fullName.equals(null)) {
-            AlertDialog.Builder alert = new AlertDialog.Builder(getContext());
-            alert.setTitle("Error");
-            alert.setMessage("Enter a fist and a last name and press the associated send button");
-            alert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialogInterface, int i) {
-                    //empty DialogInterface.OnClickListener()
-                }
-            });
-            alert.show();
+    private void showAlertDialog() {
 
-        } else  if (firstName.equals(null) || lastName.equals(null)  ){
-            AlertDialog.Builder alert = new AlertDialog.Builder(getContext());
-            alert.setTitle("Error");
-            alert.setMessage("Enter a fist or a last name and press the associated send button");
-            alert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialogInterface, int i) {
-                    //empty DialogInterface.OnClickListener()
-                }
-            });
-            alert.show();
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getContext());
+        alertDialogBuilder.setTitle("A error has occurred!");
+        alertDialogBuilder.setMessage("Please enter a first or last name and click on the corresponding send button.");
+        alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                // Schließe den AlertDialog
+                dialogInterface.dismiss();
+            }
+        });
 
-        }else {
-            setFullName();
-        }
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
+
     }
 }
