@@ -2,17 +2,15 @@ package ch.ritter1.apps.ademonstration.editfield;
 
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
 
 import ch.ritter1.apps.ademonstration.R;
 
@@ -64,14 +62,11 @@ public class EditfieldFragment extends Fragment {
         button_l_name.setOnClickListener(
                 view -> setLastName()
         );
-        button_full_name.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (firstName == null || lastName == null || (firstName.isEmpty() && lastName.isEmpty())) {
-                    showAlertDialog();
-                } else {
-                    setFullName();
-                }
+        button_full_name.setOnClickListener(view -> {
+            if (firstName == null || lastName == null || (firstName.isEmpty() && lastName.isEmpty())) {
+                showAlertDialog();
+            } else {
+                setFullName();
             }
         });
         return v;
@@ -100,12 +95,7 @@ public class EditfieldFragment extends Fragment {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getContext());
         alertDialogBuilder.setTitle(R.string.alert_title);
         alertDialogBuilder.setMessage(R.string.alert_message);
-        alertDialogBuilder.setPositiveButton(R.string.alert_button, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                dialogInterface.dismiss();
-            }
-        });
+        alertDialogBuilder.setPositiveButton(R.string.alert_button, (dialogInterface, i) -> dialogInterface.dismiss());
 
         AlertDialog alertDialog = alertDialogBuilder.create();
         alertDialog.show();
