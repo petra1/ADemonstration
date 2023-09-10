@@ -75,6 +75,6 @@
     <string name="More_button">Hilfe</string>
     <string name="alert_title">Ein Fehler ist aufgetreten!</string>
     <string name="alert_message">Bitte geben Sie einen Vor oder Nachnamen ein und klicken sie auf den dazugehörigen Sende Schalter.</string>
-
+    <string name="alert_button">OK</string>
 
 </resources>

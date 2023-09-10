@@ -94,6 +94,7 @@
     <string name="More_button">Help</string>
     <string name="alert_title">A error has occurred!</string>
     <string name="alert_message">Please enter a first or last name and click on the corresponding send button.</string>
+    <string name="alert_button">OK</string>
 
 
 </resources>

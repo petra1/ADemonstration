@@ -1,5 +1,7 @@
 package ch.ritter1.apps.ademonstration.taborder;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -64,9 +66,19 @@ public class TabOrderFragment extends Fragment {
         tab_button_l_name.setOnClickListener(
                 view -> setLastName()
         );
-        tab_button_full_name.setOnClickListener(
-                view -> setFullName()
-        );
+        tab_button_full_name.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (firstName == null || lastName == null || (firstName.isEmpty() && lastName.isEmpty())) {
+                    showAlertDialog();
+                } else {
+                    setFullName();
+                }
+            }
+        });
+       // tab_button_full_name.setOnClickListener(
+        //       view -> setFullName()
+        // );
 
         tab_f_help.setOnClickListener(
                 view -> Toast.makeText(getActivity(), R.string.somethings_wrong, Toast.LENGTH_SHORT).show()
@@ -91,9 +103,26 @@ public class TabOrderFragment extends Fragment {
     }
 
 
-        private void setFullName() {
-            fullName = firstName  + " " + lastName;
-            tab_button_full_name.setText(fullName);
-                tab_text_full_name.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
-        }
+    private void setFullName() {
+        fullName = firstName + " " + lastName;
+        tab_text_full_name.setText(fullName);
+        tab_text_full_name.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
+    }
+
+    private void showAlertDialog() {
+
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getContext());
+        alertDialogBuilder.setTitle(R.string.alert_title);
+        alertDialogBuilder.setMessage(R.string.alert_message);
+        alertDialogBuilder.setPositiveButton(R.string.alert_button, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.dismiss();
+            }
+        });
+
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
+
+    }
 }
