@@ -92,6 +92,8 @@
     <string name="usage.html">usage.html</string>
     <string name="privacy_text2">There are two forms is the app, however this are just mock forms. The data that you entered in this forms are only displayed on the same screen and wil be not stored.</string>
     <string name="More_button">Help</string>
+    <string name="alert_title">A error has occurred!</string>
+    <string name="alert_message">Please enter a first or last name and click on the corresponding send button.</string>
 
 
 </resources>

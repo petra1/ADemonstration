@@ -67,9 +67,7 @@ public class EditfieldFragment extends Fragment {
         button_full_name.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Überprüfe, ob eine der Variablen null ist oder alle null sind
                 if (firstName == null || lastName == null || (firstName.isEmpty() && lastName.isEmpty())) {
-                    // Zeige den AlertDialog an, falls die Bedingungen erfüllt sind
                     showAlertDialog();
                 } else {
                     setFullName();
@@ -100,12 +98,11 @@ public class EditfieldFragment extends Fragment {
     private void showAlertDialog() {
 
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getContext());
-        alertDialogBuilder.setTitle("A error has occurred!");
-        alertDialogBuilder.setMessage("Please enter a first or last name and click on the corresponding send button.");
+        alertDialogBuilder.setTitle(R.string.alert_title);
+        alertDialogBuilder.setMessage(R.string.alert_message);
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                // Schließe den AlertDialog
                 dialogInterface.dismiss();
             }
         });
