@@ -39,7 +39,7 @@
     <string name="first_name_send">Vorname wurde gesendet</string>
     <string name="last_name_send">Nachname wurde gesendet</string>
     <string name="description1_editfield">Im Folgenden wird gezeigt, wie sich TalkBack verhält, wenn die visuell sichtbaren Labels nicht mit dem entsprechenden Eingabefeld verknüpft sind. Um die sichtbaren Labels mit den entsprechenden Eingabefeldern zu verknüpfen, wird das Attribut android:labelFor=\" \" für das Label mit der zum editText gehörenden ID als Wert verwendet.</string>
-    <string name="description2_editfield">Im ersten Eingabefeld wurde der Link zur sichtbaren Beschriftung absichtlich weggelassen. Das zweite ist korrekt mit der Beschriftung verknüpft.</string>
+    <string name="description2_editfield">Im ersten Eingabefeld wurde die Verknüpfung zur sichtbaren Beschriftung absichtlich weggelassen. Das zweite ist korrekt mit der Beschriftung verknüpft.</string>
     <string name="released_wcag">Die aktuelle Version wurde im Juni 2018 veröffentlicht.</string>
     <string name="what_is_the_current_version_of_wcag">Was ist die aktuelle Version der WCAG?</string>
     <string name="when_was_the_current_version_of_wcag_released">Wann wurde die aktuelle Version der WCAG veröffentlicht?</string>
