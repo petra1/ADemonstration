@@ -30,7 +30,7 @@
     <string name="just_passed">Gerade noch bestanden mit 4,5:1, HEX: #00e9ff auf #5a4dad</string>
     <string name="failed">Nicht bestanden mit 2.3:1, HEX: #ffffff auf #a0b0a1</string>
     <string name="just_failed">Knapp nicht bestanden mit 4.4:1, HEX: #ffffff auf #0083a1</string>
-    <string name="failed_with">Nicht bestanden mit einem Kontrastverhälnis von? HEX #ffffff auf #ffbb86fc</string>
+    <string name="failed_with">Nicht bestanden mit einem Kontrastverhälnis von? HEX #ffffff auf #bb86fc</string>
     <string name="passed_with">Bestanden mit einem Kontrastverhälnis von? HEX #ffffff auf #006400</string>
     <string name="alt_description">Im Folgenden wird gezeigt, was von TalkBack in den drei häufigsten Situationen vorgelesen wird (kein Alternativtext, dekorative Grafiken und informative Grafiken). Um einen Alternativtext für Grafiken bereitzustellen, wird das Attribut android:contentDescription=\" \" verwendet.</string>
     <string name="informative_graphic_description">In diesem Beispiel wurde davon ausgegangen, dass die Grafik informativ ist, weshalb sie mit einem Alternativtext versehen wurde.</string>
@@ -62,7 +62,7 @@
     <string name="contentDescription_passed">Bestanden mit 21.0:1 HEX:  # f f f f f f     auf #000000.</string>
     <string name="contentDescription_failed">Nicht bestanden mit 2.3:1, HEX: # f f f f f f auf #a0b0a1</string>
     <string name="contentDescription_just_failed">Knapp nicht bestanden mit 4.4:1, HEX: # f f f f f f auf #0083a1</string>
-    <string name="contentDescription_failed_with">Nicht bestanden mit Kontrastverhältnis von? HEX # f f f f f f auf #ffbb86fc</string>
+    <string name="contentDescription_failed_with">Nicht bestanden mit Kontrastverhältnis von? HEX # f f f f f f auf #bb86fc</string>
     <string name="contentDescription_passed_with">Bestanden mit einem Kontrastverhältnis von? HEX # f f f f f f auf #006400</string>
     <string name="privacy">Datenschutz</string>
     <string name="privacy_text">Die App \"A Demonstration\" speichert keine Daten dauerhaft (auch nicht lokal auf dem Gerät) oder gibt sie an Dritte weiter.</string>

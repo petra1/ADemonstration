@@ -69,7 +69,7 @@
     <string name="headings_stricture">Headings Stricture</string>
     <string name="heading_description">There is a difference in headings between native apps and hybrids with embedded HTML content. While there are six levels of headings in HTML h1 to h6, this is not the case with native apps. In native apps, the attribute android:accessibilityHeading \"tue\" is used to mark up a text (textView) on a non-visual level as a heading.</string>
     <string name="failed">Failed with 2.3:1, HEX: #ffffff on #a0b0a1.</string>
-    <string name="failed_with">Failed with contrast ratio of?  HEX #ffffff on #ffbb86fc</string>
+    <string name="failed_with">Failed with contrast ratio of?  HEX #ffffff on #bb86fc</string>
     <string name="alt_description">The following will show what is read by TalkBack in the three most common situations (no alternative text, decorative graphics, and informative graphics). To provide an alternative text to graphics the attribute android:contentDescription=\" \" is used.</string>
     <string name="first_name_send">First name has been sent</string>
     <string name="graphics">Graphics</string>
@@ -81,7 +81,7 @@
     <string name="contentDescription_passed">Passed with 21.0:1, HEX: # f f f f f f on #000000.</string>
     <string name="contentDescription_failed">Failed with 2.3:1, HEX: # f f f f f f on #a0b0a1.</string>
     <string name="contentDescription_just_failed">Just failed with 4.4:1, HEX: # f f f f f f on #0083a1</string>
-    <string name="contentDescription_failed_with">Failed with contrast ratio of? HEX # f f f f f f on #ffbb86fc</string>
+    <string name="contentDescription_failed_with">Failed with contrast ratio of? HEX # f f f f f f on #bb86fc</string>
     <string name="contentDescription_passed_with">Passed with  contrast ratio of? HEX # f f f f f f on #006400</string>
     <string name="privacy_text">The app \"A Demonstration\" does not store any data permanently (not even local on  the device) or pass it on to third parties.</string>
     <string name="privacy">Privacy</string>

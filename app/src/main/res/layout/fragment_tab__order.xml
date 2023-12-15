@@ -121,6 +121,7 @@
                     android:id="@+id/tab_first_name_help"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+
                     android:layout_marginStart="41dp"
                     android:layout_marginTop="30dp"
                     android:background="@drawable/button_selector"
@@ -128,7 +129,8 @@
                     android:minHeight="48dp"
                     android:src="@drawable/ic_baseline_question_mark_24"
                     app:layout_constraintStart_toEndOf="@+id/tab_send_first_name_btn"
-                    app:layout_constraintTop_toBottomOf="@+id/tab_first_name_edit" />
+                    app:layout_constraintTop_toBottomOf="@+id/tab_first_name_edit"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:id="@+id/tab_last_name_label"
@@ -186,7 +188,8 @@
                     android:minHeight="48dp"
                     android:src="@drawable/ic_baseline_question_mark_24"
                     app:layout_constraintStart_toEndOf="@+id/tab_send_last_name_btn"
-                    app:layout_constraintTop_toBottomOf="@+id/tab_last_name_edit" />
+                    app:layout_constraintTop_toBottomOf="@+id/tab_last_name_edit"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:id="@+id/tab_full_name_text"
