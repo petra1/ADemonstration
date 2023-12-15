@@ -46,8 +46,8 @@
     <string name="full_name_text">Press the button below to display the full name.</string>
 
     <!--Image Buttons-->
-    <string name="version_of_wcag">The current version of WCAG is 2.1.</string>
-    <string name="released_wcag">The current version was released in june 2018.</string>
+    <string name="version_of_wcag">The current version of WCAG is 2.2.</string>
+    <string name="released_wcag">The current version was released in October 2023.</string>
     <string name="what_is_the_current_version_of_wcag">What is the current version of WCAG?</string>
     <string name="when_was_the_current_version_of_wcag_released">When was the current version of WCAG released?</string>
     <string name="image_buttons">Image Buttons</string>
