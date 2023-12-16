@@ -70,6 +70,8 @@
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif-medium"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
                     android:text="@string/first_name_label"
                     android:textColor="?colorOnPrimary"
                     android:textSize="16sp" />
@@ -138,7 +140,9 @@
                     android:layout_weight="1"
                     android:autofillHints="family-name"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp" />
             </LinearLayout>
 
             <LinearLayout
