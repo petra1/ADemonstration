@@ -37,7 +37,7 @@
 
     <!--Edit fields-->
     <string name="last_name_send">Last name was sent.</string>
-    <string name="description1_editfield">In the following, we will show how TalkBack behaves when the visually visible labels have not been linked to the corresponding input field. In order to link the visible labels with the corresponding input fields, the attribute android:labelFor=\" \" is used for the label with the belonging editText\'s ID as value.</string>
+    <string name="description1_editfield">In the following, we will show how TalkBack behaves when the visually visible labels have not been linked to the corresponding input field.</string>
     <string name="description2_editfield">In the first input field, the link to the visible label was intentionally omitted. The second is correctly linked to the label.</string>
     <string name="first_name_label">Any first name</string>
     <string name="send_first_name_bt">Send first name</string>
@@ -52,7 +52,7 @@
     <string name="when_was_the_current_version_of_wcag_released">When was the current version of WCAG released?</string>
     <string name="image_buttons">Image Buttons</string>
     <string name="Description1_imageButton">This example shows how TalkBack behaves with graphic buttons that lack alternative text, and at the same time shows how the buttons can be made more usable for people with limited fine motor skills.</string>
-    <string name="Description2_imageButton">In the first graphic button, the alternative text, the attribute contentDescription=\" \" was intentionally omitted and the font target was also not adjusted. The second graphic button, however, was correctly labelled and the touch target was adjusted by setting the attributes minWidth and minHeight to 48dp so that the button is displayed larger and is thus easier to use.</string>
+    <string name="Description2_imageButton">In the first graphical button, the alternative text was intentionally omitted and the target was not adjusted. The second graphic button, on the other hand, has been labelled correctly and the touch target has been adjusted to 48dp so that the button is displayed larger and is therefore easier to use.</string>
     <string name="question1_imageButton">Question #1: What is the current version of WCAG?</string>
     <string name="question2_imageButton">Question #2: When was the current version of WCAG released?</string>
     <string name="contentDescription_imageButton">Get the answer to the second question.</string>
@@ -67,10 +67,10 @@
     <string name="display_full_name_bt">Display full name</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="headings_stricture">Headings Stricture</string>
-    <string name="heading_description">There is a difference in headings between native apps and hybrids with embedded HTML content. While there are six levels of headings in HTML h1 to h6, this is not the case with native apps. In native apps, the attribute android:accessibilityHeading \"tue\" is used to mark up a text (textView) on a non-visual level as a heading.</string>
+    <string name="heading_description">There is a difference in headings between native apps and hybrids with embedded HTML content. While there are six levels of headings in HTML h1 to h6, this is not the case with native apps.</string>
     <string name="failed">Failed with 2.3:1, HEX: #ffffff on #a0b0a1.</string>
     <string name="failed_with">Failed with contrast ratio of?  HEX #ffffff on #bb86fc</string>
-    <string name="alt_description">The following will show what is read by TalkBack in the three most common situations (no alternative text, decorative graphics, and informative graphics). To provide an alternative text to graphics the attribute android:contentDescription=\" \" is used.</string>
+    <string name="alt_description">"The following will show what is read by TalkBack in the three most common situations (no alternative text, decorative graphics, and informative graphics). "</string>
     <string name="first_name_send">First name has been sent</string>
     <string name="graphics">Graphics</string>
     <string name="headings">Headings</string>
@@ -95,6 +95,8 @@
     <string name="alert_title">A error has occurred!</string>
     <string name="alert_message">Please enter a first or last name and click on the corresponding send button.</string>
     <string name="alert_button">OK</string>
+    <string name="github" translatable="false">GitHub:</string>
+    <string name="github_url" translatable="false">https://github.com/petra1/ADemonstration/tree/Lokalisation_de</string>
 
 
 </resources>

@@ -23,8 +23,8 @@
     <string name="decorative_graphics">Dekorative Grafiken</string>
     <string name="informative_graphic">Informative Grafik</string>
     <string name="no_alt_description">In diesem Beispiel wurde der Alternativtext absichtlich weggelassen. In der Praxis kommt es sehr oft vor, dass der Alternativtext versehentlich weggelassen wird.</string>
-    <string name="deco_graphic_description">"Diese Grafik ist rein dekorativ, und der alternative Text wurde leer gelassen, damit TalkBack die Grafik ignoriert und kein unnötigen Text ausgibt.  "</string>
-    <string name="heading_description">"Bei Überschriften gibt es einen Unterschied zwischen nativen Anwendungen und hybriden Anwendungen mit eingebettetem HTML-Inhalt. Während es in HTML sechs Überschriftsebenen h1 bis h6 gibt, gibt es bei nativen Apps keine Überschriftenebenen. In nativen Apps wird das Attribut android:accessibilityHeading \"true\" verwendet, um einen Text (textView) auf einer nicht visuellen Ebene als Überschrift zu kennzeichnen."</string>
+    <string name="deco_graphic_description">"Diese Grafik ist rein dekorativ, und der Alternativtext wurde leer gelassen, damit TalkBack die Grafik ignoriert und kein unnötigen Text ausgibt.  "</string>
+    <string name="heading_description">"Bei Überschriften gibt es einen Unterschied zwischen nativen Anwendungen und hybriden Anwendungen mit eingebettetem HTML-Inhalt. Während es in HTML sechs Überschriftsebenen h1 bis h6 gibt, gibt es bei nativen Apps keine Überschriftenebenen. "</string>
     <string name="contrast_description">"Dem Kontrastverhältnis wird bei der Entwicklung mobiler Apps oft nicht genügend Aufmerksamkeit geschenkt. Gerade bei der mobilen Nutzung ist ein gutes Kontrastverhältnis jedoch für alle Nutzenden wichtig, z.B. bei der Nutzung mobiler Geräte im Freien bei Sonnenschein. Nachfolgend finden Sie einige Beispiele für gute und schlechte Kontrastverhältnisse. "</string>
     <string name="passed">Bestanden mit 21.0:1, HEX: #ffffff auf #000000.</string>
     <string name="just_passed">Gerade noch bestanden mit 4,5:1, HEX: #00e9ff auf #5a4dad</string>
@@ -32,19 +32,19 @@
     <string name="just_failed">Knapp nicht bestanden mit 4.4:1, HEX: #ffffff auf #0083a1</string>
     <string name="failed_with">Nicht bestanden mit einem Kontrastverhälnis von? HEX #ffffff auf #bb86fc</string>
     <string name="passed_with">Bestanden mit einem Kontrastverhälnis von? HEX #ffffff auf #006400</string>
-    <string name="alt_description">Im Folgenden wird gezeigt, was von TalkBack in den drei häufigsten Situationen vorgelesen wird (kein Alternativtext, dekorative Grafiken und informative Grafiken). Um einen Alternativtext für Grafiken bereitzustellen, wird das Attribut android:contentDescription=\" \" verwendet.</string>
+    <string name="alt_description">"Im Folgenden wird gezeigt, was von TalkBack in den drei häufigsten Situationen vorgelesen wird (kein Alternativtext, dekorative Grafiken und informative Grafiken). "</string>
     <string name="informative_graphic_description">In diesem Beispiel wurde davon ausgegangen, dass die Grafik informativ ist, weshalb sie mit einem Alternativtext versehen wurde.</string>
     <string name="informative_graphic_alt">rollstuhlgängig</string>
     <string name="contact_information">Kontakt Information</string>
     <string name="first_name_send">Vorname wurde gesendet</string>
     <string name="last_name_send">Nachname wurde gesendet</string>
-    <string name="description1_editfield">Im Folgenden wird gezeigt, wie sich TalkBack verhält, wenn die visuell sichtbaren Labels nicht mit dem entsprechenden Eingabefeld verknüpft sind. Um die sichtbaren Labels mit den entsprechenden Eingabefeldern zu verknüpfen, wird das Attribut android:labelFor=\" \" für das Label mit der zum editText gehörenden ID als Wert verwendet.</string>
+    <string name="description1_editfield">Im Folgenden wird gezeigt, wie sich TalkBack verhält, wenn die visuell sichtbaren Labels nicht mit dem entsprechenden Eingabefeld verknüpft sind.</string>
     <string name="description2_editfield">Im ersten Eingabefeld wurde die Verknüpfung zur sichtbaren Beschriftung absichtlich weggelassen. Das zweite ist korrekt mit der Beschriftung verknüpft.</string>
     <string name="released_wcag">Die aktuelle Version wurde im Oktober 2023 veröffentlicht.</string>
     <string name="what_is_the_current_version_of_wcag">Was ist die aktuelle Version der WCAG?</string>
     <string name="when_was_the_current_version_of_wcag_released">Wann wurde die aktuelle Version der WCAG veröffentlicht?</string>
     <string name="Description1_imageButton">Dieses Beispiel zeigt, wie sich TalkBack bei grafischen Schaltflächen verhält, die keinen Alternativtext enthalten, und zeigt gleichzeitig, wie die Schaltflächen für Menschen mit eingeschränkter Feinmotorik besser nutzbar gemacht werden können.</string>
-    <string name="Description2_imageButton">Bei der ersten grafischen Schaltfläche wurde das Attribut contentDescription=\" \" absichtlich weggelassen und auch das Touch-Target wurde nicht angepasst. Die zweite grafische Schaltfläche hingegen wurde korrekt beschriftet und das Touch-Target wurde durch Setzen der Attribute minWidth und minHeight auf 48dp angepasst, so dass die Schaltfläche größer dargestellt wird und somit leichter zu bedienen ist.</string>
+    <string name="Description2_imageButton">Bei der ersten grafischen Schaltfläche wurde der Alternativtext absichtlich weggelassen und auch das Touch-Target wurde nicht angepasst. Die zweite grafische Schaltfläche hingegen wurde korrekt beschriftet und das Touch-Target wurde auf 48dp gesetzt, so dass die Schaltfläche größer dargestellt wird und somit leichter zu bedienen ist.</string>
     <string name="question2_imageButton">Frage 2: Wann wurde die aktuelle Version der WCAG veröffentlicht?</string>
     <string name="question1_imageButton">Frage 1: Was ist die aktuelle Version der WCAG?</string>
     <string name="contentDescription_imageButton">Erhalten Sie die Antwort auf die zweite Frage.</string>
