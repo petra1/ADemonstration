@@ -98,5 +98,11 @@
     <string name="github" translatable="false">GitHub:</string>
     <string name="github_url" translatable="false">https://github.com/petra1/ADemonstration/tree/Lokalisation_de</string>
 
+    <string name="language_of_parts">Language of Parts</string>
+    <string name="description_language">The following demonstrates how TalkBack behaves in relation to foreign-language text where the language declaration has been set correctly.</string>
+    <string name="heading_incorrect_implementation">Incorrect Implementation</string>
+    <string name="heading_correct_example">Correct Implementation</string>
+    <string name="incorrect_example" translatable="false">El objetivo de este criterio de éxito es garantizar que los agentes de usuario puedan presentar correctamente contenidos escritos en varios idiomas.</string>
+
 
 </resources>

@@ -34,7 +34,10 @@
             android:id="@+id/nav_contrast"
             android:icon="@drawable/ic_baseline_contrast_24"
             android:title="@string/contrast_ratio" />
-
+    <item
+        android:id="@+id/nav_language"
+        android:icon="@drawable/ic_language_24"
+        android:title="@string/language_of_parts" />
 
 
 

@@ -51,5 +51,10 @@
         android:name="ch.ritter1.apps.ademonstration.usage.UsageFragment"
         android:label=""
         tools:layout="@layout/fragment_usage" />
+    <fragment
+        android:id="@+id/nav_language"
+        android:name="ch.ritter1.apps.ademonstration.language.LanguageFragment"
+        android:label=""
+        tools:layout="@layout/fragment_language" />
 
 </navigation>

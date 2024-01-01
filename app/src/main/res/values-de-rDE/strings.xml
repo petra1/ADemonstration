@@ -77,4 +77,10 @@
     <string name="alert_message">Bitte geben Sie einen Vor oder Nachnamen ein und klicken sie auf den dazugehörigen Sende Schalter.</string>
     <string name="alert_button">OK</string>
 
+
+    <string name="language_of_parts">Sprache von Teilen</string>
+    <string name="description_language">Im Folgenden wird gezeigt, wie sich TalkBack bei fremdsprachigem Text verhält, wenn die Sprachdeklaration korrekt gesetzt wurde.</string>
+    <string name="heading_incorrect_implementation">Inkorrekt Implementation</string>
+    <string name="heading_correct_example">Korrekte  Implementation</string>
+
 </resources>
