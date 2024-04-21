@@ -17,7 +17,7 @@
     <string name="navigation_drawer_open">Navigation öffnen</string>
 
     <string name="nav_header_desc">Navigation Kopfzeilen</string>
-    <string name="headings_stricture">Überschriften-Struktur</string>
+    <string name="headings_structure">Überschriften-Struktur</string>
     <string name="alternative_texts">Alternativtexte</string>
     <string name="no_alt_text">Fehlender Alternativtext</string>
     <string name="decorative_graphics">Dekorative Grafiken</string>

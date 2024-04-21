@@ -66,7 +66,7 @@
     <string name="edit_fields">Edit fields</string>
     <string name="display_full_name_bt">Display full name</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="headings_stricture">Headings Stricture</string>
+    <string name="headings_structure">Headings Structure</string>
     <string name="heading_description">There is a difference in headings between native apps and hybrids with embedded HTML content. While there are six levels of headings in HTML h1 to h6, this is not the case with native apps.</string>
     <string name="failed">Failed with 2.3:1, HEX: #ffffff on #a0b0a1.</string>
     <string name="failed_with">Failed with contrast ratio of?  HEX #ffffff on #bb86fc</string>
