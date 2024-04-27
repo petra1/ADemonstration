@@ -81,7 +81,9 @@
     <string name="heading_incorrect_implementation">Inkorrekt Implementation</string>
     <string name="heading_correct_example">Korrekte  Implementation</string>
     <string name="focus_visible">Fokus Sichtbar</string>
-    <string name="description1_focus_visible">"Motorischbehinterte Menschen haben möglicherweise Mühe oder sind nicht in der Lage einen Touch-Screen zu bedienen und verwenden daher eine Bluetooth-Tastatur. Dies setz unter anderem voraus, dass der Tastaturfokus genügend sichtbar ist.  "</string>
+    <string name="description1_focus_visible">"Motorischbehinterte Menschen haben möglicherweise Mühe oder sind nicht in der Lage einen Touch-Screen zu bedienen und verwenden daher eine Bluetooth-Tastatur. Dies setz unter anderem voraus, dass der Tastaturfokus genügend sichtbar ist. "</string>
+    <string name="description2_focus_visible">In diesem Beispiel wurde die Sichtbarkeit des Tastaturfokus für einige Schalter absichtlich ignoriert. Versuchen Sie, eine mit dem mobilen Gerät gekoppelte Bluetooth-Tastatur zu verwenden, und versuchen Sie, die Taste 3 zu finden und zu aktivieren</string>
+
 
 
 </resources>

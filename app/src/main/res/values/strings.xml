@@ -101,9 +101,10 @@
     <string name="heading_incorrect_implementation">Incorrect Implementation</string>
     <string name="heading_correct_example">Correct Implementation</string>
     <string name="incorrect_example" translatable="false">El objetivo de este criterio de éxito es garantizar que los agentes de usuario puedan presentar correctamente contenidos escritos en varios idiomas.</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="focus_visible">Focus Visible</string>
+    <string name="description2_focus_visible">In this example, the visibility of the keyboard focus was intentionally ignored for some button. Try using a Bluetooth keyboard paired with the mobile device and try to find and activate button 3.</string>
     <string name="description1_focus_visible">People with motor disabilities may have difficulty or be unable to operate a touch screen and therefore use a Bluetooth keyboard. This requires, among other things, that the keyboard focus is sufficiently visible.</string>
 
 
