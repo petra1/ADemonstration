@@ -55,7 +55,7 @@
     <string name="dark_mode_heading__html">dark_mode_heading_de.html</string>
     <string name="graphics">Grafiken</string>
     <string name="headings">Überschriften</string>
-    <string name="tab_order">Tab-Reihenfolge</string>
+    <string name="tab_order">Fokus-Reihenfolge</string>
     <string name="contact">Kontakt &amp; Datenschutz</string>
     <string name="description1_tab_order">Menschen mit eingeschränkter Feinmotorik sind möglicherweise nicht in der Lage, einen Touchscreen zu bedienen. Daher ist es wichtig, dass eine App auch mit einer über Bluetooth angeschlossenen Tastatur bedient werden kann und dass die Fokusreihenfolge der Bedienelemente korrekt ist.</string>
     <string name="description2_tab_order">Im ersten Beispiel wurde die Fokusreihenfolge absichtlich ignoriert, aber im zweiten Beispiel ist die Fokusreihenfolge korrekt</string>
@@ -68,11 +68,9 @@
     <string name="privacy_text">Die App \"A Demonstration\" speichert keine Daten dauerhaft (auch nicht lokal auf dem Gerät) oder gibt sie an Dritte weiter.</string>
     <string name="dark_mode_usage.html">dark_mode_usage_de.html</string>
     <string name="usage">Hilfe</string>
-    <string name="edit_field">Eingabefelder</string>
     <string name="heading__html">heading_de.html</string>
     <string name="usage.html">usage_de.html</string>
     <string name="privacy_text2">Es gibt zwei Formulare in der App, dies sind jedoch nur Beispielformulare. Die Daten, die Sie in diese Formulare eingeben, werden nur auf demselben Bildschirm angezeigt, aber nicht gespeichert.</string>
-    <string name="More_button">Hilfe</string>
     <string name="alert_title">Ein Fehler ist aufgetreten!</string>
     <string name="alert_message">Bitte geben Sie einen Vor oder Nachnamen ein und klicken sie auf den dazugehörigen Sende Schalter.</string>
     <string name="alert_button">OK</string>
@@ -82,5 +80,8 @@
     <string name="description_language">Im Folgenden wird gezeigt, wie sich TalkBack bei fremdsprachigem Text verhält, wenn die Sprachdeklaration korrekt gesetzt wurde.</string>
     <string name="heading_incorrect_implementation">Inkorrekt Implementation</string>
     <string name="heading_correct_example">Korrekte  Implementation</string>
+    <string name="focus_visible">Fokus Sichtbar</string>
+    <string name="description1_focus_visible">"Motorischbehinterte Menschen haben möglicherweise Mühe oder sind nicht in der Lage einen Touch-Screen zu bedienen und verwenden daher eine Bluetooth-Tastatur. Dies setz unter anderem voraus, dass der Tastaturfokus genügend sichtbar ist.  "</string>
+
 
 </resources>

@@ -63,7 +63,7 @@
     <string name="help_first">Get help for first name</string>
     <string name="help_last">Get help for last name</string>
     <string name="contrast_ratio">Contrast Ratio</string>
-    <string name="edit_fields">Edit fields</string>
+    <string name="edit_fields">"Edit Fields "</string>
     <string name="display_full_name_bt">Display full name</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="headings_structure">Headings Structure</string>
@@ -74,7 +74,7 @@
     <string name="first_name_send">First name has been sent</string>
     <string name="graphics">Graphics</string>
     <string name="headings">Headings</string>
-    <string name="tab_order">Tab Order</string>
+    <string name="tab_order">Focus Order</string>
     <string name="contact">Contact &amp; Privacy</string>
     <string name="description1_tab_order">People with limited fine motor skills may not be able to operate a touch screen. It is therefore important that an app can also be operated with a keyboard connected via Bluetooth and that the focus order of the operating elements is correct.</string>
     <string name="description2_tab_order">In the first example, the focus order was intentionally ignored, but in the second example, the focus order is correct</string>
@@ -87,11 +87,9 @@
     <string name="privacy">Privacy</string>
     <string name="dark_mode_usage.html">dark_mode_usage.html</string>
     <string name="usage">Help</string>
-    <string name="edit_field">Edit fields</string>
     <string name="contact_name" translatable="false">Name:</string>
     <string name="usage.html">usage.html</string>
     <string name="privacy_text2">There are two forms in the app, however this are just mock forms. The data that you entered in this forms are only displayed on the same screen and wil be not stored.</string>
-    <string name="More_button">Help</string>
     <string name="alert_title">A error has occurred!</string>
     <string name="alert_message">Please enter a first or last name and click on the corresponding send button.</string>
     <string name="alert_button">OK</string>
@@ -103,6 +101,10 @@
     <string name="heading_incorrect_implementation">Incorrect Implementation</string>
     <string name="heading_correct_example">Correct Implementation</string>
     <string name="incorrect_example" translatable="false">El objetivo de este criterio de éxito es garantizar que los agentes de usuario puedan presentar correctamente contenidos escritos en varios idiomas.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="focus_visible">Focus Visible</string>
+    <string name="description1_focus_visible">People with motor disabilities may have difficulty or be unable to operate a touch screen and therefore use a Bluetooth keyboard. This requires, among other things, that the keyboard focus is sufficiently visible.</string>
 
 
 </resources>

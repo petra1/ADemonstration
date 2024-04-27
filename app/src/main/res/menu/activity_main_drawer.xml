@@ -4,41 +4,46 @@
     tools:showIn="navigation_view">
 
 
-    <group android:checkableBehavior="single"/>
-        <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_baseline_home_24"
-            android:title="@string/menu_home" />
-        <item
-            android:id="@+id/nav_graphics"
-            android:icon="@drawable/ic_baseline_gif_box_24"
-            android:title="@string/alternative_texts" />
-        <item
-            android:id="@+id/nav_image_button"
-            android:icon="@drawable/ic_baseline_radio_button_checked_24"
-            android:title="@string/image_buttons" />
+    <group android:checkableBehavior="single" />
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/menu_home" />
+    <item
+        android:id="@+id/nav_graphics"
+        android:icon="@drawable/ic_baseline_gif_box_24"
+        android:title="@string/alternative_texts" />
+    <item
+        android:id="@+id/nav_image_button"
+        android:icon="@drawable/ic_baseline_radio_button_checked_24"
+        android:title="@string/image_buttons" />
 
-        <item
-            android:id="@+id/nav_headings"
-            android:icon="@drawable/ic_baseline_view_headline_24"
-            android:title="@string/headings" />
-        <item
-            android:id="@+id/nav_edit"
-            android:icon="@drawable/ic_baseline_edit_24"
-            android:title="@string/edit_fields" />
-        <item
-            android:id="@+id/nav_tab"
-            android:icon="@drawable/ic_baseline_keyboard_tab_24"
-            android:title="@string/tab_order" />
-        <item
-            android:id="@+id/nav_contrast"
-            android:icon="@drawable/ic_baseline_contrast_24"
-            android:title="@string/contrast_ratio" />
+    <item
+        android:id="@+id/nav_headings"
+        android:icon="@drawable/ic_baseline_view_headline_24"
+        android:title="@string/headings" />
+    <item
+        android:id="@+id/nav_edit"
+        android:icon="@drawable/ic_baseline_edit_24"
+        android:title="@string/edit_fields" />
+    <item
+        android:id="@+id/nav_contrast"
+        android:icon="@drawable/ic_baseline_contrast_24"
+        android:title="@string/contrast_ratio" />
+
+    <item
+        android:id="@+id/nav_tab"
+        android:icon="@drawable/ic_baseline_keyboard_tab_24"
+        android:title="@string/tab_order" />
+    <item
+        android:id="@+id/nav_focus_visible"
+        android:icon="@drawable/baseline_visibility_24"
+        android:title="@string/focus_visible" />
+
     <item
         android:id="@+id/nav_language"
         android:icon="@drawable/ic_language_24"
         android:title="@string/language_of_parts" />
-
 
 
     <group
@@ -52,16 +57,6 @@
             android:id="@+id/nav_usage"
             android:icon="@drawable/ic_baseline_front_hand_24"
             android:title="@string/usage" />
-
-
-
-
-
-
-
-
-
-
 
 
     </group>
