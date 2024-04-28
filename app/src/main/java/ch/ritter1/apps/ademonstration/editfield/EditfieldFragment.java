@@ -15,7 +15,7 @@ import androidx.fragment.app.Fragment;
 import ch.ritter1.apps.ademonstration.R;
 
 
-public class EditfieldFragment extends Fragment {
+public class    EditfieldFragment extends Fragment {
     String lastName;
     String firstName;
     String fullName;

@@ -104,8 +104,16 @@
 
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="focus_visible">Focus Visible</string>
-    <string name="description2_focus_visible">In this example, the visibility of the keyboard focus was intentionally ignored for some button. Try using a Bluetooth keyboard paired with the mobile device and try to find and activate button 3.</string>
+    <string name="description2_focus_visible">In this example, the visibility of the keyboard focus was intentionally ignored for some button. Try using a Bluetooth keyboard paired with the mobile device and try to find and activate button 3 without counting how many times you press the Tab key.</string>
     <string name="description1_focus_visible">People with motor disabilities may have difficulty or be unable to operate a touch screen and therefore use a Bluetooth keyboard. This requires, among other things, that the keyboard focus is sufficiently visible.</string>
+    <string name="btn_1">You pressed button # 1</string>
+    <string name="btn_2">You pressed button # 2</string>
+    <string name="btn_3">You pressed button # 3</string>
+    <string name="btn_4">You pressed button # 4</string>
+    <string name="btn_5">You pressed button # 5</string>
+    <string name="btn_6">You pressed button # 6</string>
+    <string name="btn_7">You pressed button # 7</string>
+    <string name="btn_8">You pressed button # 8</string>
 
 
 </resources>
