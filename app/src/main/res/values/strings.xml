@@ -83,13 +83,13 @@
     <string name="contentDescription_just_failed">Just failed with 4.4:1, HEX: # f f f f f f on #0083a1</string>
     <string name="contentDescription_failed_with">Failed with contrast ratio of? HEX # f f f f f f on #bb86fc</string>
     <string name="contentDescription_passed_with">Passed with  contrast ratio of? HEX # f f f f f f on #006400</string>
-    <string name="privacy_text">The app \"A Demonstration\" does not store any data permanently (not even local on  the device) or pass it on to third parties.</string>
+    <string name="privacy_text">The app only processes data locally and does not send it to other devices or third-party services. The data is also not stored permanently.</string>
     <string name="privacy">Privacy</string>
     <string name="dark_mode_usage.html">dark_mode_usage.html</string>
     <string name="usage">Help</string>
     <string name="contact_name" translatable="false">Name:</string>
     <string name="usage.html">usage.html</string>
-    <string name="privacy_text2">There are two forms in the app, however this are just mock forms. The data that you entered in this forms are only displayed on the same screen and wil be not stored.</string>
+    <string name="privacy_text2">The app contains two forms, but these are only sample forms. The data you enter in these forms is only processed locally and displayed on the user\'s device.</string>
     <string name="alert_title">A error has occurred!</string>
     <string name="alert_message">Please enter a first or last name and click on the corresponding send button.</string>
     <string name="alert_button">OK</string>
