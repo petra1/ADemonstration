@@ -71,7 +71,6 @@
     <string name="heading__html">heading_de.html</string>
     <string name="usage.html">usage_de.html</string>
     <string name="privacy_text2">Die App enthält zwei Formulare, bei denen es sich jedoch nur um Beispiel-Formulare handelt. Die Daten, die Sie in diese Formulare eingeben, werden nur lokal verarbeitet  und auf dem Gerät des Benutzers angezeigt</string>
-    <string name="privacy_text2">Die App enthält zwei Formulare, bei denen es sich jedoch nur um Beispiel-Formulare handelt. Die Daten, die Sie in diese Formulare eingeben, werden nur lokal verarbeitet  und auf dem Gerät des Benutzers angezeigt</string>
     <string name="alert_title">Ein Fehler ist aufgetreten!</string>
     <string name="alert_message">Bitte geben Sie einen Vor oder Nachnamen ein und klicken sie auf den dazugehörigen Sende Schalter.</string>
     <string name="alert_button">OK</string>
