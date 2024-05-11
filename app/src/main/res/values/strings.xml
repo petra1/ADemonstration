@@ -114,6 +114,16 @@
     <string name="btn_6">You pressed button # 6</string>
     <string name="btn_7">You pressed button # 7</string>
     <string name="btn_8">You pressed button # 8</string>
+    <string name="focus_visible_btn_1" translatable="false">1</string>
+    <string name="focus_visible_btn_2" translatable="false">2</string>
+    <string name="focus_visible_btn_3" translatable="false">3</string>
+    <string name="focus_visible_btn_4" translatable="false">4</string>
+    <string name="focus_visible_btn_5" translatable="false">5</string>
+    <string name="focus_visible_btn_6" translatable="false">6</string>
+    <string name="focus_visible_btn_7" translatable="false">7</string>
+    <string name="focus_visible_btn_8" translatable="false">8</string>
+    <string name="website">Website:</string>
+    <string name="website_url" translatable="false">"https://sites.google.com/view/ritter-apps/project"</string>
 
 
 </resources>
