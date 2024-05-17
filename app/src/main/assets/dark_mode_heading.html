@@ -13,6 +13,12 @@
    font-size: 20px;
    font-family: sans-serif-medium;
   }
+  h3 {
+  color:white;
+  text-align: center;
+   font-size: 16px;
+   font-family: sans-serif-medium;
+  }
 p {
   color:white;
   font-family: sans-serif-medium;
@@ -21,21 +27,26 @@ p {
    background-color: #303030;
    }
 </style>
-<title>Output of TalkBack</title>
+<title>Headings Structure</title>
 
 <header>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </header>
 <body>
 
-<h1>Output of TalkBack</h1>
-<h2>Native Apps</h2>
+<h1>Headings Structure</h1>
 <p>
-    You may have noticed that the heading "Heading Structure", unlike the following two headings, has been announced by TalkBack as "Heading Heading Structure" only. This is not a duplication of the word "heading" by the screen reader, but a text formatted as a heading on a non-visual level.
+    There is a difference in headings between native apps and hybrids with embedded HTML content. While there are six levels of headings in HTML h1 to h6, this is not the case with native apps.
+
 </p>
-<h2>HTML content</h2>
+<h2>Output of TalkBack</h2>
+<h3>Native Apps</h3>
 <p>
-    For HTML documents, for example, TalkBack says "HTML content heading 2". Since it is a heading of the second heading level (h2). No matter whether an HTML document is called up in a browser or integrated into an app, TalkBack always says the headings in the same way.
+    You may have noticed that the heading "Alternative Texts", unlike the heading "Heading Structure", has been announced by TalkBack as "Heading Alternative Texts" only. This is not a duplication of the word "heading" by the screen reader, but a text formatted as a heading on a non-visual level.
+</p>
+<h3>HTML content</h3>
+<p>
+    For HTML documents, for example, TalkBack says "HTML content heading 3". Since it is a heading of the third heading level (h3). No matter whether an HTML document is called up in a browser or integrated into an app, TalkBack always says the headings in the same way.
 </p>
 </body>
 </html>

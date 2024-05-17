@@ -11,11 +11,16 @@
    font-size: 20px;
    font-family: sans-serif-medium;
   }
+  h3 {
+  text-align: center;
+   font-size: 16px;
+   font-family: sans-serif-medium;
+  }
   body {
   background-color: #F8F8F8;
   }
 </style>
-<title>Ausgabe von TalkBack</title>
+<title>Überschriften-Struktur</title>
 
 <header>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -23,16 +28,22 @@
 </header>
 <body>
 
-<h1>Ausgabe von TalkBack</h1>
-<h2>Native Apps</h2>
+
+<h1>Überschriften-Struktur</h1>
 <p>
-    Sie haben vielleicht schon bemerkt, dass die Überschrift "Überschriften-Struktur", im Gegensatz zu den beiden folgenden
-    Überschriften von TalkBack nur als "Überschrift Überschriften-Struktur" angekündigt wurde. Dies ist keine
+    Bei Überschriften gibt es einen Unterschied zwischen nativen Anwendungen und hybriden Anwendungen mit eingebettetem HTML-Inhalt. Während es in HTML sechs Überschriftsebenen h1 bis h6 gibt, gibt es bei nativen Apps keine Überschriftenebenen.
+</p>
+<h2>Ausgabe von TalkBack</h2>
+<h3>Native Apps</h3>
+<p>
+    Sie haben vielleicht schon bemerkt, dass z. B. die Überschrift "Alternativtexte", im Gegensatz zu der
+    Überschrift "Überschriften-Struktur" nur als "Überschrift Alternativtexte" angekündigt wurde. Dies ist keine
     Verdoppelung des Wortes "Überschrift" durch den Screenreader, sondern ein Text, der auf nicht-visueller Ebene als
-    Überschrift formatiert wurde.</p>
-<h2>HTML Inhalt</h2>
+    Überschrift formatiert wurde.
+</p>
+<h3>HTML Inhalt</h3>
 <p>
-    Bei HTML-Dokumenten sagt TalkBack zum Beispiel "HTML-Inhalt Überschrift 2". Da es sich um eine Überschrift der zweiten Überschriften-Ebene (h2) handelt. Egal, ob ein HTML-Dokument in einem Browser aufgerufen oder in eine App integriert wird, TalkBack sagt die Überschriften immer auf die gleiche Weise an.
+    Bei HTML-Dokumenten sagt TalkBack zum Beispiel "HTML-Inhalt Überschrift 3". Da es sich um eine Überschrift der dritten Überschriften-Ebene (h3) handelt. Egal, ob ein HTML-Dokument in einem Browser aufgerufen oder in eine App integriert wird, TalkBack sagt die Überschriften immer auf die gleiche Weise an.
 </p>
 </body>
 </html>

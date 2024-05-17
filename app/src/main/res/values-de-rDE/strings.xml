@@ -17,14 +17,12 @@
     <string name="navigation_drawer_open">Navigation öffnen</string>
 
     <string name="nav_header_desc">Navigation Kopfzeilen</string>
-    <string name="headings_structure">Überschriften-Struktur</string>
     <string name="alternative_texts">Alternativtexte</string>
     <string name="no_alt_text">Fehlender Alternativtext</string>
     <string name="decorative_graphics">Dekorative Grafiken</string>
     <string name="informative_graphic">Informative Grafik</string>
     <string name="no_alt_description">In diesem Beispiel wurde der Alternativtext absichtlich weggelassen. In der Praxis kommt es sehr oft vor, dass der Alternativtext versehentlich weggelassen wird.</string>
     <string name="deco_graphic_description">"Diese Grafik ist rein dekorativ, und der Alternativtext wurde leer gelassen, damit TalkBack die Grafik ignoriert und kein unnötigen Text ausgibt.  "</string>
-    <string name="heading_description">"Bei Überschriften gibt es einen Unterschied zwischen nativen Anwendungen und hybriden Anwendungen mit eingebettetem HTML-Inhalt. Während es in HTML sechs Überschriftsebenen h1 bis h6 gibt, gibt es bei nativen Apps keine Überschriftenebenen. "</string>
     <string name="contrast_description">"Dem Kontrastverhältnis wird bei der Entwicklung mobiler Apps oft nicht genügend Aufmerksamkeit geschenkt. Gerade bei der mobilen Nutzung ist ein gutes Kontrastverhältnis jedoch für alle Nutzenden wichtig, z.B. bei der Nutzung mobiler Geräte im Freien bei Sonnenschein. Nachfolgend finden Sie einige Beispiele für gute und schlechte Kontrastverhältnisse. "</string>
     <string name="passed">Bestanden mit 21.0:1, HEX: #ffffff auf #000000.</string>
     <string name="just_passed">Gerade noch bestanden mit 4,5:1, HEX: #00e9ff auf #5a4dad</string>
