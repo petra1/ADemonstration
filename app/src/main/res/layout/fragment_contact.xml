@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="15dp"
-
     android:background="?colorSecondary"
     tools:context=".contact.ContactFragment">
 
@@ -18,11 +17,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingBottom="30dp">
+
 
                 <TextView
                     android:layout_width="match_parent"
@@ -34,7 +29,7 @@
                     android:gravity="center_horizontal"
                     android:text="@string/privacy"
                     android:textColor="?colorOnPrimary"
-                    android:textSize="20sp"
+                    android:textSize="24sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -59,19 +54,13 @@
                     android:fontFamily="sans-serif-medium"
                     android:text="@string/privacy_text2"
                     android:textColor="?colorOnPrimary"
-                    android:textSize="16sp"
+                    android:textSize="16sp" />
 
-                    />
-
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingBottom="30dp">
-
-
+                android:orientation="vertical">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -82,132 +71,96 @@
                     android:text="@string/contact_information"
                     android:textColor="?colorOnPrimary"
                     android:textSize="24sp" />
-
-
-                <LinearLayout
-
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="30dp"
-                    android:layout_marginBottom="30dp"
-                    android:orientation="horizontal">
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/contact_name"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="20sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="30dp"
-                        android:fontFamily="sans-serif-medium"
-                        android:text="@string/contact_name"
-                        android:textColor="?colorOnPrimary"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="30dp"
-                        android:fontFamily="sans-serif-medium"
-                        android:text="@string/petra_ritter"
-                        android:textColor="?colorOnPrimary"
-                        android:textSize="20sp" />
-
-                </LinearLayout>
-
-
-                <LinearLayout
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:fontFamily="sans-serif-medium"
-                        android:text="@string/email"
-                        android:textColor="?colorOnPrimary"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:autoLink="email"
-                        android:fontFamily="sans-serif-medium"
-                        android:minWidth="48dp"
-                        android:minHeight="48dp"
-                        android:text="@string/mail_address"
-                        android:textColorLink="?colorPrimary"
-                        android:textSize="20sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/petra_ritter"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="20sp" />
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:orientation="horizontal">
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/email"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="20sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:fontFamily="sans-serif-medium"
-                        android:text="@string/website"
-                        android:textColor="?colorOnPrimary"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:autoLink="web"
-                        android:fontFamily="sans-serif-medium"
-                        android:minWidth="48dp"
-                        android:minHeight="48dp"
-                        android:text="@string/website_url"
-                        android:textColorLink="?colorPrimary"
-                        android:textSize="20sp" />
-
-                </LinearLayout>
-
-
-                <LinearLayout
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:orientation="horizontal">
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:autoLink="email"
+                    android:fontFamily="sans-serif-medium"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:text="@string/mail_address"
+                    android:textColorLink="?colorPrimary"
+                    android:textSize="20sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:fontFamily="sans-serif-medium"
-                        android:text="@string/github"
-                        android:textColor="?colorOnPrimary"
-                        android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/website"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="20sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:autoLink="web"
-                        android:fontFamily="sans-serif-medium"
-                        android:minWidth="48dp"
-                        android:minHeight="48dp"
-                        android:text="@string/github_url"
-                        android:textColorLink="?colorPrimary"
-                        android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:autoLink="web"
+                    android:fontFamily="sans-serif-medium"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:text="@string/website_url"
+                    android:textColorLink="?colorPrimary"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/github"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="20sp" />
 
-                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:autoLink="web"
+                    android:fontFamily="sans-serif-medium"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:text="@string/github_url"
+                    android:textColorLink="?colorPrimary"
+                    android:textSize="20sp" />
             </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

@@ -3,6 +3,10 @@ package ch.ritter1.apps.ademonstration.usage;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
+import android.os.Handler;
+import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +16,7 @@ import ch.ritter1.apps.ademonstration.R;
 
 
 public class UsageFragment extends Fragment {
+    private SwipeRefreshLayout swipeLayout;
 
     public UsageFragment() {
         // Required empty public constructor
@@ -28,6 +33,7 @@ public class UsageFragment extends Fragment {
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_usage, container, false);
         WebView webView = v.findViewById (R.id.webView2);
+        swipeLayout = v.findViewById(R.id.swipeRefreshLayout);
         v.setHorizontalScrollBarEnabled(true);
         v.setHorizontalScrollBarEnabled(true);
 
@@ -41,8 +47,16 @@ public class UsageFragment extends Fragment {
                 break;
         }
 
+        swipeLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                swipeLayout.setRefreshing(false);
+            }
+        });
 
-      
+
+
+
 
 
 

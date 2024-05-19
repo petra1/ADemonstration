@@ -52,7 +52,7 @@
     <string name="when_was_the_current_version_of_wcag_released">When was the current version of WCAG released?</string>
     <string name="image_buttons">Image Buttons</string>
     <string name="Description1_imageButton">This example shows how TalkBack behaves with graphic buttons that lack alternative text, and at the same time shows how the buttons can be made more usable for people with limited fine motor skills.</string>
-    <string name="Description2_imageButton">In the first graphical button, the alternative text was intentionally omitted and the target was not adjusted. The second graphic button, on the other hand, has been labelled correctly and the touch target has been adjusted to 48dp so that the button is displayed larger and is therefore easier to use.</string>
+    <string name="Description2_imageButton">In the first graphical button, the alternative text was intentionally omitted and the target was not adjusted. The second graphic button, on the other hand, has been labelled correctly and the touch target has been adjusted  so that the button is displayed larger and is therefore easier to use.</string>
     <string name="question1_imageButton">Question #1: What is the current version of WCAG?</string>
     <string name="question2_imageButton">Question #2: When was the current version of WCAG released?</string>
     <string name="contentDescription_imageButton">Get the answer to the second question.</string>
@@ -73,7 +73,7 @@
     <string name="graphics">Graphics</string>
     <string name="headings">Headings</string>
     <string name="tab_order">Focus Order</string>
-    <string name="contact">Contact &amp; Privacy</string>
+    <string name="contact">Privacy &amp; Contact</string>
     <string name="description1_tab_order">People with limited fine motor skills may not be able to operate a touch screen. It is therefore important that an app can also be operated with a keyboard connected via Bluetooth and that the focus order of the operating elements is correct.</string>
     <string name="description2_tab_order">In the first example, the focus order was intentionally ignored, but in the second example, the focus order is correct</string>
     <string name="contentDescription_passed">Passed with 21.0:1, HEX: # f f f f f f on #000000.</string>
@@ -104,14 +104,14 @@
     <string name="focus_visible">Focus Visible</string>
     <string name="description2_focus_visible">In this example, the visibility of the keyboard focus was intentionally ignored for some button. Try using a Bluetooth keyboard paired with the mobile device and try to find and activate button 3 without counting how many times you press the Tab key.</string>
     <string name="description1_focus_visible">People with motor disabilities may have difficulty or be unable to operate a touch screen and therefore use a Bluetooth keyboard. This requires, among other things, that the keyboard focus is sufficiently visible.</string>
-    <string name="btn_1">You pressed button # 1</string>
-    <string name="btn_2">You pressed button # 2</string>
-    <string name="btn_3">You pressed button # 3</string>
-    <string name="btn_4">You pressed button # 4</string>
-    <string name="btn_5">You pressed button # 5</string>
-    <string name="btn_6">You pressed button # 6</string>
-    <string name="btn_7">You pressed button # 7</string>
-    <string name="btn_8">You pressed button # 8</string>
+    <string name="btn_1">You pressed button number 1</string>
+    <string name="btn_2">You pressed button number 2</string>
+    <string name="btn_3">You pressed button number 3</string>
+    <string name="btn_4">You pressed button number 4</string>
+    <string name="btn_5">You pressed button number 5</string>
+    <string name="btn_6">You pressed button number 6</string>
+    <string name="btn_7">You pressed button number 7</string>
+    <string name="btn_8">You pressed button number 8</string>
     <string name="focus_visible_btn_1" translatable="false">1</string>
     <string name="focus_visible_btn_2" translatable="false">2</string>
     <string name="focus_visible_btn_3" translatable="false">3</string>

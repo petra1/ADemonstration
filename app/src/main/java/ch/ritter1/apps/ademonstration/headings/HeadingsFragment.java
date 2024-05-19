@@ -4,6 +4,7 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +16,7 @@ import ch.ritter1.apps.ademonstration.R;
 
 public class HeadingsFragment extends Fragment {
 
+    private SwipeRefreshLayout swipeLayout;
 
     public HeadingsFragment() {
         // Required empty public constructor
@@ -29,27 +31,30 @@ public class HeadingsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate (R.layout.fragment_headings, container, false);
-        WebView webView = v.findViewById (R.id.webView);
+        View v = inflater.inflate(R.layout.fragment_headings, container, false);
+        WebView webView = v.findViewById(R.id.webView);
+        swipeLayout = v.findViewById(R.id.swipeRefreshLayout);
         v.setVerticalScrollBarEnabled(true);
         v.setHorizontalScrollBarEnabled(true);
 
         switch (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK) {
             case Configuration.UI_MODE_NIGHT_YES:
-                webView.loadUrl ("file:///android_asset/" +  getString (R.string.dark_mode_heading__html));
+                webView.loadUrl("file:///android_asset/" + getString(R.string.dark_mode_heading__html));
                 break;
-            case  Configuration.UI_MODE_NIGHT_NO:
-                webView.loadUrl ("file:///android_asset/" + getString (R.string.heading__html));
+            case Configuration.UI_MODE_NIGHT_NO:
+                webView.loadUrl("file:///android_asset/" + getString(R.string.heading__html));
                 break;
         }
 
-
-
-
-
-
+        swipeLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                swipeLayout.setRefreshing(false);
+            }
+        });
 
 
         return v;
 
-    }}
+    }
+}
