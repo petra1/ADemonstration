@@ -103,6 +103,7 @@
                     android:textSize="20sp" />
 
                 <TextView
+                    android:id="@+id/textView_mail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -127,6 +128,7 @@
                     android:textSize="20sp" />
 
                 <TextView
+                    android:id="@+id/textView_website_url"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -150,6 +152,7 @@
                     android:textSize="20sp" />
 
                 <TextView
+                    android:id="@+id/textView_GitHup_url"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"

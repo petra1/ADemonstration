@@ -31,7 +31,7 @@
     <string name="contact_information">Contact information</string>
     <string name="petra_ritter" translatable="false">Petra Ritter</string>
     <string name="email" translatable="false">E-mail:</string>
-    <string name="mail_address" translatable="false">ritter1.apps@gmail.com</string>
+    <string name="mail_address" translatable="false"><a href="mailto:ritter1.apps@gmail.com">ritter1.apps@gmail.com</a></string>
     <string name="logo">Logo of A Demonstration</string>
 
 
@@ -92,7 +92,9 @@
     <string name="alert_message">Please enter a first or last name and click on the corresponding send button.</string>
     <string name="alert_button">OK</string>
     <string name="github" translatable="false">GitHub:</string>
-    <string name="github_url" translatable="false">https://github.com/petra1/ADemonstration/tree/Lokalisation_de</string>
+    <string name="github_url" translatable="false"><a href="https://github.com/petra1/ADemonstration/tree/Lokalisation_de">https://github.com/petra1/ADemonstration/tree/Lokalisation_de</a></string>
+
+
 
     <string name="language_of_parts">Language of Parts</string>
     <string name="description_language">The following demonstrates how TalkBack behaves in relation to foreign-language text where the language declaration has been set correctly.</string>
@@ -121,7 +123,7 @@
     <string name="focus_visible_btn_7" translatable="false">7</string>
     <string name="focus_visible_btn_8" translatable="false">8</string>
     <string name="website">Website:</string>
-    <string name="website_url" translatable="false">"https://sites.google.com/view/ritter-apps/project"</string>
+    <string name="website_url" translatable="false"><a href="https://sites.google.com/view/ritter-apps/project">https://sites.google.com/view/ritter-apps/project</a></string>
 
 
 </resources>
