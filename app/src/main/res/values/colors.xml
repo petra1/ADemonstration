@@ -8,8 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="green">#006400</color>
-    <color name="highlight">#008900</color>
-    <color name="light_green">#00A200</color>
+    <color name="highlight">#009900</color>
+    <color name="light_green">#00B900</color>
     <color name="just_past_foreground">#00e9ff</color>
     <color name="just_past_background">#5a4dad</color>
     <color name="just_fault_background">#0083a1</color>

@@ -95,7 +95,6 @@
     <string name="github_url" translatable="false"><a href="https://github.com/petra1/ADemonstration/tree/Lokalisation_de">https://github.com/petra1/ADemonstration/tree/Lokalisation_de</a></string>
 
 
-
     <string name="language_of_parts">Language of Parts</string>
     <string name="description_language">The following demonstrates how TalkBack behaves in relation to foreign-language text where the language declaration has been set correctly.</string>
     <string name="heading_incorrect_implementation">Incorrect Implementation</string>
@@ -112,18 +111,18 @@
     <string name="btn_4">You pressed button number 4</string>
     <string name="btn_5">You pressed button number 5</string>
     <string name="btn_6">You pressed button number 6</string>
-    <string name="btn_7">You pressed button number 7</string>
-    <string name="btn_8">You pressed button number 8</string>
     <string name="focus_visible_btn_1" translatable="false">1</string>
     <string name="focus_visible_btn_2" translatable="false">2</string>
     <string name="focus_visible_btn_3" translatable="false">3</string>
     <string name="focus_visible_btn_4" translatable="false">4</string>
     <string name="focus_visible_btn_5" translatable="false">5</string>
     <string name="focus_visible_btn_6" translatable="false">6</string>
-    <string name="focus_visible_btn_7" translatable="false">7</string>
-    <string name="focus_visible_btn_8" translatable="false">8</string>
     <string name="website">Website:</string>
     <string name="website_url" translatable="false"><a href="https://sites.google.com/view/ritter-apps/project">https://sites.google.com/view/ritter-apps/project</a></string>
+    <string name="about_the_app">About the app</string>
+    <string name="app_name_heading">App name</string>
+    <string name="app_version">App version</string>
+    <string name="build_number">Build number</string>
 
 
 </resources>

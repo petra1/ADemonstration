@@ -61,6 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
                 android:orientation="horizontal">
 
                 <androidx.appcompat.widget.AppCompatButton
@@ -93,24 +94,24 @@
                     android:layout_marginEnd="4dp"
                     android:text="@string/focus_visible_btn_3" />
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/bt_4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@color/green"
-                    android:textColor="@color/white"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="@string/focus_visible_btn_4" />
-
-
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginBottom="20dp"
                 android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_selector"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/focus_visible_btn_4"/>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/bt_5"
@@ -120,7 +121,7 @@
                     android:textColor="@color/white"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="4dp"
-                    android:text="@string/focus_visible_btn_5" />
+                    android:text="@string/focus_visible_btn_5"/>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/bt_6"
@@ -130,33 +131,8 @@
                     android:textColor="@color/white"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="4dp"
-                    android:text="@string/focus_visible_btn_6" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/bt_7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/button_selector"
-                    android:textColor="@color/white"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="4dp"
-                    android:text="@string/focus_visible_btn_7" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/bt_8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/button_selector"
-                    android:textColor="@color/white"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="@string/focus_visible_btn_8" />
-
-
+                    android:text="@string/focus_visible_btn_6"/>
             </LinearLayout>
-
-
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
-
 </FrameLayout>

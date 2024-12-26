@@ -14,7 +14,7 @@ import ch.ritter1.apps.ademonstration.R;
 
 public class FocusVisibleFragment extends Fragment implements View.OnClickListener{
     View v;
-    Button bt_1,  bt_2,  bt_3,  bt_4,  bt_5,  bt_6,  bt_7,  bt_8;
+    Button bt_1,  bt_2,  bt_3,  bt_4,  bt_5,  bt_6;
 
     public FocusVisibleFragment() {
         // Required empty public constructor
@@ -38,8 +38,7 @@ public class FocusVisibleFragment extends Fragment implements View.OnClickListen
         bt_4 = v.findViewById(R.id.bt_4);
         bt_5 = v.findViewById(R.id.bt_5);
         bt_6 = v.findViewById(R.id.bt_6);
-        bt_7 = v.findViewById(R.id.bt_7);
-        bt_8 = v.findViewById(R.id.bt_8);
+
 
         bt_1.setOnClickListener(this);
         bt_2.setOnClickListener(this);
@@ -47,8 +46,7 @@ public class FocusVisibleFragment extends Fragment implements View.OnClickListen
         bt_4.setOnClickListener(this);
         bt_5.setOnClickListener(this);
         bt_6.setOnClickListener(this);
-        bt_7.setOnClickListener(this);
-        bt_8.setOnClickListener(this);
+
 
         return v;
     }
@@ -73,12 +71,6 @@ public class FocusVisibleFragment extends Fragment implements View.OnClickListen
                 break;
             case R.id.bt_6:
                 Toast.makeText(getActivity(), R.string.btn_6, Toast.LENGTH_LONG ).show();
-                break;
-            case R.id.bt_7:
-                Toast.makeText(getActivity(), R.string.btn_7, Toast.LENGTH_LONG ).show();
-                break;
-            case R.id.bt_8:
-                Toast.makeText(getActivity(), R.string.btn_8 , Toast.LENGTH_LONG ).show();
                 break;
 
         }

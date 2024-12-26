@@ -87,9 +87,12 @@
     <string name="btn_4">Sie drückten Schalter Nummer 4</string>
     <string name="btn_5">Sie drückten Schalter Nummer 5</string>
     <string name="btn_6">Sie drückten Schalter Nummer 6</string>
-    <string name="btn_7">Sie drückten Schalter Nummer 7</string>
-    <string name="btn_8">Sie drückten Schalter Nummer 8</string>
+
     <string name="website">Webseite:</string>
+    <string name="about_the_app">Über die App</string>
+    <string name="app_name_heading">App-Name</string>
+    <string name="app_version">App-Version</string>
+    <string name="build_number">Build-Nummer</string>
 
 
 </resources>

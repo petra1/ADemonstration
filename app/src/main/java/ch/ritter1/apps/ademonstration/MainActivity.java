@@ -12,7 +12,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import ch.ritter1.apps.ademonstration.databinding.ActivityMainBinding;
 
+/**
+ * update AGP to 8.5.2 on 14.8.2024
+ *
+ */
+
 public class MainActivity extends AppCompatActivity {
+
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
@@ -33,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_contact, R.id.nav_headings, R.id.nav_graphics, R.id.nav_contrast, R.id.nav_edit, R.id.nav_image_button, R.id.nav_tab, R.id.nav_usage, R.id.nav_language, R.id.nav_focus_visible)
+                R.id.nav_home, R.id.nav_contact, R.id.nav_headings, R.id.nav_graphics, R.id.nav_contrast, R.id.nav_edit, R.id.nav_image_button, R.id.nav_tab, R.id.nav_usage, R.id.nav_language, R.id.nav_focus_visible, R.id.nav_about)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
@@ -48,3 +54,4 @@ public class MainActivity extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 }
+

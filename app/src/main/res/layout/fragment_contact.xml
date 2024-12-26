@@ -140,30 +140,7 @@
                     android:text="@string/website_url"
                     android:textColorLink="?colorPrimary"
                     android:textSize="20sp" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="20dp"
-                    android:textStyle="bold"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="@string/github"
-                    android:textColor="?colorOnPrimary"
-                    android:textSize="20sp" />
 
-                <TextView
-                    android:id="@+id/textView_GitHup_url"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="5dp"
-                    android:autoLink="web"
-                    android:fontFamily="sans-serif-medium"
-                    android:minWidth="48dp"
-                    android:minHeight="48dp"
-                    android:text="@string/github_url"
-                    android:textColorLink="?colorPrimary"
-                    android:textSize="20sp" />
             </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
