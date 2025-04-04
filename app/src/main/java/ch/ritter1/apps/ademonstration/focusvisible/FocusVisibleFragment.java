@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import ch.ritter1.apps.ademonstration.R;
 
 
-public class FocusVisibleFragment extends Fragment implements View.OnClickListener{
+public class  FocusVisibleFragment extends Fragment implements View.OnClickListener{
     View v;
     Button bt_1,  bt_2,  bt_3,  bt_4,  bt_5,  bt_6;
 

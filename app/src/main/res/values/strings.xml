@@ -46,10 +46,9 @@
     <string name="full_name_text">Press the button below to display the full name.</string>
 
     <!--Image Buttons-->
-    <string name="version_of_wcag">The current version of WCAG is 2.2.</string>
-    <string name="released_wcag">The current version was released in October 2023.</string>
-    <string name="what_is_the_current_version_of_wcag">What is the current version of WCAG?</string>
-    <string name="when_was_the_current_version_of_wcag_released">When was the current version of WCAG released?</string>
+    <string name="version_of_wcag"> Answer #1 The current version of WCAG is 2.2.</string>
+    <string name="released_wcag">Answer #2  The current version was released in October 2023.</string>
+
     <string name="image_buttons">Image Buttons</string>
     <string name="Description1_imageButton">This example shows how TalkBack behaves with graphic buttons that lack alternative text, and at the same time shows how the buttons can be made more usable for people with limited fine motor skills.</string>
     <string name="Description2_imageButton">In the first graphical button, the alternative text was intentionally omitted and the target was not adjusted. The second graphic button, on the other hand, has been labelled correctly and the touch target has been adjusted  so that the button is displayed larger and is therefore easier to use.</string>
@@ -101,7 +100,6 @@
     <string name="heading_correct_example">Correct Implementation</string>
     <string name="incorrect_example" translatable="false">El objetivo de este criterio de éxito es garantizar que los agentes de usuario puedan presentar correctamente contenidos escritos en varios idiomas.</string>
 
-    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="focus_visible">Focus Visible</string>
     <string name="description2_focus_visible">In this example, the visibility of the keyboard focus was intentionally ignored for some button. Try using a Bluetooth keyboard paired with the mobile device and try to find and activate button 3 without counting how many times you press the Tab key.</string>
     <string name="description1_focus_visible">People with motor disabilities may have difficulty or be unable to operate a touch screen and therefore use a Bluetooth keyboard. This requires, among other things, that the keyboard focus is sufficiently visible.</string>

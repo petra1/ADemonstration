@@ -1,7 +1,8 @@
 package ch.ritter1.apps.ademonstration;
 
 import android.os.Bundle;
-import com.google.android.material.navigation.NavigationView;
+
+import  com.google.android.material.navigation.NavigationView;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;

@@ -70,12 +70,12 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:background="@color/just_past_background"
-                    android:contentDescription="@string/contentDescription_just_failed"
+                    android:background="@color/fault_background"
+                    android:contentDescription="@string/contentDescription_failed"
                     android:paddingStart="10dp"
                     android:paddingEnd="1dp"
-                    android:text="@string/just_passed"
-                    android:textColor="@color/just_past_foreground" />
+                    android:text="@string/failed"
+                    android:textColor="@color/white" />
 
             </LinearLayout>
 
@@ -93,12 +93,12 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:background="@color/fault_background"
-                    android:contentDescription="@string/contentDescription_failed"
+                    android:background="@color/just_past_background"
+                    android:contentDescription="@string/contentDescription_just_failed"
                     android:paddingStart="10dp"
                     android:paddingEnd="1dp"
-                    android:text="@string/failed"
-                    android:textColor="@color/white" />
+                    android:text="@string/just_passed"
+                    android:textColor="@color/just_past_foreground" />
 
                 <TextView
                     android:id="@+id/textView6"
@@ -130,11 +130,11 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="20dp"
                     android:layout_weight="1"
-                    android:background="@color/purple_200"
-                    android:contentDescription="@string/contentDescription_failed_with"
+                    android:background="@color/green"
+                    android:contentDescription="@string/contentDescription_passed_with"
                     android:paddingStart="10dp"
                     android:paddingEnd="1dp"
-                    android:text="@string/failed_with"
+                    android:text="@string/passed_with"
                     android:textColor="@color/white" />
 
                 <TextView
@@ -145,11 +145,11 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="20dp"
                     android:layout_weight="1"
-                    android:background="@color/green"
-                    android:contentDescription="@string/contentDescription_passed_with"
+                    android:background="@color/purple_200"
+                    android:contentDescription="@string/contentDescription_failed_with"
                     android:paddingStart="10dp"
                     android:paddingEnd="1dp"
-                    android:text="@string/passed_with"
+                    android:text="@string/failed_with"
                     android:textColor="@color/white" />
             </LinearLayout>
 

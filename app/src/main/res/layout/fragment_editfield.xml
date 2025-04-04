@@ -83,7 +83,9 @@
                     android:layout_weight="1"
                     android:autofillHints="cc-given-name"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"/>
 
 
             </LinearLayout>

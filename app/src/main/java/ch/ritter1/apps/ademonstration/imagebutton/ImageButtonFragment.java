@@ -67,8 +67,8 @@ public class ImageButtonFragment extends Fragment {
         question2.setText(getString(R.string.released_wcag));
     }
     private void resetQuestions() {
-        question1.setText(getString(R.string.what_is_the_current_version_of_wcag));
-        question2.setText(getString(R.string.when_was_the_current_version_of_wcag_released));
+        question1.setText(getString(R.string.question1_imageButton));
+        question2.setText(getString(R.string.question2_imageButton));
 
     }
 
