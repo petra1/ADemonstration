@@ -1,12 +1,9 @@
 package ch.ritter1.apps.ademonstration.ui.home;
-
-import android.content.Intent;
-
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import ch.ritter1.apps.ademonstration.usage.UsageFragment;
+
 
 public class HomeViewModel extends ViewModel {
 

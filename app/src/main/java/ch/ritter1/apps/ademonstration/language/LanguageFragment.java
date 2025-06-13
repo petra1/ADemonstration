@@ -1,9 +1,7 @@
 package ch.ritter1.apps.ademonstration.language;
 
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.LocaleSpan;
@@ -11,9 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import java.util.Locale;
-
 import ch.ritter1.apps.ademonstration.R;
 
 

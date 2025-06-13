@@ -46,7 +46,7 @@ public class AboutFragment extends Fragment {
 
 
         appName.setText(getResources().getString(R.string.app_name));
-        versionName.setText(String.valueOf(BuildConfig.VERSION_NAME));
+        versionName.setText(BuildConfig.VERSION_NAME);
         versionCode.setText(String.valueOf(BuildConfig.VERSION_CODE));
         gitHubUrl.setMovementMethod(LinkMovementMethod.getInstance());
         return v;

@@ -2,15 +2,12 @@ package ch.ritter1.apps.ademonstration.headings;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
-
 import ch.ritter1.apps.ademonstration.R;
 
 
@@ -46,12 +43,7 @@ public class HeadingsFragment extends Fragment {
                 break;
         }
 
-        swipeLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                swipeLayout.setRefreshing(false);
-            }
-        });
+        swipeLayout.setOnRefreshListener(() -> swipeLayout.setRefreshing(false));
 
 
         return v;
