@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:background="?colorSecondary"
+    tools:context=".checkboxes.CheckboxesFragment">
+
+   <androidx.core.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:fillViewport="true">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginTop="30dp"
+               android:accessibilityHeading="true"
+               android:fontFamily="sans-serif-black"
+               android:gravity="center_horizontal"
+               android:text="@string/checkboxes"
+               android:textColor="?colorOnPrimary"
+               android:textSize="24sp"
+               android:textStyle="bold" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="30dp"
+               android:layout_marginEnd="10dp"
+               android:fontFamily="sans-serif-medium"
+               android:text="@string/Description1_checkboxes"
+               android:textColor="?colorOnPrimary"
+               android:textSize="16sp" />
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="30dp"
+               android:layout_marginEnd="10dp"
+               android:fontFamily="sans-serif-medium"
+               android:text="@string/description2_checkboxes"
+               android:textColor="?colorOnPrimary"
+               android:textSize="16sp" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="start"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="30dp"
+               android:layout_marginEnd="10dp"
+               android:fontFamily="sans-serif-medium"
+               android:text="@string/checkboxes_question1"
+               android:textColor="?colorOnPrimary"
+               android:textSize="16sp" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+
+               <CheckBox
+                   android:id="@+id/checkBox1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginEnd="10dp"
+                   android:text="@string/checkbox_question_yes"
+                   android:buttonTint="@color/green"/>
+
+               <CheckBox
+                   android:id="@+id/checkBox2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/checkbox_question_no"
+                   android:buttonTint="@color/green"/>
+
+
+           </LinearLayout>
+
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="start"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="30dp"
+               android:layout_marginEnd="10dp"
+               android:fontFamily="sans-serif-medium"
+               android:text="@string/checkboxes_question2"
+               android:textColor="?colorOnPrimary"
+               android:textSize="16sp" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+
+               <CheckBox
+                   android:id="@+id/checkBox3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginEnd="10dp"
+                   android:text="@string/checkbox_question_yes"
+                   android:contentDescription="@string/contentDescription_checkbox_questen2_yes"
+                   android:buttonTint="@color/green"
+                   />
+
+               <CheckBox
+                   android:id="@+id/checkBox4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/checkbox_question_no"
+                   android:contentDescription="@string/contentDescription_checkbox_questen2_no"
+                   android:buttonTint="@color/green"
+                   />
+           </LinearLayout>
+
+
+       </LinearLayout>
+   </androidx.core.widget.NestedScrollView>
+</FrameLayout>

@@ -93,5 +93,18 @@
     <string name="app_version">App-Version</string>
     <string name="build_number">Build-Nummer</string>
 
+    <string name="checkboxes">Kontrollkästchen</string>
+    <string name="Description1_checkboxes">Dieses Beispiel zeigt, wie sich TalkBack bei Kontrollkästchen verhält, die nicht richtig implementiert wurden.</string>
+    <string name="description2_checkboxes">Das erste Kontrollkästchen wurde ohne Berücksichtigung der Accessibility implementiert. Bei der zweiten würde darauf geachtet.</string>
+    <string name="checkboxes_question1">Frage 1: Können Sie programmieren?</string>
+    <string name="checkboxes_question2">Frage 2:  Haben Sie vor programmieren zu lernen?\t</string>
+    <string name="checkbox_question_yes">Ja</string>
+    <string name="checkbox_question_no">Nein</string>
+    <string name="contentDescription_checkbox_questen2_yes">Ja, ich habe vor programmieren zu lernen.</string>
+    <string name="contentDescription_checkbox_questen2_no">Nein, ich habe nicht vor programmieren zu lernen.</string>
+    <string name="message_checkbox_question1_yes">Sehr gut. Fleissig weiter leren!</string>
+    <string name="message_checkbox_question1_no">Auch gut. Es gibt auch noch andere Dinger, die man tuen ckann.</string>
+    <string name="message_checkbox_question2_yes">Gut, Programmieren ist ein spannendes Hobby.</string>
+    <string name="message_checkbox_question2_no">Vielleicht interessieren Sie sich später einmal für das Programmieren.</string>
 
 </resources>

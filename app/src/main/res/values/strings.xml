@@ -122,5 +122,19 @@
     <string name="app_version">App version</string>
     <string name="build_number">Build number</string>
 
+    <string name="checkboxes">Checkboxes</string>
+    <string name="Description1_checkboxes">This example shows how TalkBack behaves if checkboxes have not been implemented correctly.</string>
+    <string name="description2_checkboxes">The first checkbox was implemented without taking accessibility into account. This would be taken into account for the second.</string>
+    <string name="checkboxes_question1">Question 1: Do you know how to programme?</string>
+    <string name="checkboxes_question2">Question 2: Do you plan to learn programming?</string>
+    <string name="checkbox_question_yes">Yes</string>
+    <string name="checkbox_question_no">No</string>
+    <string name="contentDescription_checkbox_questen2_yes">Yes, I am planning to learn programming.</string>
+    <string name="contentDescription_checkbox_questen2_no">No, I\'m not planning to learn programming.</string>
+    <string name="message_checkbox_question1_yes">Very good. Keep on learning!</string>
+    <string name="message_checkbox_question1_no">Also good. There are also other things you can do.</string>
+    <string name="message_checkbox_question2_yes">Good, programming is an exciting hobby</string>
+    <string name="message_checkbox_question2_no">Perhaps you will be interested in programming later on.</string>
+
 
 </resources>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:showIn="navigation_view">
 
 
@@ -27,6 +26,10 @@
         android:id="@+id/nav_edit"
         android:icon="@drawable/ic_baseline_edit_24"
         android:title="@string/edit_fields" />
+    <item
+        android:id="@+id/nav_checkboxes"
+        android:icon="@drawable/outline_check_24"
+        android:title="@string/checkboxes" />
     <item
         android:id="@+id/nav_contrast"
         android:icon="@drawable/ic_baseline_contrast_24"
