@@ -52,11 +52,6 @@
         android:label=""
         tools:layout="@layout/fragment_usage" />
     <fragment
-        android:id="@+id/nav_language"
-        android:name="ch.ritter1.apps.ademonstration.language.LanguageFragment"
-        android:label=""
-        tools:layout="@layout/fragment_language" />
-    <fragment
         android:id="@+id/nav_focus_visible"
         android:name="ch.ritter1.apps.ademonstration.focusvisible.FocusVisibleFragment"
         android:label=""

@@ -73,10 +73,6 @@
     <string name="alert_button">OK</string>
 
 
-    <string name="language_of_parts">Sprache von Teilen</string>
-    <string name="description_language">Im Folgenden wird gezeigt, wie sich TalkBack bei fremdsprachigem Text verhält, wenn die Sprachdeklaration korrekt gesetzt wurde.</string>
-    <string name="heading_incorrect_implementation">Inkorrekt Implementation</string>
-    <string name="heading_correct_example">Korrekte  Implementation</string>
     <string name="focus_visible">Fokus Sichtbar</string>
     <string name="description2_focus_visible">In diesem Beispiel wurde die Sichtbarkeit des Tastaturfokus für einige Schalter absichtlich ignoriert. Verwenden Sie, einer mit dem mobilen Gerät gekoppelte Bluetooth-Tastatur und versuchen, die Taste 3 zu finden und zu aktivieren, ohne zu zählen, wie oft Sie die Tab-Taste drücken.</string>
     <string name="description1_focus_visible">"Motorischbehinderte Menschen haben möglicherweise Mühe oder sind nicht in der Lage einen Touch-Screen zu bedienen und verwenden daher eine Bluetooth-Tastatur. Dies setz unter anderem voraus, dass der Tastaturfokus genügend sichtbar ist. "</string>

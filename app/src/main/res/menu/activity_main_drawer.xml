@@ -44,10 +44,7 @@
         android:icon="@drawable/baseline_visibility_24"
         android:title="@string/focus_visible" />
 
-    <item
-        android:id="@+id/nav_language"
-        android:icon="@drawable/ic_language_24"
-        android:title="@string/language_of_parts" />
+
 
     <group
         android:id="@+id/group2"

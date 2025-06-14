@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ch.ritter1.apps.ademonstration.databinding.ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
+        ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
 
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_contact, R.id.nav_headings, R.id.nav_graphics, R.id.nav_contrast, R.id.nav_edit, R.id.nav_image_button, R.id.nav_tab, R.id.nav_usage, R.id.nav_language, R.id.nav_focus_visible, R.id.nav_about, R.id.nav_checkboxes)
+                R.id.nav_home, R.id.nav_contact, R.id.nav_headings, R.id.nav_graphics, R.id.nav_contrast, R.id.nav_edit, R.id.nav_image_button, R.id.nav_tab, R.id.nav_usage, R.id.nav_usage, R.id.nav_focus_visible, R.id.nav_about, R.id.nav_checkboxes)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
