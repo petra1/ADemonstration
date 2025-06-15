@@ -115,7 +115,7 @@
                    android:layout_height="wrap_content"
                    android:layout_marginEnd="10dp"
                    android:text="@string/checkbox_question_yes"
-                   android:contentDescription="@string/contentDescription_checkbox_questen2_yes"
+                   android:contentDescription="@string/contentDescription_checkbox_question2_yes"
                    android:minWidth="48dp"
                    android:minHeight="48dp"
                    android:buttonTint="@color/green"
@@ -126,7 +126,7 @@
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="@string/checkbox_question_no"
-                   android:contentDescription="@string/contentDescription_checkbox_questen2_no"
+                   android:contentDescription="@string/contentDescription_checkbox_question2_no"
                    android:minWidth="48dp"
                    android:minHeight="48dp"
 

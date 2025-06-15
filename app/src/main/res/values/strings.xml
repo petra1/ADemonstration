@@ -123,8 +123,8 @@
     <string name="checkboxes_question2">Question 2: Do you plan to learn programming?</string>
     <string name="checkbox_question_yes">Yes</string>
     <string name="checkbox_question_no">No</string>
-    <string name="contentDescription_checkbox_questen2_yes">Yes, I am planning to learn programming.</string>
-    <string name="contentDescription_checkbox_questen2_no">No, I\'m not planning to learn programming.</string>
+    <string name="contentDescription_checkbox_question2_yes">Yes, I am planning to learn programming.</string>
+    <string name="contentDescription_checkbox_question2_no">No, I\'m not planning to learn programming.</string>
     <string name="message_checkbox_question1_yes">Very good. Keep on learning!</string>
     <string name="message_checkbox_question1_no">Also good. There are also other things you can do.</string>
     <string name="message_checkbox_question2_yes">Good, programming is an exciting hobby</string>
