@@ -91,7 +91,7 @@
 
     <string name="checkboxes">Kontrollkästchen</string>
     <string name="Description1_checkboxes">Dieses Beispiel zeigt, wie sich TalkBack bei Kontrollkästchen verhält, die nicht richtig implementiert wurden.</string>
-    <string name="description2_checkboxes">Das erste Kontrollkästchen wurde ohne Berücksichtigung der Accessibility implementiert. Bei der zweiten würde darauf geachtet.</string>
+    <string name="description2_checkboxes">Die ersten Kontrollkästchen wurden ohne Berücksichtigung der Accessibility implementiert. Bei den zweiten wurde darauf geachtet.</string>
     <string name="checkboxes_question1">Frage 1: Können Sie programmieren?</string>
     <string name="checkboxes_question2">Frage 2:  Haben Sie vor programmieren zu lernen?\t</string>
     <string name="checkbox_question_yes">Ja</string>

@@ -24,8 +24,8 @@ public class CheckboxesFragment extends Fragment implements View.OnClickListener
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_checkboxes, container, false);
 
-        // Initialize CheckBox views
-        // It's good practice to make views private if they are only used within the class
+
+        // Find the CheckBoxes by their IDs
         CheckBox checkBox1 = view.findViewById(R.id.checkBox1);
         CheckBox checkBox2 = view.findViewById(R.id.checkBox2);
         CheckBox checkBox3 = view.findViewById(R.id.checkBox3);

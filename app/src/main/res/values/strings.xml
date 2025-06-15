@@ -118,7 +118,7 @@
 
     <string name="checkboxes">Checkboxes</string>
     <string name="Description1_checkboxes">This example shows how TalkBack behaves if checkboxes have not been implemented correctly.</string>
-    <string name="description2_checkboxes">The first checkbox was implemented without taking accessibility into account. This would be taken into account for the second.</string>
+    <string name="description2_checkboxes">The first checkboxes were implemented without taking accessibility into account. This was taken into account for the second.</string>
     <string name="checkboxes_question1">Question 1: Do you know how to programme?</string>
     <string name="checkboxes_question2">Question 2: Do you plan to learn programming?</string>
     <string name="checkbox_question_yes">Yes</string>
