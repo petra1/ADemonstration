@@ -21,7 +21,7 @@ public class CheckboxesFragment extends Fragment implements View.OnClickListener
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        // Inflate the layout for this fragment petra
         View view = inflater.inflate(R.layout.fragment_checkboxes, container, false);
 
 

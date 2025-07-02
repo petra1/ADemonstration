@@ -129,7 +129,6 @@
                    android:contentDescription="@string/contentDescription_checkbox_question2_no"
                    android:minWidth="48dp"
                    android:minHeight="48dp"
-
                    android:buttonTint="@color/green"
                    />
            </LinearLayout>
