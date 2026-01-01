@@ -11,7 +11,10 @@ import static org.hamcrest.Matchers.not;
 
 import android.view.View;
 
+
+
 import androidx.test.espresso.matcher.BoundedMatcher;
+
 import androidx.test.espresso.matcher.ViewMatchers;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
@@ -85,16 +88,7 @@ public class AccessibilityTest {
 
     }
 
-    @Test
-    public void testHeadingsFragment() {
-        // Open the navigation drawer
-        onView(withId(R.id.drawer_layout)).perform(open());
-
-        // Navigate to the menu item (nav_headings)
-        onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_headings));
-
-        // TODO: Implement accessibility tests for HeadingsFragment
-    }
+    //The HeadingFrame is HTML-based; the corresponding accessibility tests can be found in the HtmlStructureTest.
 
     @Test
     public void testEditFragment() {
@@ -108,8 +102,8 @@ public class AccessibilityTest {
         // Check whether the TextViews with the ID 'text_Title' is an accessibility headings
         onView(withId(R.id.text_Title)).check(matches(isAccessibilityHeading()));
 
-        // WCAG 2.2, 3.3.2 Labels or Instructions
-        // Check that the TextView 'text_lastname' is a label for the EditText 'editText_Last_name'
+        // WCAG 3.3.2 Labels or Instructions
+
         onView(ViewMatchers.withId(R.id.text_Last_name)).check(matches(hasLabelFor(R.id.editText_Last_name)));
     }
 
@@ -168,16 +162,7 @@ public class AccessibilityTest {
         // TODO: Implement accessibility tests for ContactFragment
     }
 
-    @Test
-    public void testUsageFragment() {
-        // Open the navigation drawer
-        onView(withId(R.id.drawer_layout)).perform(open());
-
-        // Navigate to the menu item (nav_usage)
-        onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_usage));
-
-        // TODO: Implement accessibility tests for UsageFragment
-    }
+    //The UsageFrame is HTML-based; the corresponding accessibility tests can be found in the HtmlStructureTest.
 
     @Test
     public void testAboutFragment() {
@@ -295,4 +280,8 @@ public class AccessibilityTest {
             }
         };
     }
+
+
+
 }
+

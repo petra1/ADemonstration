@@ -45,9 +45,10 @@ dependencies {
     androidTestImplementation   'androidx.test.espresso:espresso-core:3.7.0'
     androidTestImplementation 'com.google.android.apps.common.testing.accessibility.framework:accessibility-test-framework:4.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.7.0'
-    
-
-
+    testImplementation 'org.jsoup:jsoup:1.17.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+    androidTestImplementation 'org.jsoup:jsoup:1.17.2'
 
     configurations.implementation {
         exclude group: 'org.jetbrains.kotlin', module:'kotlin-stdlib-jdk8'
