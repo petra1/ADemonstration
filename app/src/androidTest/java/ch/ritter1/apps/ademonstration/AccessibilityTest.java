@@ -105,13 +105,13 @@ public class AccessibilityTest {
         // NOTE: The Dynamic Content Description Test is intended to be run on physical devices.
         // It is likely to fail on an emulator, possibly due to timing issues.
 
-
+        // WCAG 2.2, SC 4.1.3 Status Messages
         // PERFORM THE ACTION: Click the "Set First Name" button to trigger the dynamic change.
         onView(withId(R.id.bt_first_name)).perform(click());
         //Checks whether a dynamic contentDescription exists for the button with the ID bt_first_name and whether it is not empty.
         onView(withId(R.id.bt_first_name)).check(matches(withContentDescription(not(isEmptyOrNullString()))));
 
-
+        // WCAG 2.2, SC 4.1.3 Status Messages
         // PERFORM THE ACTION: Click the "Set Last Name" button to trigger the dynamic change.
         onView(withId(R.id.bt_last_name)).perform(click());
         // Checks whether a dynamic contentDescription exists for the button with the ID bt_last_name and whether it is not empty.
@@ -128,7 +128,9 @@ public class AccessibilityTest {
         // Navigate to the menu item (nav_checkboxes)
         onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_checkboxes));
 
-        // TODO: Implement accessibility tests for CheckboxesFragment
+        // WCAG 2.2, Success Criterion 1.3.1: Info and Relationships (Label)
+        onView(withId(R.id.checkBox3)).check(matches(withContentDescription(not(isEmptyOrNullString()))));
+        onView(withId(R.id.checkBox4)).check(matches(withContentDescription(not(isEmptyOrNullString()))));
     }
 
     @Test
