@@ -9,7 +9,12 @@ import static androidx.test.espresso.matcher.ViewMatchers.withHint;
 import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.CoreMatchers.nullValue;
 
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.view.View;
+import android.widget.TextView;
+
+import androidx.core.graphics.ColorUtils;
 import androidx.test.espresso.matcher.BoundedMatcher;
 import androidx.test.espresso.matcher.ViewMatchers;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
@@ -118,7 +123,12 @@ public class NotAccessibleTest {
         // Navigate to the menu item (nav_contrast)
         onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_contrast));
 
-        // TODO: Implement "not accessible" tests for ContrastFragment
+        // --- Assertions for NotAccessibleTest ---
+        // WCAG 2.2, Success Criterion 1.4.3 Contrast (Minimum)
+        // Verify that the contrast ratio is below the minimum requirement of 4.5
+        onView(withId(R.id.textView4)).check(matches(withContrastRatioLessThan(4.5)));
+        onView(withId(R.id.textView6)).check(matches(withContrastRatioLessThan(4.5)));
+        onView(withId(R.id.textView8)).check(matches(withContrastRatioLessThan(4.5)));
     }
 
     @Test
@@ -195,6 +205,44 @@ public class NotAccessibleTest {
             protected boolean matchesSafely(View item) {
                 // In Espresso, if labelFor is not set, getLabelFor() returns -1 (View.NO_ID)
                 return item.getLabelFor() == expectedId;
+            }
+        };
+    }
+
+    /**
+     * Custom Matcher to check if a TextView has a contrast ratio of less than a given value.
+     * This is crucial for testing views that fail WCAG 1.4.3 (Contrast (Minimum)).
+     * @param expectedRatio The maximum expected contrast ratio.
+     * @return A Matcher for the View.
+     */
+    public static Matcher<View> withContrastRatioLessThan(final double expectedRatio) {
+        return new BoundedMatcher<View, TextView>(TextView.class) {
+            private String failureDescription;
+
+            @Override
+            public void describeTo(Description description) {
+                description.appendText("with a contrast ratio of less than " + expectedRatio);
+                if (failureDescription != null) {
+                    description.appendText("\n[Actual]: " + failureDescription);
+                }
+            }
+
+            @Override
+            protected boolean matchesSafely(TextView textView) {
+                int textColor = textView.getCurrentTextColor();
+                Drawable background = textView.getBackground();
+                if (background instanceof ColorDrawable) {
+                    int backgroundColor = ((ColorDrawable) background).getColor();
+                    double contrast = ColorUtils.calculateContrast(textColor, backgroundColor);
+                    System.out.println("Actual contrast ratio for view " + textView.getResources().getResourceEntryName(textView.getId()) + " is " + contrast);
+                    if (contrast >= expectedRatio) {
+                        failureDescription = "contrast ratio is " + contrast;
+                        return false;
+                    }
+                    return true;
+                }
+                failureDescription = "background is not a solid color";
+                return false;
             }
         };
     }

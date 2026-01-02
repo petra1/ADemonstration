@@ -22,10 +22,10 @@
       <SelectionState runConfigName="AccessibilityTest">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="testImageButtonFragment()">
+      <SelectionState runConfigName="testCheckboxesFragment()">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="testCheckboxesFragment()">
+      <SelectionState runConfigName="testContrastFragment()">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

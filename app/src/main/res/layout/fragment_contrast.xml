@@ -94,7 +94,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="@color/just_past_background"
-                    android:contentDescription="@string/contentDescription_just_failed"
+                    android:contentDescription="@string/just_passed"
                     android:paddingStart="10dp"
                     android:paddingEnd="1dp"
                     android:text="@string/just_passed"

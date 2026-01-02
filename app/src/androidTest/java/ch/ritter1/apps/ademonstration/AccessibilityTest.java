@@ -10,7 +10,11 @@ import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static org.hamcrest.Matchers.isEmptyOrNullString;
 import static org.hamcrest.Matchers.not;
 
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.view.View;
+import android.widget.TextView;
+import androidx.core.graphics.ColorUtils;
 import androidx.test.espresso.matcher.BoundedMatcher;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
@@ -141,7 +145,10 @@ public class AccessibilityTest {
         // Navigate to the menu item (nav_contrast)
         onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_contrast));
 
-        // TODO: Implement accessibility tests for ContrastFragment
+        // WCAG 2.2, Success Criterion 1.4.3 Contrast (Minimum)
+        onView(withId(R.id.textView3)).check(matches(withContrastRatio(4.5)));
+        onView(withId(R.id.textView5)).check(matches(withContrastRatio(4.5)));
+        onView(withId(R.id.textView7)).check(matches(withContrastRatio(4.5)));
     }
 
     @Test
@@ -297,5 +304,43 @@ public class AccessibilityTest {
     }
 
 
+
+    /**
+     * Custom Matcher to check if a TextView has a contrast ratio of at least a given value.
+     * This is crucial for WCAG 1.4.3 (Contrast (Minimum)).
+     * @param expectedRatio The minimum expected contrast ratio.
+     * @return A Matcher for the View.
+     */
+    public static Matcher<View> withContrastRatio(final double expectedRatio) {
+        return new BoundedMatcher<View, TextView>(TextView.class) {
+            private String failureDescription;
+
+            @Override
+            public void describeTo(Description description) {
+                description.appendText("with a contrast ratio of at least " + expectedRatio);
+                if (failureDescription != null) {
+                    description.appendText("\n[Actual]: " + failureDescription);
+                }
+            }
+
+            @Override
+            protected boolean matchesSafely(TextView textView) {
+                int textColor = textView.getCurrentTextColor();
+                Drawable background = textView.getBackground();
+                if (background instanceof ColorDrawable) {
+                    int backgroundColor = ((ColorDrawable) background).getColor();
+                    double contrast = ColorUtils.calculateContrast(textColor, backgroundColor);
+                    if (contrast < expectedRatio) {
+                        failureDescription = "contrast ratio is " + contrast;
+                        return false;
+                    }
+                    System.out.println("Contrast ratio is " + contrast);
+                    return true;
+                }
+                failureDescription = "background is not a solid color";
+                return false;
+            }
+        };
+    }
 
 }
