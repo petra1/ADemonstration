@@ -1,6 +1,7 @@
 package ch.ritter1.apps.ademonstration;
 
 import static androidx.test.espresso.Espresso.onView;
+import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.contrib.DrawerActions.open;
 import static androidx.test.espresso.contrib.NavigationViewActions.navigateTo;
@@ -10,15 +11,9 @@ import static org.hamcrest.Matchers.isEmptyOrNullString;
 import static org.hamcrest.Matchers.not;
 
 import android.view.View;
-
-
-
 import androidx.test.espresso.matcher.BoundedMatcher;
-
-import androidx.test.espresso.matcher.ViewMatchers;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 import org.junit.Rule;
@@ -39,7 +34,7 @@ public class AccessibilityTest {
         // Navigate to the menu item (nav_home)
         onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_home));
 
-        // TODO: Implement accessibility tests for HomeFragment
+        onView(withId(R.id.image_view_logo)).check(matches(withContentDescription(not(isEmptyOrNullString()))));
     }
 
     @Test
@@ -90,6 +85,7 @@ public class AccessibilityTest {
 
     //The HeadingFrame is HTML-based; the corresponding accessibility tests can be found in the HtmlStructureTest.
 
+    
     @Test
     public void testEditFragment() {
         // Open the navigation drawer
@@ -99,13 +95,30 @@ public class AccessibilityTest {
         onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_edit));
 
         // WCAG 2.2, Success Criterion 1.3.1: Info and Relationships (Heading)
-        // Check whether the TextViews with the ID 'text_Title' is an accessibility headings
         onView(withId(R.id.text_Title)).check(matches(isAccessibilityHeading()));
 
-        // WCAG 3.3.2 Labels or Instructions
+        // WCAG 2.2, Success Criterion 1.3.1: Info and Relationships (Label)
+        onView(withId(R.id.text_Last_name)).check(matches(hasLabelFor(R.id.editText_Last_name)));
 
-        onView(ViewMatchers.withId(R.id.text_Last_name)).check(matches(hasLabelFor(R.id.editText_Last_name)));
+
+        //--- Dynamic Content Description Test --
+        // NOTE: The Dynamic Content Description Test is intended to be run on physical devices.
+        // It is likely to fail on an emulator, possibly due to timing issues.
+
+
+        // PERFORM THE ACTION: Click the "Set First Name" button to trigger the dynamic change.
+        onView(withId(R.id.bt_first_name)).perform(click());
+        //Checks whether a dynamic contentDescription exists for the button with the ID bt_first_name and whether it is not empty.
+        onView(withId(R.id.bt_first_name)).check(matches(withContentDescription(not(isEmptyOrNullString()))));
+
+
+        // PERFORM THE ACTION: Click the "Set Last Name" button to trigger the dynamic change.
+        onView(withId(R.id.bt_last_name)).perform(click());
+        // Checks whether a dynamic contentDescription exists for the button with the ID bt_last_name and whether it is not empty.
+        onView(withId(R.id.bt_last_name)).check(matches(withContentDescription(not(isEmptyOrNullString()))));
     }
+
+
 
     @Test
     public void testCheckboxesFragment() {
@@ -284,4 +297,3 @@ public class AccessibilityTest {
 
 
 }
-

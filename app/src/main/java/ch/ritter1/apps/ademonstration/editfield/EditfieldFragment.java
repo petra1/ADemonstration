@@ -73,15 +73,15 @@ public class EditfieldFragment extends Fragment {
     }
 
     private void setFirstName() {
+        button_f_name.setContentDescription(getString(R.string.first_name_send));
         firstName = editText_f_name.getText().toString();
         clicked = true;
-        button_f_name.setContentDescription(getString(R.string.first_name_send));
     }
 
     private void setLastName() {
+        button_l_name.setContentDescription(getString(R.string.last_name_send));
         lastName = editText_l_name.getText().toString();
         clicked = true;
-        button_l_name.setContentDescription(getString(R.string.last_name_send));
     }
 
     private void setFullName() {

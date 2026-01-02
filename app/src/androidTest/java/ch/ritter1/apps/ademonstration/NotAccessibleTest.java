@@ -5,12 +5,18 @@ import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.contrib.DrawerActions.open;
 import static androidx.test.espresso.contrib.NavigationViewActions.navigateTo;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
+import static androidx.test.espresso.matcher.ViewMatchers.withHint;
+import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.CoreMatchers.nullValue;
 
+import android.view.View;
+import androidx.test.espresso.matcher.BoundedMatcher;
 import androidx.test.espresso.matcher.ViewMatchers;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
+import org.hamcrest.Description;
+import org.hamcrest.Matcher;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -65,7 +71,16 @@ public class NotAccessibleTest {
         // TODO: Implement "not accessible" tests for ImageButtonFragment
     }
 
-    //The test for the HeadingFrame is not necessary in this file.
+    @Test
+    public void testHeadingsFragment_NotAccessible() {
+        // Open the navigation drawer
+        onView(withId(R.id.drawer_layout)).perform(open());
+
+        // Navigate to the menu item (nav_headings)
+        onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_headings));
+
+        // TODO: Implement "not accessible" tests for HeadingsFragment
+    }
 
     @Test
     public void testEditFragment_NotAccessible() {
@@ -75,7 +90,13 @@ public class NotAccessibleTest {
         // Navigate to the menu item (nav_edit)
         onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_edit));
 
-        // TODO: Implement "not accessible" tests for EditFragment
+        // --- Assertions for NotAccessibleTest ---
+
+        // Verify that text_First_name does NOT have a labelFor attribute pointing to the EditText.
+        onView(withId(R.id.text_First_name)).check(matches(not(hasLabelFor(R.id.editText_Fist_name))));
+
+        // Verify that the EditText for the first name does NOT have a hint attribute.
+        onView(withId(R.id.editText_Fist_name)).check(matches(withHint(nullValue(String.class))));
     }
 
     @Test
@@ -133,7 +154,16 @@ public class NotAccessibleTest {
         // TODO: Implement "not accessible" tests for ContactFragment
     }
 
-    //The test for the UsageFrame is not necessary in this file.
+    @Test
+    public void testUsageFragment_NotAccessible() {
+        // Open the navigation drawer
+        onView(withId(R.id.drawer_layout)).perform(open());
+
+        // Navigate to the menu item (nav_usage)
+        onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_usage));
+
+        // TODO: Implement "not accessible" tests for UsageFragment
+    }
 
     @Test
     public void testAboutFragment_NotAccessible() {
@@ -144,5 +174,28 @@ public class NotAccessibleTest {
         onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_about));
 
         // TODO: Implement "not accessible" tests for AboutFragment
+    }
+
+    // --- Helper Methods ---
+
+    /**
+     * Custom Matcher to check if a View (typically a TextView) has a 'labelFor' property
+     * pointing to a specific View ID. This is crucial for WCAG 3.3.2 (Labels or Instructions).
+     * @param expectedId The resource ID of the View that this View should be a label for.
+     * @return A Matcher for the View.
+     */
+    public static Matcher<View> hasLabelFor(final int expectedId) {
+        return new BoundedMatcher<View, View>(View.class) {
+            @Override
+            public void describeTo(Description description) {
+                description.appendText("has labelFor property with id: " + expectedId);
+            }
+
+            @Override
+            protected boolean matchesSafely(View item) {
+                // In Espresso, if labelFor is not set, getLabelFor() returns -1 (View.NO_ID)
+                return item.getLabelFor() == expectedId;
+            }
+        };
     }
 }
