@@ -2,13 +2,10 @@ package ch.ritter1.apps.ademonstration;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
-import static androidx.test.espresso.action.ViewActions.closeSoftKeyboard;
-import static androidx.test.espresso.action.ViewActions.pressKey;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.contrib.DrawerActions.open;
 import static androidx.test.espresso.contrib.NavigationViewActions.navigateTo;
 import static androidx.test.espresso.matcher.ViewMatchers.isAssignableFrom;
-import static androidx.test.espresso.matcher.ViewMatchers.isFocused;
 import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static org.hamcrest.Matchers.isEmptyOrNullString;
@@ -16,7 +13,6 @@ import static org.hamcrest.Matchers.not;
 
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.TextView;
 
@@ -160,43 +156,11 @@ public class AccessibilityTest {
         onView(withId(R.id.textView5)).check(matches(withContrastRatio(4.5)));
         onView(withId(R.id.textView7)).check(matches(withContrastRatio(4.5)));
     }
-/*
-    This test would be deliberately commented out because it does not run stably.
-    @Test
-    public void testTabFragment() {
-        // Open the navigation drawer
-        onView(withId(R.id.drawer_layout)).perform(open());
 
-        // Navigate to the menu item (nav_tab)
-        onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_tab));
-
-        // Programmatically request focus on the first field.
-        onView(withId(R.id.tab_first_name_edit)).perform(requestFocus());
-        onView(withId(R.id.tab_first_name_edit)).check(matches(isFocused()));
-
-        // Now that focus is stable, simulate Tab presses and check the focus order.
-        onView(withId(R.id.tab_first_name_edit)).perform(pressKey(KeyEvent.KEYCODE_TAB));
-        onView(withId(R.id.tab_send_first_name_btn)).check(matches(isFocused()));
-
-        onView(withId(R.id.tab_send_first_name_btn)).perform(pressKey(KeyEvent.KEYCODE_TAB));
-        onView(withId(R.id.tab_first_name_help)).check(matches(isFocused()));
-
-        onView(withId(R.id.tab_first_name_help)).perform(pressKey(KeyEvent.KEYCODE_TAB));
-        onView(withId(R.id.tab_last_name_edit)).check(matches(isFocused()));
-
-        onView(withId(R.id.tab_last_name_edit)).perform(pressKey(KeyEvent.KEYCODE_TAB));
-        onView(withId(R.id.tab_last_name_help)).check(matches(isFocused()));
-
-        onView(withId(R.id.tab_last_name_help)).perform(pressKey(KeyEvent.KEYCODE_TAB));
-        onView(withId(R.id.tab_send_last_name_btn)).check(matches(isFocused()));
-
-        onView(withId(R.id.tab_send_last_name_btn)).perform(pressKey(KeyEvent.KEYCODE_TAB));
-        onView(withId(R.id.tab_full_name_btn)).check(matches(isFocused()));
-
-        // CLEANUP: Close the keyboard to avoid polluting the state of the next test.
-        onView(withId(R.id.tab_last_name_edit)).perform(closeSoftKeyboard());
-    }
-*/
+// The test for keyboard focus order in TabOrderFragment ('testTabFragment') was removed.
+// We were unable to implement a solution that reliably sets the initial focus for TalkBack users
+// on the title while simultaneously ensuring a predictable keyboard focus order for testing,
+// without creating conflicts that broke the intended behavior.
 
     @Test
     public void testFocusVisibleFragment() {

@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewTreeObserver;
-import android.view.accessibility.AccessibilityEvent;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -44,7 +42,6 @@ public class TabOrderFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        // Setup Listeners etc.
         binding.tabFirstNameHelp.setContentDescription(getString(R.string.help_first));
         binding.tabLastNameHelp.setContentDescription(getString(R.string.help_last));
         binding.tabSendFirstNameBtn.setOnClickListener(v -> setFirstName());
@@ -58,31 +55,7 @@ public class TabOrderFragment extends Fragment {
         });
         binding.tabFirstNameHelp.setOnClickListener(v -> Toast.makeText(getActivity(), R.string.somethings_wrong, Toast.LENGTH_SHORT).show());
         binding.tabLastNameHelp.setOnClickListener(v -> Toast.makeText(getActivity(), R.string.tab_correct, Toast.LENGTH_SHORT).show());
-
-        // ** NEW, MORE RELIABLE APPROACH **
-        // We wait until the entire layout is measured and drawn before requesting any focus.
-        // This avoids all timing conflicts.
-        view.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-            @Override
-            public void onGlobalLayout() {
-                // It's important to remove the listener immediately
-                // to prevent this code from running multiple times.
-                view.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-
-                // 1. Set TalkBack focus to the title.
-                binding.tabTitle.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_ACCESSIBILITY_FOCUSED);
-
-                // 2. Set keyboard focus with a tiny delay. (Temporarily commented out for testing)
-                /*
-                view.postDelayed(() -> {
-                    binding.tabFirstNameEdit.requestFocus();
-                }, 100); // 100ms delay
-                */
-            }
-        });
     }
-
-    // The onResume method is no longer needed for focus management.
 
     private void setFirstName() {
         firstName = binding.tabFirstNameEdit.getText().toString();

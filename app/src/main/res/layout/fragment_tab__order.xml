@@ -30,7 +30,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:accessibilityHeading="true"
-                    android:focusable="true"
                     android:fontFamily="sans-serif-black"
                     android:text="@string/tab_order"
                     android:textColor="?colorOnPrimary"
