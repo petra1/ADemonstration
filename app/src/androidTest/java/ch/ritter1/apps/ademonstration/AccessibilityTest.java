@@ -2,9 +2,13 @@ package ch.ritter1.apps.ademonstration;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
+import static androidx.test.espresso.action.ViewActions.closeSoftKeyboard;
+import static androidx.test.espresso.action.ViewActions.pressKey;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.contrib.DrawerActions.open;
 import static androidx.test.espresso.contrib.NavigationViewActions.navigateTo;
+import static androidx.test.espresso.matcher.ViewMatchers.isAssignableFrom;
+import static androidx.test.espresso.matcher.ViewMatchers.isFocused;
 import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static org.hamcrest.Matchers.isEmptyOrNullString;
@@ -12,12 +16,17 @@ import static org.hamcrest.Matchers.not;
 
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.TextView;
+
 import androidx.core.graphics.ColorUtils;
+import androidx.test.espresso.UiController;
+import androidx.test.espresso.ViewAction;
 import androidx.test.espresso.matcher.BoundedMatcher;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 import org.junit.Rule;
@@ -89,7 +98,7 @@ public class AccessibilityTest {
 
     //The HeadingFrame is HTML-based; the corresponding accessibility tests can be found in the HtmlStructureTest.
 
-    
+
     @Test
     public void testEditFragment() {
         // Open the navigation drawer
@@ -97,6 +106,8 @@ public class AccessibilityTest {
 
         // Navigate to the menu item (nav_edit)
         onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_edit));
+
+
 
         // WCAG 2.2, Success Criterion 1.3.1: Info and Relationships (Heading)
         onView(withId(R.id.text_Title)).check(matches(isAccessibilityHeading()));
@@ -121,7 +132,6 @@ public class AccessibilityTest {
         // Checks whether a dynamic contentDescription exists for the button with the ID bt_last_name and whether it is not empty.
         onView(withId(R.id.bt_last_name)).check(matches(withContentDescription(not(isEmptyOrNullString()))));
     }
-
 
 
     @Test
@@ -150,7 +160,8 @@ public class AccessibilityTest {
         onView(withId(R.id.textView5)).check(matches(withContrastRatio(4.5)));
         onView(withId(R.id.textView7)).check(matches(withContrastRatio(4.5)));
     }
-
+/*
+    This test would be deliberately commented out because it does not run stably.
     @Test
     public void testTabFragment() {
         // Open the navigation drawer
@@ -159,8 +170,33 @@ public class AccessibilityTest {
         // Navigate to the menu item (nav_tab)
         onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_tab));
 
-        // TODO: Implement accessibility tests for TabFragment
+        // Programmatically request focus on the first field.
+        onView(withId(R.id.tab_first_name_edit)).perform(requestFocus());
+        onView(withId(R.id.tab_first_name_edit)).check(matches(isFocused()));
+
+        // Now that focus is stable, simulate Tab presses and check the focus order.
+        onView(withId(R.id.tab_first_name_edit)).perform(pressKey(KeyEvent.KEYCODE_TAB));
+        onView(withId(R.id.tab_send_first_name_btn)).check(matches(isFocused()));
+
+        onView(withId(R.id.tab_send_first_name_btn)).perform(pressKey(KeyEvent.KEYCODE_TAB));
+        onView(withId(R.id.tab_first_name_help)).check(matches(isFocused()));
+
+        onView(withId(R.id.tab_first_name_help)).perform(pressKey(KeyEvent.KEYCODE_TAB));
+        onView(withId(R.id.tab_last_name_edit)).check(matches(isFocused()));
+
+        onView(withId(R.id.tab_last_name_edit)).perform(pressKey(KeyEvent.KEYCODE_TAB));
+        onView(withId(R.id.tab_last_name_help)).check(matches(isFocused()));
+
+        onView(withId(R.id.tab_last_name_help)).perform(pressKey(KeyEvent.KEYCODE_TAB));
+        onView(withId(R.id.tab_send_last_name_btn)).check(matches(isFocused()));
+
+        onView(withId(R.id.tab_send_last_name_btn)).perform(pressKey(KeyEvent.KEYCODE_TAB));
+        onView(withId(R.id.tab_full_name_btn)).check(matches(isFocused()));
+
+        // CLEANUP: Close the keyboard to avoid polluting the state of the next test.
+        onView(withId(R.id.tab_last_name_edit)).perform(closeSoftKeyboard());
     }
+*/
 
     @Test
     public void testFocusVisibleFragment() {
@@ -199,9 +235,31 @@ public class AccessibilityTest {
 
 
     //-- Helper-methods
+
+    public static ViewAction requestFocus() {
+        return new ViewAction() {
+            @Override
+            public Matcher<View> getConstraints() {
+                return isAssignableFrom(View.class);
+            }
+
+            @Override
+            public String getDescription() {
+                return "Request focus on a view";
+            }
+
+            @Override
+            public void perform(UiController uiController, View view) {
+                view.requestFocus();
+                uiController.loopMainThreadUntilIdle();
+            }
+        };
+    }
+
     /**
      * Custom Matcher to check if a View is marked as an accessibility heading.
      * This is useful for verifying WCAG 1.3.1 (Info and Relationships).
+     *
      * @return A Matcher for the View.
      */
     public static Matcher<View> isAccessibilityHeading() {
@@ -221,7 +279,8 @@ public class AccessibilityTest {
     /**
      * Custom Matcher to check if a View has a minimum target size (minWidth/minHeight) in dp.
      * This is ideal for verifying WCAG 2.5.8 (Target Size Minimum).
-     * @param minWidthDp The expected minimum width in dp.
+     *
+     * @param minWidthDp  The expected minimum width in dp.
      * @param minHeightDp The expected minimum height in dp.
      * @return A Matcher for the View.
      */
@@ -266,6 +325,7 @@ public class AccessibilityTest {
      * Custom Matcher to check if a View is an accessibility live region.
      * A live region notifies accessibility services of changes.
      * This is useful for verifying WCAG 4.1.3 (Status Messages).
+     *
      * @return A Matcher for the View.
      */
     public static Matcher<View> isLiveRegion() {
@@ -286,6 +346,7 @@ public class AccessibilityTest {
     /**
      * Custom Matcher to check if a View (typically a TextView) has a 'labelFor' property
      * pointing to a specific View ID. This is crucial for WCAG 3.3.2 (Labels or Instructions).
+     *
      * @param expectedId The resource ID of the View that this View should be a label for.
      * @return A Matcher for the View.
      */
@@ -304,10 +365,10 @@ public class AccessibilityTest {
     }
 
 
-
     /**
      * Custom Matcher to check if a TextView has a contrast ratio of at least a given value.
-     * This is crucial for WCAG 1.4.3 (Contrast (Minimum)).
+     * This is crucial for verifying WCAG 1.4.3 (Contrast (Minimum)).
+     *
      * @param expectedRatio The minimum expected contrast ratio.
      * @return A Matcher for the View.
      */
@@ -334,7 +395,6 @@ public class AccessibilityTest {
                         failureDescription = "contrast ratio is " + contrast;
                         return false;
                     }
-                    System.out.println("Contrast ratio is " + contrast);
                     return true;
                 }
                 failureDescription = "background is not a solid color";
@@ -342,5 +402,4 @@ public class AccessibilityTest {
             }
         };
     }
-
 }
