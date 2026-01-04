@@ -30,6 +30,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:accessibilityHeading="true"
+                    android:focusable="true"
                     android:fontFamily="sans-serif-black"
                     android:text="@string/tab_order"
                     android:textColor="?colorOnPrimary"
@@ -93,12 +94,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="14dp"
+                    android:background="@drawable/edit_text_border"
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:minWidth="48dp"
                     android:minHeight="48dp"
+                    android:padding="10dp"
+                    android:textColor="?colorOnPrimary"
                     app:layout_constraintStart_toEndOf="@id/tab_first_name_label"
-                    app:layout_constraintTop_toBottomOf="@+id/tab_description2"/>
+                    app:layout_constraintTop_toBottomOf="@+id/tab_description2">
+                </EditText>
 
 
                 <androidx.appcompat.widget.AppCompatButton
@@ -153,11 +158,14 @@
                     android:layout_marginStart="18dp"
                     android:layout_marginTop="54dp"
                     android:autofillHints="name"
-                    android:nextFocusForward="@id/tab_last_name_help"
+                    android:background="@drawable/edit_text_border"
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:minWidth="48dp"
                     android:minHeight="48dp"
+                    android:nextFocusForward="@id/tab_last_name_help"
+                    android:padding="10dp"
+                    android:textColor="?colorOnPrimary"
                     app:layout_constraintStart_toEndOf="@id/tab_last_name_label"
                     app:layout_constraintTop_toBottomOf="@+id/tab_first_name_help" />
 

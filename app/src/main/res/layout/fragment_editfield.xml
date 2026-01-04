@@ -82,6 +82,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:autofillHints="cc-given-name"
+                    android:background="@drawable/edit_text_border"
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:minWidth="48dp"
@@ -141,6 +142,7 @@
                     android:layout_height="48dp"
                     android:layout_weight="1"
                     android:autofillHints="family-name"
+                    android:background="@drawable/edit_text_border"
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:minWidth="48dp" />
