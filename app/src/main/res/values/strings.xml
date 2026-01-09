@@ -15,7 +15,7 @@
     <string name="passed">Passed with 21.0:1, HEX: #ffffff on #000000.</string>
     <string name="just_passed">Just passed with 4.5:1, HEX: #00e9ff on #5a4dad</string>
     <string name="just_failed">Just failed with 4.4:1, HEX: #ffffff on #0083a1</string>
-    <string name="passed_with">Passed with contrast ratio of? HEX #ffffff on #006400</string>
+    <string name="passed_with">Passed with contrast ratio of __? HEX #ffffff on #006400</string>
 
     <!--Alternative text-->
     <string name="alternative_texts">Alternative Texts</string>
@@ -46,7 +46,7 @@
     <string name="full_name_text">Press the button below to display the full name.</string>
 
     <!--Image Buttons-->
-    <string name="version_of_wcag"> Answer #1 The current version of WCAG is 2.2.</string>
+    <string name="version_of_wcag">Answer #1 The current version of WCAG is 2.2.</string>
     <string name="released_wcag">Answer #2  The current version was released in October 2023.</string>
 
     <string name="image_buttons">Image Buttons</string>
@@ -66,7 +66,7 @@
     <string name="display_full_name_bt">Display full name</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="failed">Failed with 2.3:1, HEX: #ffffff on #a0b0a1.</string>
-    <string name="failed_with">Failed with contrast ratio of?  HEX #ffffff on #bb86fc</string>
+    <string name="failed_with">Failed with contrast ratio of __?  HEX #ffffff on #bb86fc</string>
     <string name="alt_description">"The following will show what is read by TalkBack in the three most common situations (no alternative text, decorative graphics, and informative graphics). "</string>
     <string name="first_name_send">First name has been sent</string>
     <string name="graphics">Graphics</string>
@@ -74,12 +74,12 @@
     <string name="tab_order">Focus Order</string>
     <string name="contact">Privacy &amp; Contact</string>
     <string name="description1_tab_order">People with limited fine motor skills may not be able to operate a touch screen. It is therefore important that an app can also be operated with a keyboard connected via Bluetooth and that the focus order of the operating elements is correct.</string>
-    <string name="description2_tab_order">In the first example, the focus order was intentionally ignored, but in the second example, the focus order is correct</string>
+    <string name="description2_tab_order">In the first example, the focus order was intentionally ignored, but in the second example, the focus order is correct.</string>
     <string name="contentDescription_passed">Passed with 21.0:1, HEX: # f f f f f f on #000000.</string>
     <string name="contentDescription_failed">Failed with 2.3:1, HEX: # f f f f f f on #a0b0a1.</string>
     <string name="contentDescription_just_failed">Just failed with 4.4:1, HEX: # f f f f f f on #0083a1</string>
-    <string name="contentDescription_failed_with">Failed with contrast ratio of? HEX # f f f f f f on #bb86fc</string>
-    <string name="contentDescription_passed_with">Passed with  contrast ratio of? HEX # f f f f f f on #006400</string>
+    <string name="contentDescription_failed_with">Failed with contrast ratio of __? HEX # f f f f f f on #bb86fc</string>
+    <string name="contentDescription_passed_with">Passed with  contrast ratio of __? HEX # f f f f f f on #006400</string>
     <string name="privacy_text">The app only processes data locally and does not send it to other devices or third-party services. The data is also not stored permanently.</string>
     <string name="privacy">Privacy</string>
     <string name="dark_mode_usage.html">dark_mode_usage.html</string>
@@ -87,7 +87,7 @@
     <string name="contact_name" translatable="false">Name:</string>
     <string name="usage.html">usage.html</string>
     <string name="privacy_text2">The app contains two forms, but these are only sample forms. The data you enter in these forms is only processed locally and displayed on the user\'s device.</string>
-    <string name="alert_title">A error has occurred!</string>
+    <string name="alert_title">An error has occurred!</string>
     <string name="alert_message">Please enter a first or last name and click on the corresponding send button.</string>
     <string name="alert_button">OK</string>
     <string name="github" translatable="false">GitHub:</string>
@@ -95,7 +95,7 @@
 
 
     <string name="focus_visible">Focus Visible</string>
-    <string name="description2_focus_visible">In this example, the visibility of the keyboard focus was intentionally ignored for some button. Try using a Bluetooth keyboard paired with the mobile device and try to find and activate button 3 without counting how many times you press the Tab key.</string>
+    <string name="description2_focus_visible">In this example, the visibility of the keyboard focus was intentionally ignored for some buttons. Try using a Bluetooth keyboard paired with the mobile device and try to find and activate button 3 without counting how many times you press the Tab key.</string>
     <string name="description1_focus_visible">People with motor disabilities may have difficulty or be unable to operate a touch screen and therefore use a Bluetooth keyboard. This requires, among other things, that the keyboard focus is sufficiently visible.</string>
     <string name="btn_1">You pressed button number 1</string>
     <string name="btn_2">You pressed button number 2</string>
