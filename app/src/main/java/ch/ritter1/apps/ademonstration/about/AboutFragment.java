@@ -8,19 +8,13 @@ import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import ch.ritter1.apps.ademonstration.BuildConfig;
 import ch.ritter1.apps.ademonstration.R;
+import ch.ritter1.apps.ademonstration.databinding.FragmentAboutBinding;
 
 
 public class AboutFragment extends Fragment {
-    View v;
-    TextView appName;
-    TextView versionName;
-    TextView versionCode;
-
-
-    TextView  gitHubUrl;
+    private FragmentAboutBinding binding;
 
 
     public AboutFragment() {
@@ -38,17 +32,20 @@ public class AboutFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-       v = inflater.inflate(R.layout.fragment_about, container, false);
-        gitHubUrl = v.findViewById(R.id.textView_GitHup_url);
-       appName = v.findViewById(R.id.textView_app_name);
-        versionName = v.findViewById(R.id.textView_app_vers);
-       versionCode = v.findViewById(R.id.textView_build_no);
+       binding = FragmentAboutBinding.inflate(inflater, container, false);
+        View view = binding.getRoot();
 
 
-        appName.setText(getResources().getString(R.string.app_name));
-        versionName.setText(BuildConfig.VERSION_NAME);
-        versionCode.setText(String.valueOf(BuildConfig.VERSION_CODE));
-        gitHubUrl.setMovementMethod(LinkMovementMethod.getInstance());
-        return v;
+        binding.textViewAppName.setText(getResources().getString(R.string.app_name));
+        binding.textViewAppVers.setText(BuildConfig.VERSION_NAME);
+        binding.textViewBuildNo.setText(String.valueOf(BuildConfig.VERSION_CODE));
+        binding.textViewGitHupUrl.setMovementMethod(LinkMovementMethod.getInstance());
+        return view;
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
     }
 }

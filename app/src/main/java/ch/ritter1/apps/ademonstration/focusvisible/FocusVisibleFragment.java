@@ -4,17 +4,16 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
 import ch.ritter1.apps.ademonstration.R;
+import ch.ritter1.apps.ademonstration.databinding.FragmentFocusVisibleBinding;
 
 
 public class  FocusVisibleFragment extends Fragment implements View.OnClickListener{
-    View v;
-    Button bt_1,  bt_2,  bt_3,  bt_4,  bt_5,  bt_6;
+    private FragmentFocusVisibleBinding binding;
 
     public FocusVisibleFragment() {
         // Required empty public constructor
@@ -30,25 +29,18 @@ public class  FocusVisibleFragment extends Fragment implements View.OnClickListe
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.fragment_focus_visible, container, false);
+        binding = FragmentFocusVisibleBinding.inflate(inflater, container, false);
+        View view = binding.getRoot();
 
-        bt_1 = v.findViewById(R.id.bt_1);
-        bt_2 = v.findViewById(R.id.bt_2);
-        bt_3 = v.findViewById(R.id.bt_3);
-        bt_4 = v.findViewById(R.id.bt_4);
-        bt_5 = v.findViewById(R.id.bt_5);
-        bt_6 = v.findViewById(R.id.bt_6);
-
-
-        bt_1.setOnClickListener(this);
-        bt_2.setOnClickListener(this);
-        bt_3.setOnClickListener(this);
-        bt_4.setOnClickListener(this);
-        bt_5.setOnClickListener(this);
-        bt_6.setOnClickListener(this);
+        binding.bt1.setOnClickListener(this);
+        binding.bt2.setOnClickListener(this);
+        binding.bt3.setOnClickListener(this);
+        binding.bt4.setOnClickListener(this);
+        binding.bt5.setOnClickListener(this);
+        binding.bt6.setOnClickListener(this);
 
 
-        return v;
+        return view;
     }
 
     @Override
@@ -72,4 +64,9 @@ public class  FocusVisibleFragment extends Fragment implements View.OnClickListe
 
     }
 
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
+    }
 }

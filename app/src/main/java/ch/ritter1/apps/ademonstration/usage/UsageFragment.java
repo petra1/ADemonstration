@@ -10,10 +10,11 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 
 import ch.ritter1.apps.ademonstration.R;
+import ch.ritter1.apps.ademonstration.databinding.FragmentUsageBinding;
 
 
 public class UsageFragment extends Fragment {
-    private SwipeRefreshLayout swipeLayout;
+    private FragmentUsageBinding binding;
 
     public UsageFragment() {
         // Required empty public constructor
@@ -28,11 +29,12 @@ public class UsageFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_usage, container, false);
-        WebView webView = v.findViewById (R.id.webView2);
-        swipeLayout = v.findViewById(R.id.swipeRefreshLayout);
-        v.setHorizontalScrollBarEnabled(true);
-        v.setHorizontalScrollBarEnabled(true);
+        binding = FragmentUsageBinding.inflate(inflater, container, false);
+        View view = binding.getRoot();
+        WebView webView = binding.webView2;
+        SwipeRefreshLayout swipeLayout = binding.swipeRefreshLayout;
+        view.setHorizontalScrollBarEnabled(true);
+        view.setHorizontalScrollBarEnabled(true);
 
 
         switch (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK) {
@@ -51,14 +53,13 @@ public class UsageFragment extends Fragment {
             }
         });
 
+        return view;
 
+    }
 
-
-
-
-
-
-
-        return v;
-
-    }}
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
+    }
+}

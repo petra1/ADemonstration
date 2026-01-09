@@ -6,13 +6,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
 import ch.ritter1.apps.ademonstration.R;
+import ch.ritter1.apps.ademonstration.databinding.FragmentEditfieldBinding;
 
 
 public class EditfieldFragment extends Fragment {
@@ -20,14 +18,7 @@ public class EditfieldFragment extends Fragment {
     String firstName;
     String fullName;
 
-    boolean clicked = false;
-    View v;
-    Button button_f_name;
-    Button button_l_name;
-    Button button_full_name;
-    TextView text_full_name;
-    EditText editText_f_name;
-    EditText editText_l_name;
+    private FragmentEditfieldBinding binding;
 
 
     public EditfieldFragment() {
@@ -46,48 +37,41 @@ public class EditfieldFragment extends Fragment {
                              Bundle savedInstanceState) {
 
 
-        v = inflater.inflate(R.layout.fragment_editfield, container, false);
-        button_f_name = v.findViewById(R.id.bt_first_name);
-        button_l_name = v.findViewById(R.id.bt_last_name);
-        button_full_name = v.findViewById(R.id.bt_full_name);
-        text_full_name = v.findViewById(R.id.text_full_name);
-        editText_f_name = v.findViewById(R.id.editText_Fist_name);
-        editText_l_name = v.findViewById(R.id.editText_Last_name);
+        binding = FragmentEditfieldBinding.inflate(inflater, container, false);
+        View view = binding.getRoot();
 
 
-        button_f_name.setOnClickListener(
-                view -> setFirstName()
+        binding.btFirstName.setOnClickListener(
+                v -> setFirstName()
         );
 
-        button_l_name.setOnClickListener(
-                view -> setLastName()
+        binding.btLastName.setOnClickListener(
+                v -> setLastName()
         );
-        button_full_name.setOnClickListener(view -> {
+        binding.btFullName.setOnClickListener(v -> {
             if (firstName == null || lastName == null || (firstName.isEmpty() && lastName.isEmpty())) {
                 showAlertDialog();
             } else {
                 setFullName();
             }
         });
-        return v;
+        return view;
     }
 
     private void setFirstName() {
-        button_f_name.setContentDescription(getString(R.string.first_name_send));
-        firstName = editText_f_name.getText().toString();
-        clicked = true;
+        binding.btFirstName.setContentDescription(getString(R.string.first_name_send));
+        firstName = binding.editTextFistName.getText().toString();
     }
 
     private void setLastName() {
-        button_l_name.setContentDescription(getString(R.string.last_name_send));
-        lastName = editText_l_name.getText().toString();
-        clicked = true;
+        binding.btLastName.setContentDescription(getString(R.string.last_name_send));
+        lastName = binding.editTextLastName.getText().toString();
     }
 
     private void setFullName() {
         fullName = firstName + " " + lastName;
-        text_full_name.setText(fullName);
-        text_full_name.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
+        binding.textFullName.setText(fullName);
+        binding.textFullName.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
     }
 
     private void showAlertDialog() {
@@ -100,5 +84,11 @@ public class EditfieldFragment extends Fragment {
         AlertDialog alertDialog = alertDialogBuilder.create();
         alertDialog.show();
 
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
     }
 }

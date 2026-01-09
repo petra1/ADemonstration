@@ -8,16 +8,12 @@ import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
-import ch.ritter1.apps.ademonstration.R;
+import ch.ritter1.apps.ademonstration.databinding.FragmentContactBinding;
 
 
 public class ContactFragment extends Fragment {
-    View v;
-    TextView webSiteUrl;
-
-    TextView mail;
+    private FragmentContactBinding binding;
 
 
     public ContactFragment() {
@@ -34,14 +30,18 @@ public class ContactFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.fragment_contact, container, false);
-        webSiteUrl = v.findViewById(R.id.textView_website_url);
-        mail = v.findViewById(R.id.textView_mail);
+        binding = FragmentContactBinding.inflate(inflater, container, false);
+        View view = binding.getRoot();
 
-        webSiteUrl.setMovementMethod(LinkMovementMethod.getInstance());
-        mail.setMovementMethod(LinkMovementMethod.getInstance());
+        binding.textViewWebsiteUrl.setMovementMethod(LinkMovementMethod.getInstance());
+        binding.textViewMail.setMovementMethod(LinkMovementMethod.getInstance());
 
-        return v;
+        return view;
     }
 
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
+    }
 }
