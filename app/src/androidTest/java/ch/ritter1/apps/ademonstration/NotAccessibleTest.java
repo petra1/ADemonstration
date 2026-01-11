@@ -36,16 +36,6 @@ public class NotAccessibleTest {
     @Rule
     public ActivityScenarioRule<MainActivity> activityRule = new ActivityScenarioRule<>(MainActivity.class);
 
-    @Test
-    public void testHomeFragment_NotAccessible() {
-        // Open the navigation drawer
-        onView(withId(R.id.drawer_layout)).perform(open());
-
-        // Navigate to the menu item (nav_home)
-        onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_home));
-
-        // TODO: Implement "not accessible" tests for HomeFragment
-    }
 
     @Test
     public void testGraphicFragment_NotAccessible() {
@@ -153,38 +143,6 @@ public class NotAccessibleTest {
         // TODO: Implement "not accessible" tests for FocusVisibleFragment
     }
 
-    @Test
-    public void testContactFragment_NotAccessible() {
-        // Open the navigation drawer
-        onView(withId(R.id.drawer_layout)).perform(open());
-
-        // Navigate to the menu item (nav_contact)
-        onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_contact));
-
-        // TODO: Implement "not accessible" tests for ContactFragment
-    }
-
-    @Test
-    public void testUsageFragment_NotAccessible() {
-        // Open the navigation drawer
-        onView(withId(R.id.drawer_layout)).perform(open());
-
-        // Navigate to the menu item (nav_usage)
-        onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_usage));
-
-        // TODO: Implement "not accessible" tests for UsageFragment
-    }
-
-    @Test
-    public void testAboutFragment_NotAccessible() {
-        // Open the navigation drawer
-        onView(withId(R.id.drawer_layout)).perform(open());
-
-        // Navigate to the menu item (nav_about)
-        onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_about));
-
-        // TODO: Implement "not accessible" tests for AboutFragment
-    }
 
     // --- Helper Methods ---
 

@@ -6,6 +6,7 @@ import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.contrib.DrawerActions.open;
 import static androidx.test.espresso.contrib.NavigationViewActions.navigateTo;
 import static androidx.test.espresso.matcher.ViewMatchers.isAssignableFrom;
+import static androidx.test.espresso.matcher.ViewMatchers.isFocusable;
 import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static org.hamcrest.Matchers.isEmptyOrNullString;
@@ -181,7 +182,17 @@ public class AccessibilityTest {
         // Navigate to the menu item (nav_contact)
         onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_contact));
 
-        // TODO: Implement accessibility tests for ContactFragment
+        // WCAG 2.2, Success Criterion 1.3.1: Info and Relationships (Heading)
+        onView(withId(R.id.privacy_heading)).check(matches(isAccessibilityHeading()));
+        onView(withId(R.id.contact_heading)).check(matches(isAccessibilityHeading()));
+        onView(withId(R.id.name_heading)).check(matches(isAccessibilityHeading()));
+        onView(withId(R.id.email_heading)).check(matches(isAccessibilityHeading()));
+        onView(withId(R.id.website_heading)).check(matches(isAccessibilityHeading()));
+
+        // WCAG 2.2, Success Criterion 2.1.1: Keyboard
+        // Check if the links are focusable
+        onView(withId(R.id.textView_mail)).check(matches(isFocusable()));
+        onView(withId(R.id.textView_website_url)).check(matches(isFocusable()));
     }
 
     //The UsageFrame is HTML-based; the corresponding accessibility tests can be found in the HtmlStructureTest.
@@ -194,7 +205,16 @@ public class AccessibilityTest {
         // Navigate to the menu item (nav_about)
         onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_about));
 
-        // TODO: Implement accessibility tests for AboutFragment
+        // WCAG 2.2, Success Criterion 1.3.1: Info and Relationships (Heading)
+        onView(withId(R.id.about_heading)).check(matches(isAccessibilityHeading()));
+        onView(withId(R.id.app_name_heading)).check(matches(isAccessibilityHeading()));
+        onView(withId(R.id.app_vers_heading)).check(matches(isAccessibilityHeading()));
+        onView(withId(R.id.build_no_heading)).check(matches(isAccessibilityHeading()));
+        onView(withId(R.id.git_hub_heading)).check(matches(isAccessibilityHeading()));
+
+        // WCAG 2.2, Success Criterion 2.1.1: Keyboard
+        // Check if the link is focusable
+        onView(withId(R.id.textView_GitHup_url)).check(matches(isFocusable()));
     }
 
 

@@ -18,8 +18,8 @@
             android:orientation="vertical">
 
 
-
             <TextView
+                android:id="@+id/about_heading"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -32,16 +32,19 @@
                 android:textColor="?colorOnPrimary"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+
             <TextView
+                android:id="@+id/app_name_heading"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="30dp"
-                android:textStyle="bold"
+                android:accessibilityHeading="true"
                 android:fontFamily="sans-serif-medium"
                 android:text="@string/app_name_heading"
                 android:textColor="?colorOnPrimary"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView_app_name"
@@ -52,16 +55,20 @@
                 android:fontFamily="sans-serif-medium"
                 android:textColor="?colorOnPrimary"
                 android:textSize="20sp" />
+
             <TextView
+                android:id="@+id/app_vers_heading"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="50dp"
-                android:textStyle="bold"
+                android:accessibilityHeading="true"
                 android:fontFamily="sans-serif-medium"
                 android:text="@string/app_version"
                 android:textColor="?colorOnPrimary"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/textView_app_vers"
                 android:layout_width="wrap_content"
@@ -71,16 +78,20 @@
                 android:fontFamily="sans-serif-medium"
                 android:textColor="?colorOnPrimary"
                 android:textSize="20sp" />
+
             <TextView
+                android:id="@+id/build_no_heading"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="50dp"
-                android:textStyle="bold"
+                android:accessibilityHeading="true"
                 android:fontFamily="sans-serif-medium"
                 android:text="@string/build_number"
                 android:textColor="?colorOnPrimary"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/textView_build_no"
                 android:layout_width="wrap_content"
@@ -92,15 +103,17 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/git_hub_heading"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="50dp"
-                android:textStyle="bold"
+                android:accessibilityHeading="true"
                 android:fontFamily="sans-serif-medium"
                 android:text="@string/github"
                 android:textColor="?colorOnPrimary"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView_GitHup_url"
@@ -109,6 +122,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="5dp"
                 android:autoLink="web"
+                android:focusable="true"
                 android:fontFamily="sans-serif-medium"
                 android:minWidth="48dp"
                 android:minHeight="48dp"
