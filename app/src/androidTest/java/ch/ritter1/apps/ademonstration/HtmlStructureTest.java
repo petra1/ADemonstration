@@ -108,19 +108,19 @@ public class HtmlStructureTest {
         // --- Assertions for dark_mode_heading_de.html ---
 
         Element h1 = doc.select("h1").first();
-        assertNotNull("Das <h1>-Tag wurde in dark_mode_heading_de.html nicht gefunden.", h1);
-        assertEquals("Der Text im <h1>-Tag ist nicht korrekt.", "Überschriften-Struktur", h1.text());
+        assertNotNull("The <h1> tag was not found in dark_mode_heading_de.html.", h1);
+        assertEquals("The text in the <h1> tag is not correct.", "Überschriften-Struktur", h1.text());
 
         Element h2 = doc.select("h2:contains(Ausgabe von TalkBack)").first();
-        assertNotNull("h2 'Ausgabe von TalkBack' nicht in dark_mode_heading_de.html gefunden.", h2);
-        assertEquals("h2 Text stimmt nicht überein.", "Ausgabe von TalkBack", h2.text());
+        assertNotNull("h2 'Ausgabe von TalkBack' not found in dark_mode_heading_de.html.", h2);
+        assertEquals("h2 text does not match.", "Ausgabe von TalkBack", h2.text());
 
         Elements h3s = doc.select("h3");
         if (h3s.size() < 2) {
-            fail("Nicht genügend h3-Tags in dark_mode_heading_de.html gefunden. Erwartet: 2, Gefunden: " + h3s.size());
+            fail("Not enough h3 tags found in dark_mode_heading_de.html. Expected: 2, Found: " + h3s.size());
         }
-        assertEquals("Erstes h3 sollte 'Native Apps' sein.", "Native Apps", h3s.get(0).text());
-        assertEquals("Zweites h3 sollte 'HTML-Inhalt' sein.", "HTML-Inhalt", h3s.get(1).text());
+        assertEquals("First h3 should be 'Native Apps'.", "Native Apps", h3s.get(0).text());
+        assertEquals("Second h3 should be 'HTML content'.", "HTML-Inhalt", h3s.get(1).text());
     }
 
     @Test
@@ -131,19 +131,19 @@ public class HtmlStructureTest {
         // --- Assertions for heading_de.html ---
 
         Element h1 = doc.select("h1").first();
-        assertNotNull("Das <h1>-Tag wurde in heading_de.html nicht gefunden.", h1);
-        assertEquals("Der Text im <h1>-Tag ist nicht korrekt.", "Überschriften-Struktur", h1.text());
+        assertNotNull("The <h1> tag was not found in heading_de.html.", h1);
+        assertEquals("The text in the <h1> tag is not correct.", "Überschriften-Struktur", h1.text());
 
         Element h2 = doc.select("h2:contains(Ausgabe von TalkBack)").first();
-        assertNotNull("h2 'Ausgabe von TalkBack' nicht in heading_de.html gefunden.", h2);
-        assertEquals("h2 Text stimmt nicht überein.", "Ausgabe von TalkBack", h2.text());
+        assertNotNull("h2 'Ausgabe von TalkBack' not found in heading_de.html.", h2);
+        assertEquals("h2 text does not match.", "Ausgabe von TalkBack", h2.text());
 
         Elements h3s = doc.select("h3");
         if (h3s.size() < 2) {
-            fail("Nicht genügend h3-Tags in heading_de.html gefunden. Erwartet: 2, Gefunden: " + h3s.size());
+            fail("Not enough h3 tags found in heading_de.html. Expected: 2, Found: " + h3s.size());
         }
-        assertEquals("Erstes h3 sollte 'Native Apps' sein.", "Native Apps", h3s.get(0).text());
-        assertEquals("Zweites h3 sollte 'HTML-Inhalt' sein.", "HTML-Inhalt", h3s.get(1).text());
+        assertEquals("First h3 should be 'Native Apps'.", "Native Apps", h3s.get(0).text());
+        assertEquals("Second h3 should be 'HTML-Inhalt'.", "HTML-Inhalt", h3s.get(1).text());
     }
 
     @Test
@@ -179,7 +179,7 @@ public class HtmlStructureTest {
         assertEquals("Item 5 text is incorrect.", "You may need to give TalkBack some permissions.", dmListItems.get(4).text());
     }
 
-    // @Test
+     @Test
     public void verifyOrderedLists_In_UsageDeFiles() throws Exception {
         // Test usage_de.html (German)
         String htmlContent = readAssetFile("usage_de.html");
@@ -187,14 +187,14 @@ public class HtmlStructureTest {
 
         // --- Assertions for ol in usage_de.html ---
         Elements listItems = doc.select("ol > li");
-        assertNotNull("Die geordnete Liste wurde in usage_de.html nicht gefunden.", listItems);
-        assertEquals("Die geordnete Liste sollte 5 Elemente enthalten.", 5, listItems.size());
+        assertNotNull("The ordered list was not found in usage_de.html.", listItems);
+        assertEquals("The ordered list should contain 5 items.", 5, listItems.size());
 
-        assertEquals("Text von Element 1 ist falsch.", "Öffnen Sie die Einstellungen.", listItems.get(0).text());
-        assertEquals("Text von Element 2 ist falsch.", "Scrollen Sie nach unten zu \"Eingabehilfen\" und öffnen Sie den Menüpunkt.", listItems.get(1).text());
-        assertEquals("Text von Element 3 ist falsch.", "Scrollen Sie zu \"TalkBack\" und öffnen Sie es.", listItems.get(2).text());
-        assertEquals("Text von Element 4 ist falsch.", "Aktivieren Sie TalkBack mit der Schaltfläche neben \"TalkBack verwenden\".", listItems.get(3).text());
-        assertEquals("Text von Element 5 ist falsch.", "Geben Sie TalkBack die erforderlichen Berechtigungen.", listItems.get(4).text());
+        assertEquals("Item 1 text is incorrect.", "Öffnen Sie die Einstellungen", listItems.get(0).text());
+        assertEquals("Item 2 text is incorrect.", "Scrollen Sie nach unten zu \"Eingabehilfen\" und öffnen Sie den Menüpunkt.", listItems.get(1).text());
+        assertEquals("Item 3 text is incorrect.", "Scrollen Sie zu \"TalkBack\" und öffnen Sie es.", listItems.get(2).text());
+        assertEquals("Item 4 text is incorrect.", "Aktivieren Sie TalkBack mit der Schaltfläche neben \"TalkBack verwenden\".", listItems.get(3).text());
+        assertEquals("Item 5 text is incorrect.", "Geben Sie TalkBack die erforderlichen Berechtigungen.", listItems.get(4).text());
 
         // Test dark_mode_usage_de.html (German)
         String dmHtmlContent = readAssetFile("dark_mode_usage_de.html");
@@ -202,13 +202,15 @@ public class HtmlStructureTest {
 
         // --- Assertions for ol in dark_mode_usage_de.html ---
         Elements dmListItems = dmDoc.select("ol > li");
-        assertNotNull("Die geordnete Liste wurde in dark_mode_usage_de.html nicht gefunden.", dmListItems);
-        assertEquals("Die geordnete Liste sollte 5 Elemente enthalten.", 5, dmListItems.size());
+        assertNotNull("The ordered list was not found in dark_mode_usage_de.html.", dmListItems);
+        assertEquals("The ordered list should contain 5 items.", 5, dmListItems.size());
 
-        assertEquals("Text von Element 1 ist falsch.", "Öffnen Sie die Einstellungen.", dmListItems.get(0).text());
-        assertEquals("Text von Element 2 ist falsch.", "Scrollen Sie nach unten zu \"Eingabehilfen\" und öffnen Sie den Menüpunkt.", dmListItems.get(1).text());
-        assertEquals("Text von Element 3 ist falsch.", "Scrollen Sie zu \"TalkBack\" und öffnen Sie es.", dmListItems.get(2).text());
-        assertEquals("Text von Element 4 ist falsch.", "Aktivieren Sie TalkBack mit der Schaltfläche neben \"TalkBack verwenden\".", dmListItems.get(3).text());
-        assertEquals("Text von Element 5 ist falsch.", "Geben Sie TalkBack die erforderlichen Berechtigungen.", dmListItems.get(4).text());
-    }
+        assertEquals("Item 1 text is incorrect.", "Öffnen Sie die Einstellungen", dmListItems.get(0).text());
+        assertEquals("Item 2 text is incorrect.", "Scrollen Sie nach unten zu \"Eingabehilfen\" und öffnen Sie den Menüpunkt.", dmListItems.get(1).text());
+        assertEquals("Item 3 text is incorrect.", "Scrollen Sie zu \"TalkBack\" und öffnen Sie es.", dmListItems.get(2).text());
+        assertEquals("Item 4 text is incorrect.", "Aktivieren Sie TalkBack mit der Schaltfläche neben \"TalkBack verwenden\".", dmListItems.get(3).text());
+        assertEquals("Item 5 text is incorrect.", "Geben Sie TalkBack die erforderlichen Berechtigungen.", dmListItems.get(4).text());
+     }
+
+
 }
