@@ -14,6 +14,7 @@ import static org.hamcrest.Matchers.not;
 
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.StateListDrawable;
 import android.view.View;
 import android.widget.TextView;
 
@@ -171,7 +172,14 @@ public class AccessibilityTest {
         // Navigate to the menu item (nav_focus_visible)
         onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_focus_visible));
 
-        // TODO: Implement accessibility tests for FocusVisibleFragment
+        // WCAG 2.2, Success Criterion 2.4.7 Focus Visible
+        // Check if the buttons have a StateListDrawable background, which indicates a visual focus state.
+        onView(withId(R.id.bt_4)).check(matches(withStateListDrawableBackground()));
+        onView(withId(R.id.bt_5)).check(matches(withStateListDrawableBackground()));
+        onView(withId(R.id.bt_6)).check(matches(withStateListDrawableBackground()));
+
+        // WCAG 2.2, Success Criterion 1.3.1: Info and Relationships (Heading)
+        onView(withId(R.id.text_Title)).check(matches(isAccessibilityHeading()));
     }
 
     @Test
@@ -383,6 +391,20 @@ public class AccessibilityTest {
                 }
                 failureDescription = "background is not a solid color";
                 return false;
+            }
+        };
+    }
+
+    public static Matcher<View> withStateListDrawableBackground() {
+        return new BoundedMatcher<View, View>(View.class) {
+            @Override
+            protected boolean matchesSafely(View view) {
+                return view.getBackground() instanceof StateListDrawable;
+            }
+
+            @Override
+            public void describeTo(Description description) {
+                description.appendText("with a StateListDrawable background");
             }
         };
     }

@@ -11,6 +11,7 @@ import static org.hamcrest.CoreMatchers.nullValue;
 
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.StateListDrawable;
 import android.view.View;
 import android.widget.TextView;
 
@@ -63,19 +64,13 @@ public class NotAccessibleTest {
         // Navigate to the menu item (nav_image_button)
         onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_image_button));
 
-        // TODO: Implement "not accessible" tests for ImageButtonFragment
+        // WCAG 2.2, Success Criterion 1.1.1 Non-text Content
+        onView(withId(R.id.imageButton1)).check(matches(ViewMatchers.withContentDescription(nullValue(String.class))));
+
+        // WCAG 2.2, Success Criterion 2.5.8: Target Size (Minimum)
+        onView(withId(R.id.imageButton1)).check(matches(not(withMinTargetSize(48, 48))));
     }
 
-    @Test
-    public void testHeadingsFragment_NotAccessible() {
-        // Open the navigation drawer
-        onView(withId(R.id.drawer_layout)).perform(open());
-
-        // Navigate to the menu item (nav_headings)
-        onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_headings));
-
-        // TODO: Implement "not accessible" tests for HeadingsFragment
-    }
 
     @Test
     public void testEditFragment_NotAccessible() {
@@ -121,16 +116,7 @@ public class NotAccessibleTest {
         onView(withId(R.id.textView8)).check(matches(withContrastRatioLessThan(4.5)));
     }
 
-    @Test
-    public void testTabFragment_NotAccessible() {
-        // Open the navigation drawer
-        onView(withId(R.id.drawer_layout)).perform(open());
 
-        // Navigate to the menu item (nav_tab)
-        onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_tab));
-
-        // TODO: Implement "not accessible" tests for TabFragment
-    }
 
     @Test
     public void testFocusVisibleFragment_NotAccessible() {
@@ -140,7 +126,10 @@ public class NotAccessibleTest {
         // Navigate to the menu item (nav_focus_visible)
         onView(withId(R.id.nav_view)).perform(navigateTo(R.id.nav_focus_visible));
 
-        // TODO: Implement "not accessible" tests for FocusVisibleFragment
+        // Verify that buttons 1, 2, and 3 do not have a StateListDrawable as background
+        onView(withId(R.id.bt_1)).check(matches(not(withStateListDrawableBackground())));
+        onView(withId(R.id.bt_2)).check(matches(not(withStateListDrawableBackground())));
+        onView(withId(R.id.bt_3)).check(matches(not(withStateListDrawableBackground())));
     }
 
 
@@ -181,7 +170,7 @@ public class NotAccessibleTest {
             public void describeTo(Description description) {
                 description.appendText("with a contrast ratio of less than " + expectedRatio);
                 if (failureDescription != null) {
-                    description.appendText("\n[Actual]: " + failureDescription);
+                    description.appendText("[Actual]: " + failureDescription);
                 }
             }
 
@@ -201,6 +190,57 @@ public class NotAccessibleTest {
                 }
                 failureDescription = "background is not a solid color";
                 return false;
+            }
+        };
+    }
+
+    public static Matcher<View> withMinTargetSize(final int minWidthDp, final int minHeightDp) {
+        return new BoundedMatcher<View, View>(View.class) {
+            private String failureDescription;
+
+            @Override
+            public void describeTo(Description description) {
+                description.appendText("with a minimum target size of " + minWidthDp + "dp x " + minHeightDp + "dp");
+                if (failureDescription != null) {
+                    description.appendText("\n[Actual]: " + failureDescription);
+                }
+            }
+
+            @Override
+            protected boolean matchesSafely(View item) {
+                // Convert expected dp to pixels
+                final float density = item.getResources().getDisplayMetrics().density;
+                final float expectedMinWidthPx = minWidthDp * density;
+                final float expectedMinHeightPx = minHeightDp * density;
+
+                // Get actual minWidth and minHeight from the View in pixels
+                final int actualMinWidthPx = item.getMinimumWidth();
+                final int actualMinHeightPx = item.getMinimumHeight();
+
+                // Check if the actual minimums meet the expected minimums
+                boolean matches = actualMinWidthPx >= expectedMinWidthPx && actualMinHeightPx >= expectedMinHeightPx;
+
+                if (!matches) {
+                    float actualMinWidthDp = actualMinWidthPx / density;
+                    float actualMinHeightDp = actualMinHeightPx / density;
+                    failureDescription = "minWidth=" + String.format("%.1f", actualMinWidthDp) + "dp, minHeight=" + String.format("%.1f", actualMinHeightDp) + "dp";
+                }
+
+                return matches;
+            }
+        };
+    }
+
+    public static Matcher<View> withStateListDrawableBackground() {
+        return new BoundedMatcher<View, View>(View.class) {
+            @Override
+            protected boolean matchesSafely(View view) {
+                return view.getBackground() instanceof StateListDrawable;
+            }
+
+            @Override
+            public void describeTo(Description description) {
+                description.appendText("with a StateListDrawable background");
             }
         };
     }

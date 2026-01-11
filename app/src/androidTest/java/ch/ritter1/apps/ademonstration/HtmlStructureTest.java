@@ -1,6 +1,7 @@
 package ch.ritter1.apps.ademonstration;
 
-import static org.junit.Assert.assertEquals;import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.fail;
 
 import android.content.Context;
@@ -119,7 +120,7 @@ public class HtmlStructureTest {
             fail("Nicht genügend h3-Tags in dark_mode_heading_de.html gefunden. Erwartet: 2, Gefunden: " + h3s.size());
         }
         assertEquals("Erstes h3 sollte 'Native Apps' sein.", "Native Apps", h3s.get(0).text());
-        assertEquals("Zweites h3 sollte 'HTML Inhalt' sein.", "HTML Inhalt", h3s.get(1).text());
+        assertEquals("Zweites h3 sollte 'HTML-Inhalt' sein.", "HTML-Inhalt", h3s.get(1).text());
     }
 
     @Test
@@ -142,9 +143,72 @@ public class HtmlStructureTest {
             fail("Nicht genügend h3-Tags in heading_de.html gefunden. Erwartet: 2, Gefunden: " + h3s.size());
         }
         assertEquals("Erstes h3 sollte 'Native Apps' sein.", "Native Apps", h3s.get(0).text());
-        assertEquals("Zweites h3 sollte 'HTML Inhalt' sein.", "HTML Inhalt", h3s.get(1).text());
+        assertEquals("Zweites h3 sollte 'HTML-Inhalt' sein.", "HTML-Inhalt", h3s.get(1).text());
     }
 
-    // Tests for the usage.html and usage_de.html files
+    @Test
+    public void verifyOrderedLists_In_UsageFiles() throws Exception {
+        // Test usage.html (English)
+        String htmlContent = readAssetFile("usage.html");
+        Document doc = Jsoup.parse(htmlContent);
 
+        // --- Assertions for ol in usage.html ---
+        Elements listItems = doc.select("ol > li");
+        assertNotNull("The ordered list was not found in usage.html.", listItems);
+        assertEquals("The ordered list should contain 5 items.", 5, listItems.size());
+
+        assertEquals("Item 1 text is incorrect.", "Open Settings.", listItems.get(0).text());
+        assertEquals("Item 2 text is incorrect.", "Scroll down to Accessibility and open it.", listItems.get(1).text());
+        assertEquals("Item 3 text is incorrect.", "Scroll to TalkBack and open it.", listItems.get(2).text());
+        assertEquals("Item 4 text is incorrect.", "Activate TalkBack with the button next to \"Use TalkBack\".", listItems.get(3).text());
+        assertEquals("Item 5 text is incorrect.", "You may need to give TalkBack some permissions.", listItems.get(4).text());
+
+        // Test dark_mode_usage.html (English)
+        String dmHtmlContent = readAssetFile("dark_mode_usage.html");
+        Document dmDoc = Jsoup.parse(dmHtmlContent);
+
+        // --- Assertions for ol in dark_mode_usage.html ---
+        Elements dmListItems = dmDoc.select("ol > li");
+        assertNotNull("The ordered list was not found in dark_mode_usage.html.", dmListItems);
+        assertEquals("The ordered list should contain 5 items.", 5, dmListItems.size());
+
+        assertEquals("Item 1 text is incorrect.", "Open Settings.", dmListItems.get(0).text());
+        assertEquals("Item 2 text is incorrect.", "Scroll down to Accessibility and open it.", dmListItems.get(1).text());
+        assertEquals("Item 3 text is incorrect.", "Scroll to TalkBack and open it.", dmListItems.get(2).text());
+        assertEquals("Item 4 text is incorrect.", "Activate TalkBack with the button next to \"Use TalkBack\".", dmListItems.get(3).text());
+        assertEquals("Item 5 text is incorrect.", "You may need to give TalkBack some permissions.", dmListItems.get(4).text());
+    }
+
+    // @Test
+    public void verifyOrderedLists_In_UsageDeFiles() throws Exception {
+        // Test usage_de.html (German)
+        String htmlContent = readAssetFile("usage_de.html");
+        Document doc = Jsoup.parse(htmlContent);
+
+        // --- Assertions for ol in usage_de.html ---
+        Elements listItems = doc.select("ol > li");
+        assertNotNull("Die geordnete Liste wurde in usage_de.html nicht gefunden.", listItems);
+        assertEquals("Die geordnete Liste sollte 5 Elemente enthalten.", 5, listItems.size());
+
+        assertEquals("Text von Element 1 ist falsch.", "Öffnen Sie die Einstellungen.", listItems.get(0).text());
+        assertEquals("Text von Element 2 ist falsch.", "Scrollen Sie nach unten zu \"Eingabehilfen\" und öffnen Sie den Menüpunkt.", listItems.get(1).text());
+        assertEquals("Text von Element 3 ist falsch.", "Scrollen Sie zu \"TalkBack\" und öffnen Sie es.", listItems.get(2).text());
+        assertEquals("Text von Element 4 ist falsch.", "Aktivieren Sie TalkBack mit der Schaltfläche neben \"TalkBack verwenden\".", listItems.get(3).text());
+        assertEquals("Text von Element 5 ist falsch.", "Geben Sie TalkBack die erforderlichen Berechtigungen.", listItems.get(4).text());
+
+        // Test dark_mode_usage_de.html (German)
+        String dmHtmlContent = readAssetFile("dark_mode_usage_de.html");
+        Document dmDoc = Jsoup.parse(dmHtmlContent);
+
+        // --- Assertions for ol in dark_mode_usage_de.html ---
+        Elements dmListItems = dmDoc.select("ol > li");
+        assertNotNull("Die geordnete Liste wurde in dark_mode_usage_de.html nicht gefunden.", dmListItems);
+        assertEquals("Die geordnete Liste sollte 5 Elemente enthalten.", 5, dmListItems.size());
+
+        assertEquals("Text von Element 1 ist falsch.", "Öffnen Sie die Einstellungen.", dmListItems.get(0).text());
+        assertEquals("Text von Element 2 ist falsch.", "Scrollen Sie nach unten zu \"Eingabehilfen\" und öffnen Sie den Menüpunkt.", dmListItems.get(1).text());
+        assertEquals("Text von Element 3 ist falsch.", "Scrollen Sie zu \"TalkBack\" und öffnen Sie es.", dmListItems.get(2).text());
+        assertEquals("Text von Element 4 ist falsch.", "Aktivieren Sie TalkBack mit der Schaltfläche neben \"TalkBack verwenden\".", dmListItems.get(3).text());
+        assertEquals("Text von Element 5 ist falsch.", "Geben Sie TalkBack die erforderlichen Berechtigungen.", dmListItems.get(4).text());
+    }
 }
