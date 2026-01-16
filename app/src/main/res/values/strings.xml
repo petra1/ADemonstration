@@ -1,24 +1,46 @@
 <resources>
-    <!--Default-->
+    <!--App General-->
     <string name="app_name">A Demonstration</string>
-
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="logo">Logo of A Demonstration</string>
+    <string name="menu_home" translatable="false">Home</string>
     <string name="nav_header_title">Ritter Apps</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="menu_home" translatable="false">Home</string>
 
-    <!--Headings-->
+    <!--Home Screen-->
+    <string name="headings">Headings</string>
+    <string name="contrast_ratio">Contrast Ratio</string>
+    <string name="graphics">Graphics</string>
+    <string name="edit_fields">"Edit Fields "</string>
+    <string name="image_buttons">Image Buttons</string>
+    <string name="tab_order">Focus Order</string>
+    <string name="focus_visible">Focus Visible</string>
+    <string name="checkboxes">Checkboxes</string>
+    <string name="usage">Help</string>
+    <string name="contact">Privacy &amp; Contact</string>
+
+    <!--Headings Screen-->
     <string name="dark_mode_heading__html">dark_mode_heading.html</string>
     <string name="heading__html">heading.html</string>
 
-    <!--Contrast ratio-->
+    <!--Contrast Ratio Screen-->
     <string name="contrast_description">The contrast ratio is often not given enough attention in the development of mobile apps. However, especially in mobile use, a good contrast ratio is important for all users, e.g. when using mobile devices outdoors in sunshine. Below you will find some examples of good and bad contrast ratios.</string>
     <string name="passed">Passed with 21.0:1, HEX: #ffffff on #000000.</string>
     <string name="just_passed">Just passed with 4.5:1, HEX: #00e9ff on #5a4dad</string>
+    <string name="failed">Failed with 2.3:1, HEX: #ffffff on #a0b0a1.</string>
     <string name="just_failed">Just failed with 4.4:1, HEX: #ffffff on #0083a1</string>
     <string name="passed_with">Passed with contrast ratio of __? HEX #ffffff on #006400</string>
+    <string name="failed_with">Failed with contrast ratio of __?  HEX #ffffff on #bb86fc</string>
+    <string name="contentDescription_passed">Passed with 21.0:1, HEX: # f f f f f f on #000000.</string>
+    <string name="contentDescription_just_passed">Just passed with 4.5:1, HEX: #00e9ff on #5a4dad</string>
+    <string name="contentDescription_failed">Failed with 2.3:1, HEX: # f f f f f f on #a0b0a1.</string>
+    <string name="contentDescription_just_failed">Just failed with 4.4:1, HEX: # f f f f f f on #0083a1</string>
+    <string name="contentDescription_passed_with">Passed with  contrast ratio of __? HEX # f f f f f f on #006400</string>
+    <string name="contentDescription_failed_with">Failed with contrast ratio of __? HEX # f f f f f f on #bb86fc</string>
 
-    <!--Alternative text-->
+    <!--Graphics (Alternative Text) Screen-->
     <string name="alternative_texts">Alternative Texts</string>
+    <string name="alt_description">"The following will show what is read by TalkBack in the three most common situations (no alternative text, decorative graphics, and informative graphics). "</string>
     <string name="no_alt_text">No alternative text</string>
     <string name="no_alt_description">In this example, the alternative text was intentionally omitted. In practice, it happens very often that the alternative text is omitted by mistake.</string>
     <string name="decorative_graphics">Decorative Graphics</string>
@@ -27,76 +49,42 @@
     <string name="informative_graphic_description">In this example, the graphic was assumed to be informative, so it was provided with an alternative text.</string>
     <string name="informative_graphic_alt">wheelchair accessible</string>
 
-    <!--Contact and Logo-->
-    <string name="contact_information">Contact information</string>
-    <string name="petra_ritter" translatable="false">Petra Ritter</string>
-    <string name="email" translatable="false">E-mail:</string>
-    <string name="mail_address" translatable="false"><a href="mailto:ritter1.apps@gmail.com">ritter1.apps@gmail.com</a></string>
-    <string name="logo">Logo of A Demonstration</string>
-
-
-    <!--Edit fields-->
-    <string name="last_name_send">Last name was sent.</string>
+    <!--Edit Fields Screen-->
     <string name="description1_editfield">In the following, we will show how TalkBack behaves when the visually visible labels have not been linked to the corresponding input field.</string>
     <string name="description2_editfield">In the first input field, the link to the visible label was intentionally omitted. The second is correctly linked to the label.</string>
     <string name="first_name_label">Any first name</string>
     <string name="send_first_name_bt">Send first name</string>
+    <string name="first_name_send">First name has been sent</string>
     <string name="last_name_label">Any last name</string>
     <string name="send_last_name_bt">Send last name</string>
+    <string name="last_name_send">Last name was sent.</string>
     <string name="full_name_text">Press the button below to display the full name.</string>
-
-    <!--Image Buttons-->
-    <string name="version_of_wcag">Answer #1 The current version of WCAG is 2.2.</string>
-    <string name="released_wcag">Answer #2  The current version was released in October 2023.</string>
-
-    <string name="image_buttons">Image Buttons</string>
-    <string name="Description1_imageButton">This example shows how TalkBack behaves with graphic buttons that lack alternative text, and at the same time shows how the buttons can be made more usable for people with limited fine motor skills.</string>
-    <string name="Description2_imageButton">In the first graphical button, the alternative text was intentionally omitted and the target was not adjusted. The second graphic button, on the other hand, has been labelled correctly and the touch target has been adjusted  so that the button is displayed larger and is therefore easier to use.</string>
-    <string name="question1_imageButton">Question #1: What is the current version of WCAG?</string>
-    <string name="question2_imageButton">Question #2: When was the current version of WCAG released?</string>
-    <string name="contentDescription_imageButton">Get the answer to the second question.</string>
-    <string name="reset_questions">Reset questions</string>
-    <!--Tab Order-->
-    <string name="somethings_wrong">Oops, something went wrong with the tab order.</string>
-    <string name="tab_correct">Now the tab order is correct.</string>
-    <string name="help_first">Get help for first name</string>
-    <string name="help_last">Get help for last name</string>
-    <string name="contrast_ratio">Contrast Ratio</string>
-    <string name="edit_fields">"Edit Fields "</string>
     <string name="display_full_name_bt">Display full name</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="failed">Failed with 2.3:1, HEX: #ffffff on #a0b0a1.</string>
-    <string name="failed_with">Failed with contrast ratio of __?  HEX #ffffff on #bb86fc</string>
-    <string name="alt_description">"The following will show what is read by TalkBack in the three most common situations (no alternative text, decorative graphics, and informative graphics). "</string>
-    <string name="first_name_send">First name has been sent</string>
-    <string name="graphics">Graphics</string>
-    <string name="headings">Headings</string>
-    <string name="tab_order">Focus Order</string>
-    <string name="contact">Privacy &amp; Contact</string>
-    <string name="description1_tab_order">People with limited fine motor skills may not be able to operate a touch screen. It is therefore important that an app can also be operated with a keyboard connected via Bluetooth and that the focus order of the operating elements is correct.</string>
-    <string name="description2_tab_order">In the first example, the focus order was intentionally ignored, but in the second example, the focus order is correct.</string>
-    <string name="contentDescription_passed">Passed with 21.0:1, HEX: # f f f f f f on #000000.</string>
-    <string name="contentDescription_failed">Failed with 2.3:1, HEX: # f f f f f f on #a0b0a1.</string>
-    <string name="contentDescription_just_failed">Just failed with 4.4:1, HEX: # f f f f f f on #0083a1</string>
-    <string name="contentDescription_failed_with">Failed with contrast ratio of __? HEX # f f f f f f on #bb86fc</string>
-    <string name="contentDescription_passed_with">Passed with  contrast ratio of __? HEX # f f f f f f on #006400</string>
-    <string name="privacy_text">The app only processes data locally and does not send it to other devices or third-party services. The data is also not stored permanently.</string>
-    <string name="privacy">Privacy</string>
-    <string name="dark_mode_usage.html">dark_mode_usage.html</string>
-    <string name="usage">Help</string>
-    <string name="contact_name" translatable="false">Name:</string>
-    <string name="usage.html">usage.html</string>
-    <string name="privacy_text2">The app contains two forms, but these are only sample forms. The data you enter in these forms is only processed locally and displayed on the user\'s device.</string>
     <string name="alert_title">An error has occurred!</string>
     <string name="alert_message">Please enter a first or last name and click on the corresponding send button.</string>
     <string name="alert_button">OK</string>
-    <string name="github" translatable="false">GitHub:</string>
-    <string name="github_url" translatable="false"><a href="https://github.com/petra1/ADemonstration/tree/Lokalisation_de">https://github.com/petra1/ADemonstration/tree/Lokalisation_de</a></string>
 
+    <!--Image Buttons Screen-->
+    <string name="Description1_imageButton">This example shows how TalkBack behaves with graphic buttons that lack alternative text, and at the same time shows how the buttons can be made more usable for people with limited fine motor skills.</string>
+    <string name="Description2_imageButton">In the first graphical button, the alternative text was intentionally omitted and the target was not adjusted. The second graphic button, on the other hand, has been labelled correctly and the touch target has been adjusted  so that the button is displayed larger and is therefore easier to use.</string>
+    <string name="question1_imageButton">Question #1: What is the current version of WCAG?</string>
+    <string name="version_of_wcag">Answer #1 The current version of WCAG is 2.2.</string>
+    <string name="question2_imageButton">Question #2: When was the current version of WCAG released?</string>
+    <string name="released_wcag">Answer #2  The current version was released in October 2023.</string>
+    <string name="contentDescription_imageButton">Get the answer to the second question.</string>
+    <string name="reset_questions">Reset questions</string>
 
-    <string name="focus_visible">Focus Visible</string>
-    <string name="description2_focus_visible">In this example, the visibility of the keyboard focus was intentionally ignored for some buttons. Try using a Bluetooth keyboard paired with the mobile device and try to find and activate button 3 without counting how many times you press the Tab key.</string>
+    <!--Focus Order (Tab Order) Screen-->
+    <string name="description1_tab_order">People with limited fine motor skills may not be able to operate a touch screen. It is therefore important that an app can also be operated with a keyboard connected via Bluetooth and that the focus order of the operating elements is correct.</string>
+    <string name="description2_tab_order">In the first example, the focus order was intentionally ignored, but in the second example, the focus order is correct.</string>
+    <string name="help_first">Get help for first name</string>
+    <string name="help_last">Get help for last name</string>
+    <string name="somethings_wrong">Oops, something went wrong with the tab order.</string>
+    <string name="tab_correct">Now the tab order is correct.</string>
+
+    <!--Focus Visible Screen-->
     <string name="description1_focus_visible">People with motor disabilities may have difficulty or be unable to operate a touch screen and therefore use a Bluetooth keyboard. This requires, among other things, that the keyboard focus is sufficiently visible.</string>
+    <string name="description2_focus_visible">In this example, the visibility of the keyboard focus was intentionally ignored for some buttons. Try using a Bluetooth keyboard paired with the mobile device and try to find and activate button 3 without counting how many times you press the Tab key.</string>
     <string name="btn_1">You pressed button number 1</string>
     <string name="btn_2">You pressed button number 2</string>
     <string name="btn_3">You pressed button number 3</string>
@@ -109,14 +97,8 @@
     <string name="focus_visible_btn_4" translatable="false">4</string>
     <string name="focus_visible_btn_5" translatable="false">5</string>
     <string name="focus_visible_btn_6" translatable="false">6</string>
-    <string name="website">Website:</string>
-    <string name="website_url" translatable="false"><a href="https://sites.google.com/view/ritter-apps/project">https://sites.google.com/view/ritter-apps/project</a></string>
-    <string name="about_the_app">About the app</string>
-    <string name="app_name_heading">App name</string>
-    <string name="app_version">App version</string>
-    <string name="build_number">Build number</string>
 
-    <string name="checkboxes">Checkboxes</string>
+    <!--Checkboxes Screen-->
     <string name="Description1_checkboxes">This example shows how TalkBack behaves if checkboxes have not been implemented correctly.</string>
     <string name="description2_checkboxes">The first checkboxes were implemented without taking accessibility into account. This was taken into account for the second.</string>
     <string name="checkboxes_question1">Question 1: Do you know how to programme?</string>
@@ -124,11 +106,32 @@
     <string name="checkbox_question_yes">Yes</string>
     <string name="checkbox_question_no">No</string>
     <string name="contentDescription_checkbox_question2_yes">Yes, I am planning to learn programming.</string>
-    <string name="contentDescription_checkbox_question2_no">No, I\'m not planning to learn programming.</string>
+    <string name="contentDescription_checkbox_question2_no">No, I am not planning to learn programming.</string>
     <string name="message_checkbox_question1_yes">Very good. Keep on learning!</string>
     <string name="message_checkbox_question1_no">Also good. There are also other things you can do.</string>
     <string name="message_checkbox_question2_yes">Good, programming is an exciting hobby</string>
     <string name="message_checkbox_question2_no">Perhaps you will be interested in programming later on.</string>
 
+    <!--Help (Usage) Screen-->
+    <string name="dark_mode_usage.html">dark_mode_usage.html</string>
+    <string name="usage.html">usage.html</string>
+
+    <!--Privacy & Contact Screen-->
+    <string name="privacy">Privacy</string>
+    <string name="privacy_text">The app only processes data locally and does not send it to other devices or third-party services. The data is also not stored permanently.</string>
+    <string name="privacy_text2">The app contains two forms, but these are only sample forms. The data you enter in these forms is only processed locally and displayed on this device.</string>
+    <string name="contact_information">Contact information</string>
+    <string name="contact_name" translatable="false">Name:</string>
+    <string name="petra_ritter" translatable="false">Petra Ritter</string>
+    <string name="email" translatable="false">E-mail:</string>
+    <string name="mail_address" translatable="false"><a href="mailto:ritter1.apps@gmail.com">ritter1.apps@gmail.com</a></string>
+    <string name="website">Website:</string>
+    <string name="website_url" translatable="false"><a href="https://sites.google.com/view/ritter-apps/project">https://sites.google.com/view/ritter-apps/project</a></string>
+    <string name="github" translatable="false">GitHub:</string>
+    <string name="github_url" translatable="false"><a href="https://github.com/petra1/ADemonstration/tree/Lokalisation_de">https://github.com/petra1/ADemonstration/tree/Lokalisation_de</a></string>
+    <string name="about_the_app">About the app</string>
+    <string name="app_name_heading">App name</string>
+    <string name="app_version">App version</string>
+    <string name="build_number">Build number</string>
 
 </resources>

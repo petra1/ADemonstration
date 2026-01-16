@@ -1,95 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--App General-->
     <string name="app_name">A Demonstration</string>
-    <string name="nav_header_title">Ritter Apps</string>
-    <string name="first_name_label">Irgendein Vorname</string>
-    <string name="last_name_label">Irgendein Nachname</string>
-    <string name="contrast_ratio">Kontrastverhältnis</string>
-    <string name="send_first_name_bt">Vornamen senden</string>
-    <string name="send_last_name_bt">Nachnamen senden</string>
-    <string name="full_name_text">Drücken Sie die Taste unten, um den vollständigen Namen anzuzeigen.</string>
-    <string name="logo">Logo von A Demonstration</string>
-    <string name="edit_fields">Eingabefelder</string>
-    <string name="version_of_wcag">Antwort #1: Die aktuelle Version der WCAG ist 2.2.</string>
-    <string name="display_full_name_bt">Vollständigen Namen anzeigen</string>
-    <string name="image_buttons">Grafische Schalter</string>
-    <string name="reset_questions">Fragen zurücksetzen</string>
     <string name="navigation_drawer_open">Navigation öffnen</string>
-
+    <string name="logo">Logo von A Demonstration</string>
+    <string name="menu_home" translatable="false">Home</string>
+    <string name="nav_header_title">Ritter Apps</string>
     <string name="nav_header_desc">Navigationskopfzeile</string>
-    <string name="alternative_texts">Alternativtexte</string>
-    <string name="no_alt_text">Fehlender Alternativtext</string>
-    <string name="decorative_graphics">Dekorative Grafiken</string>
-    <string name="informative_graphic">Informative Grafik</string>
-    <string name="no_alt_description">In diesem Beispiel wurde der Alternativtext absichtlich weggelassen. In der Praxis kommt es sehr oft vor, dass der Alternativtext versehentlich weggelassen wird.</string>
-    <string name="deco_graphic_description">"Diese Grafik ist rein dekorativ, und der Alternativtext wurde leer gelassen, damit TalkBack die Grafik ignoriert und keinen unnötigen Text ausgibt."</string>
+
+    <!--Home Screen-->
+    <string name="headings">Überschriften</string>
+    <string name="contrast_ratio">Kontrastverhältnis</string>
+    <string name="graphics">Grafiken</string>
+    <string name="edit_fields">Eingabefelder</string>
+    <string name="image_buttons">Grafische Schalter</string>
+    <string name="tab_order">Fokus-Reihenfolge</string>
+    <string name="focus_visible">Fokus sichtbar</string>
+    <string name="checkboxes">Kontrollkästchen</string>
+    <string name="usage">Hilfe</string>
+    <string name="contact">"Datenschutz &amp; Kontakt"</string>
+
+    <!--Headings Screen-->
+    <string name="dark_mode_heading__html">dark_mode_heading_de.html</string>
+    <string name="heading__html">heading_de.html</string>
+
+    <!--Contrast Ratio Screen-->
     <string name="contrast_description">"Dem Kontrastverhältnis wird bei der Entwicklung mobiler Apps oft nicht genügend Aufmerksamkeit geschenkt. Gerade bei der mobilen Nutzung ist ein gutes Kontrastverhältnis jedoch für alle Nutzenden wichtig, z.B. bei der Nutzung mobiler Geräte im Freien bei Sonnenschein. Nachfolgend finden Sie einige Beispiele für gute und schlechte Kontrastverhältnisse."</string>
     <string name="passed">Bestanden mit 21.0:1, HEX: #ffffff auf #000000.</string>
     <string name="just_passed">Gerade noch bestanden mit 4,5:1, HEX: #00e9ff auf #5a4dad</string>
     <string name="failed">Nicht bestanden mit 2.3:1, HEX: #ffffff auf #a0b0a1</string>
     <string name="just_failed">Knapp nicht bestanden mit 4.4:1, HEX: #ffffff auf #0083a1</string>
-    <string name="failed_with">Nicht bestanden mit einem Kontrastverhältnis von? HEX #ffffff auf #bb86fc</string>
     <string name="passed_with">Bestanden mit einem Kontrastverhältnis von? HEX #ffffff auf #006400</string>
-    <string name="alt_description">"Im Folgenden wird gezeigt, was von TalkBack in den drei häufigsten Situationen vorgelesen wird (kein Alternativtext, dekorative Grafiken und informative Grafiken)."</string>
-    <string name="informative_graphic_description">In diesem Beispiel wurde davon ausgegangen, dass die Grafik informativ ist, weshalb sie mit einem Alternativtext versehen wurde.</string>
-    <string name="informative_graphic_alt">rollstuhlgängig</string>
-    <string name="contact_information">Kontaktinformationen</string>
-    <string name="first_name_send">Vorname wurde gesendet</string>
-    <string name="last_name_send">Nachname wurde gesendet</string>
-    <string name="description1_editfield">Im Folgenden wird gezeigt, wie sich TalkBack verhält, wenn die visuell sichtbaren Labels nicht mit dem entsprechenden Eingabefeld verknüpft sind.</string>
-    <string name="description2_editfield">Im ersten Eingabefeld wurde die Verknüpfung zur sichtbaren Beschriftung absichtlich weggelassen. Das zweite ist korrekt mit der Beschriftung verknüpft.</string>
-    <string name="released_wcag">Antwort #2: Die aktuelle Version wurde im Oktober 2023 veröffentlicht.</string>
-
-    <string name="Description1_imageButton">Dieses Beispiel zeigt, wie sich TalkBack bei grafischen Schaltflächen verhält, die keinen Alternativtext enthalten, und zeigt gleichzeitig, wie die Schaltflächen für Menschen mit eingeschränkter Feinmotorik besser nutzbar gemacht werden können.</string>
-    <string name="Description2_imageButton">Bei der ersten grafischen Schaltfläche wurde der Alternativtext absichtlich weggelassen und auch das Touch-Target wurde nicht angepasst. Die zweite grafische Schaltfläche hingegen wurde korrekt beschriftet und das Touch-Target wurde angepasst, so dass die Schaltfläche größer dargestellt wird und somit leichter zu bedienen ist.</string>
-    <string name="question2_imageButton">Frage 2: Wann wurde die aktuelle Version der WCAG veröffentlicht?</string>
-    <string name="question1_imageButton">Frage 1: Was ist die aktuelle Version der WCAG?</string>
-    <string name="contentDescription_imageButton">Erhalten Sie die Antwort auf die zweite Frage.</string>
-    <string name="somethings_wrong">Ups, da ist etwas mit der Tab-Reihenfolge schief gegangen.</string>
-    <string name="tab_correct">Jetzt ist die Tab-Reihenfolge korrekt.</string>
-    <string name="help_first">Hilfe zum Vornamen</string>
-    <string name="help_last">Hilfe zum Nachnamen</string>
-    <string name="dark_mode_heading__html">dark_mode_heading_de.html</string>
-    <string name="graphics">Grafiken</string>
-    <string name="headings">Überschriften</string>
-    <string name="tab_order">Fokus-Reihenfolge</string>
-    <string name="contact">"Datenschutz &amp; Kontakt"</string>
-    <string name="description1_tab_order">Menschen mit eingeschränkter Feinmotorik sind möglicherweise nicht in der Lage, einen Touchscreen zu bedienen. Daher ist es wichtig, dass eine App auch mit einer über Bluetooth angeschlossenen Tastatur bedient werden kann und dass die Fokusreihenfolge der Bedienelemente korrekt ist.</string>
-    <string name="description2_tab_order">Im ersten Beispiel wurde die Fokusreihenfolge absichtlich ignoriert, aber im zweiten Beispiel ist die Fokusreihenfolge korrekt.</string>
+    <string name="failed_with">Nicht bestanden mit einem Kontrastverhältnis von? HEX #ffffff auf #bb86fc</string>
     <string name="contentDescription_passed">Bestanden mit 21.0:1 HEX:  # f f f f f f     auf #000000.</string>
+    <string name="contentDescription_just_passed">Gerade noch bestanden mit 4.5:1, HEX: #00e9ff auf #5a4dad</string>
     <string name="contentDescription_failed">Nicht bestanden mit 2.3:1, HEX: # f f f f f f auf #a0b0a1</string>
     <string name="contentDescription_just_failed">Knapp nicht bestanden mit 4.4:1, HEX: # f f f f f f auf #0083a1</string>
-    <string name="contentDescription_failed_with">Nicht bestanden mit Kontrastverhältnis von? HEX # f f f f f f auf #bb86fc</string>
     <string name="contentDescription_passed_with">Bestanden mit einem Kontrastverhältnis von? HEX # f f f f f f auf #006400</string>
-    <string name="privacy">Datenschutz</string>
-    <string name="privacy_text">Die App verarbeitet die Daten nur lokal und sendet sie nicht an andere Geräte oder an Dienste Dritter. Die Daten werden auch nicht dauerhaft gespeichert.</string>
-    <string name="dark_mode_usage.html">dark_mode_usage_de.html</string>
-    <string name="usage">Hilfe</string>
-    <string name="heading__html">heading_de.html</string>
-    <string name="usage.html">usage_de.html</string>
-    <string name="privacy_text2">Die App enthält zwei Formulare, bei denen es sich jedoch nur um Beispiel-Formulare handelt. Die Daten, die Sie in diese Formulare eingeben, werden nur lokal verarbeitet und auf dem Gerät des Benutzers angezeigt.</string>
+    <string name="contentDescription_failed_with">Nicht bestanden mit Kontrastverhältnis von? HEX # f f f f f f auf #bb86fc</string>
+
+    <!--Graphics (Alternative Text) Screen-->
+    <string name="alternative_texts">Alternativtexte</string>
+    <string name="alt_description">"Im Folgenden wird gezeigt, was von TalkBack in den drei häufigsten Situationen vorgelesen wird (kein Alternativtext, dekorative Grafiken und informative Grafiken)."</string>
+    <string name="no_alt_text">Fehlender Alternativtext</string>
+    <string name="no_alt_description">In diesem Beispiel wurde der Alternativtext absichtlich weggelassen. In der Praxis kommt es sehr oft vor, dass der Alternativtext versehentlich weggelassen wird.</string>
+    <string name="decorative_graphics">Dekorative Grafiken</string>
+    <string name="deco_graphic_description">"Diese Grafik ist rein dekorativ, und der Alternativtext wurde leer gelassen, damit TalkBack die Grafik ignoriert und keinen unnötigen Text ausgibt."</string>
+    <string name="informative_graphic">Informative Grafik</string>
+    <string name="informative_graphic_description">In diesem Beispiel wurde davon ausgegangen, dass die Grafik informativ ist, weshalb sie mit einem Alternativtext versehen wurde.</string>
+    <string name="informative_graphic_alt">rollstuhlgängig</string>
+
+    <!--Edit Fields Screen-->
+    <string name="description1_editfield">Im Folgenden wird gezeigt, wie sich TalkBack verhält, wenn die visuell sichtbaren Labels nicht mit dem entsprechenden Eingabefeld verknüpft sind.</string>
+    <string name="description2_editfield">Im ersten Eingabefeld wurde die Verknüpfung zur sichtbaren Beschriftung absichtlich weggelassen. Das zweite ist korrekt mit der Beschriftung verknüpft.</string>
+    <string name="first_name_label">Irgendein Vorname</string>
+    <string name="send_first_name_bt">Vornamen senden</string>
+    <string name="first_name_send">Vorname wurde gesendet</string>
+    <string name="last_name_label">Irgendein Nachname</string>
+    <string name="send_last_name_bt">Nachnamen senden</string>
+    <string name="last_name_send">Nachname wurde gesendet</string>
+    <string name="full_name_text">Drücken Sie die Taste unten, um den vollständigen Namen anzuzeigen.</string>
+    <string name="display_full_name_bt">Vollständigen Namen anzeigen</string>
     <string name="alert_title">Ein Fehler ist aufgetreten!</string>
     <string name="alert_message">Bitte geben Sie einen Vor- oder Nachnamen ein und klicken Sie auf den dazugehörigen Senden-Schalter.</string>
     <string name="alert_button">OK</string>
 
+    <!--Image Buttons Screen-->
+    <string name="Description1_imageButton">Dieses Beispiel zeigt, wie sich TalkBack bei grafischen Schaltflächen verhält, die keinen Alternativtext enthalten, und zeigt gleichzeitig, wie die Schaltflächen für Menschen mit eingeschränkter Feinmotorik besser nutzbar gemacht werden können.</string>
+    <string name="Description2_imageButton">Bei der ersten grafischen Schaltfläche wurde der Alternativtext absichtlich weggelassen und auch das Touch-Target wurde nicht angepasst. Die zweite grafische Schaltfläche hingegen wurde korrekt beschriftet und das Touch-Target wurde angepasst, so dass die Schaltfläche größer dargestellt wird und somit leichter zu bedienen ist.</string>
+    <string name="question1_imageButton">Frage 1: Was ist die aktuelle Version der WCAG?</string>
+    <string name="version_of_wcag">Antwort #1: Die aktuelle Version der WCAG ist 2.2.</string>
+    <string name="question2_imageButton">Frage 2: Wann wurde die aktuelle Version der WCAG veröffentlicht?</string>
+    <string name="released_wcag">Antwort #2: Die aktuelle Version wurde im Oktober 2023 veröffentlicht.</string>
+    <string name="contentDescription_imageButton">Erhalten Sie die Antwort auf die zweite Frage.</string>
+    <string name="reset_questions">Fragen zurücksetzen</string>
 
-    <string name="focus_visible">Fokus sichtbar</string>
-    <string name="description2_focus_visible">In diesem Beispiel wurde die Sichtbarkeit des Tastaturfokus für einige Schalter absichtlich ignoriert. Verwenden Sie eine mit dem mobilen Gerät gekoppelte Bluetooth-Tastatur und versuchen, die Taste 3 zu finden und zu aktivieren, ohne zu zählen, wie oft Sie die Tab-Taste drücken.</string>
+    <!--Focus Order (Tab Order) Screen-->
+    <string name="description1_tab_order">Menschen mit eingeschränkter Feinmotorik sind möglicherweise nicht in der Lage, einen Touchscreen zu bedienen. Daher ist es wichtig, dass eine App auch mit einer über Bluetooth angeschlossenen Tastatur bedient werden kann und dass die Fokusreihenfolge der Bedienelemente korrekt ist.</string>
+    <string name="description2_tab_order">Im ersten Beispiel wurde die Fokusreihenfolge absichtlich ignoriert, aber im zweiten Beispiel ist die Fokusreihenfolge korrekt.</string>
+    <string name="help_first">Hilfe zum Vornamen</string>
+    <string name="help_last">Hilfe zum Nachnamen</string>
+    <string name="somethings_wrong">Ups, da ist etwas mit der Tab-Reihenfolge schief gegangen.</string>
+    <string name="tab_correct">Jetzt ist die Tab-Reihenfolge korrekt.</string>
+
+    <!--Focus Visible Screen-->
     <string name="description1_focus_visible">„Motorisch behinderte“ Menschen haben möglicherweise Mühe oder sind nicht in der Lage einen Touchscreen zu bedienen und verwenden daher eine Bluetooth-Tastatur. Dies setzt unter anderem voraus, dass der Tastaturfokus genügend sichtbar ist.</string>
+    <string name="description2_focus_visible">In diesem Beispiel wurde die Sichtbarkeit des Tastaturfokus für einige Schalter absichtlich ignoriert. Verwenden Sie eine mit dem mobilen Gerät gekoppelte Bluetooth-Tastatur und versuchen, die Taste 3 zu finden und zu aktivieren, ohne zu zählen, wie oft Sie die Tab-Taste drücken.</string>
     <string name="btn_1">Sie drückten den Schalter Nummer 1</string>
     <string name="btn_2">Sie drückten den Schalter Nummer 2</string>
     <string name="btn_3">Sie drückten den Schalter Nummer 3</string>
     <string name="btn_4">Sie drückten den Schalter Nummer 4</string>
     <string name="btn_5">Sie drückten den Schalter Nummer 5</string>
     <string name="btn_6">Sie drückten den Schalter Nummer 6</string>
+    <string name="focus_visible_btn_1" translatable="false">1</string>
+    <string name="focus_visible_btn_2" translatable="false">2</string>
+    <string name="focus_visible_btn_3" translatable="false">3</string>
+    <string name="focus_visible_btn_4" translatable="false">4</string>
+    <string name="focus_visible_btn_5" translatable="false">5</string>
+    <string name="focus_visible_btn_6" translatable="false">6</string>
 
-    <string name="website">Webseite:</string>
-    <string name="about_the_app">Über die App</string>
-    <string name="app_name_heading">App-Name</string>
-    <string name="app_version">App-Version</string>
-    <string name="build_number">Build-Nummer</string>
-
-    <string name="checkboxes">Kontrollkästchen</string>
+    <!--Checkboxes Screen-->
     <string name="Description1_checkboxes">Dieses Beispiel zeigt, wie sich TalkBack bei Kontrollkästchen verhält, die nicht richtig implementiert wurden.</string>
     <string name="description2_checkboxes">Die ersten Kontrollkästchen wurden ohne Berücksichtigung der Barrierefreiheit implementiert. Bei den zweiten wurde darauf geachtet.</string>
     <string name="checkboxes_question1">Frage 1: Können Sie programmieren?</string>
@@ -102,5 +111,27 @@
     <string name="message_checkbox_question1_no">Auch gut. Es gibt auch noch andere Dinge, die man tun kann.</string>
     <string name="message_checkbox_question2_yes">Gut, Programmieren ist ein spannendes Hobby.</string>
     <string name="message_checkbox_question2_no">Vielleicht interessieren Sie sich später einmal für das Programmieren.</string>
+
+    <!--Help (Usage) Screen-->
+    <string name="dark_mode_usage.html">dark_mode_usage_de.html</string>
+    <string name="usage.html">usage_de.html</string>
+
+    <!--Privacy & Contact Screen-->
+    <string name="privacy">Datenschutz</string>
+    <string name="privacy_text">Die App verarbeitet die Daten nur lokal und sendet sie nicht an andere Geräte oder an Dienste Dritter. Die Daten werden auch nicht dauerhaft gespeichert.</string>
+    <string name="privacy_text2">Die App enthält zwei Formulare, bei denen es sich jedoch nur um Beispiel-Formulare handelt. Die Daten, die Sie in diese Formulare eingeben, werden nur lokal verarbeitet und auf dem Gerät des Benutzers angezeigt.</string>
+    <string name="contact_information">Kontaktinformationen</string>
+    <string name="contact_name" translatable="false">Name:</string>
+    <string name="petra_ritter" translatable="false">Petra Ritter</string>
+    <string name="email" translatable="false">E-mail:</string>
+    <string name="mail_address" translatable="false"><a href="mailto:ritter1.apps@gmail.com">ritter1.apps@gmail.com</a></string>
+    <string name="website">Webseite:</string>
+    <string name="website_url" translatable="false"><a href="https://sites.google.com/view/ritter-apps/project">https://sites.google.com/view/ritter-apps/project</a></string>
+    <string name="github" translatable="false">GitHub:</string>
+    <string name="github_url" translatable="false"><a href="https://github.com/petra1/ADemonstration/tree/Lokalisation_de">https://github.com/petra1/ADemonstration/tree/Lokalisation_de</a></string>
+    <string name="about_the_app">Über die App</string>
+    <string name="app_name_heading">App-Name</string>
+    <string name="app_version">App-Version</string>
+    <string name="build_number">Build-Nummer</string>
 
 </resources>
