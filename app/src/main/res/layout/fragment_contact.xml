@@ -99,7 +99,7 @@
                 <TextView
                     android:id="@+id/email_heading"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="20dp"
                     android:accessibilityHeading="true"
@@ -122,7 +122,9 @@
                     android:minHeight="48dp"
                     android:text="@string/mail_address"
                     android:textColorLink="?colorPrimary"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                   />
+
 
                 <TextView
                     android:id="@+id/website_heading"
@@ -150,7 +152,8 @@
                     android:minHeight="48dp"
                     android:text="@string/website_url"
                     android:textColorLink="?colorPrimary"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    />
 
             </LinearLayout>
         </LinearLayout>

@@ -4,7 +4,7 @@
     <string name="navigation_drawer_open">Navigation öffnen</string>
     <string name="logo">Logo von A Demonstration</string>
     <string name="menu_home" translatable="false">Home</string>
-    <string name="nav_header_title">Ritter Apps</string>
+    <string name="nav_header_title"> Ritter Apps\nritter1.apps@gmail.com</string>
     <string name="nav_header_desc">Navigationskopfzeile</string>
 
     <!--Home Screen-->
