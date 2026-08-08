@@ -9,8 +9,8 @@ android {
         applicationId "ch.ritter1.apps.ademonstration"
         minSdk 29
         targetSdk 37
-        versionCode 10
-        versionName "0.99.3"
+        versionCode 13
+        versionName "0.99.4"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
