@@ -63,7 +63,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tab_description1" />
 
-        <!-- Beispiel 1: Vorname -->
+
         <TextView
             android:id="@+id/tab_first_name_label"
             android:layout_width="wrap_content"
@@ -124,7 +124,7 @@
             app:layout_constraintTop_toBottomOf="@id/tab_first_name_edit"
             tools:ignore="SpeakableTextPresentCheck" />
 
-        <!-- Beispiel 2: Nachname (Fokusreihenfolge explizit gesetzt) -->
+
         <TextView
             android:id="@+id/tab_last_name_label"
             android:layout_width="wrap_content"
@@ -188,7 +188,7 @@
             app:layout_constraintTop_toBottomOf="@id/tab_last_name_edit"
             tools:ignore="SpeakableTextPresentCheck" />
 
-        <!-- Vollständiger Name -->
+
         <TextView
             android:id="@+id/tab_full_name_text"
             android:layout_width="wrap_content"

@@ -3,7 +3,7 @@
     <string name="app_name" translatable="false">A Demonstration</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="logo">Logo of A Demonstration</string>
-    <string name="menu_home" translatable="false">Home</string>
+    <string name="menu_home">Home</string>
     <string name="nav_header_title" translatable="false"> Ritter Apps\nritter1.apps@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
 
@@ -18,6 +18,7 @@
     <string name="checkboxes">Checkboxes</string>
     <string name="usage">Help</string>
     <string name="contact">Privacy &amp; Contact</string>
+    <string name="home_description">This app shows typical accessibility barriers in mobile apps and how to avoid them. Try the examples with a screen reader to experience the difference.</string>
 
     <!--Headings Screen-->
     <string name="dark_mode_heading__html">dark_mode_heading.html</string>

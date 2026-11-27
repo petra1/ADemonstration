@@ -52,7 +52,7 @@
             android:textColor="?colorOnPrimary"
             android:textSize="16sp" />
 
-        <!-- Vorname: Label absichtlich NICHT per labelFor mit dem Feld verknüpft -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
             android:textAllCaps="false"
             android:textColor="@color/white" />
 
-        <!-- Nachname: Label korrekt per labelFor verknüpft -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
